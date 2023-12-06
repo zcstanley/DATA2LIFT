@@ -91,4 +91,4 @@ p <- ggplot(us_contiguous) +
   theme(legend.position = "right")
 
 # Save the plot as a PDF file
-ggsave(p, filename = "map.pdf", plot = p, width = 10, height = 6)
+ggsave(filename = "map.pdf", plot = p, width = 10, height = 6)
