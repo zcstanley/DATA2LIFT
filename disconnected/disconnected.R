@@ -5,7 +5,7 @@ library(sf)
 library(cartogram)
 
 # Set census api key
-census_api_key("985901667535f61f5ea97bfbf8e4fdfcd8c743c4")
+census_api_key("d48d2c6fa999265383738be2b1f48aed4900866a")
 
 # Set your states
 states_list <- c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
@@ -45,7 +45,7 @@ rawdata_list <- pbmclapply(states_list, function(state) {
 # Combine all the data into one data frame
 # rawdata <- bind_rows(rawdata_list)
 # save(rawdata, file = "rawdata.Rdata") 
-load("disconnectedRawData.Rdata")
+load("disconnected/disconnectedRawData.Rdata")
 
 # Recode data for clarity
 data <- rawdata %>% 
@@ -54,10 +54,10 @@ data <- rawdata %>%
       HISP > 1 ~ "Hispanic",
       RAC1P == 1 ~ "White",
       RAC1P == 2 ~ "Black",
-      RAC1P %in% c(3,4) ~ "Native American/Alaska Native",
+      RAC1P %in% c(3,5) ~ "Native American/Alaska Native",
       RAC1P == 6 ~ "Asian",
       RAC1P == 7 ~ "Native Hawaiian/Pacific Islander",
-      RAC1P == 8 ~ "Multi-racial",
+      RAC1P == 9 ~ "Multi-racial",
       TRUE ~ "None of the above"
     ),
     gender = if_else(SEX == 1, "Male", "Female")
