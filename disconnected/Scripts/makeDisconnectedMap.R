@@ -14,22 +14,6 @@ states_list <- c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
 # Load raw data (if it exists), else prompt user to download data using downloadDisconnectedData.R
 load("disconnected/RawData/disconnectedRawData.Rdata")
 
-# Recode data for clarity
-data <- rawdata %>% 
-  mutate(
-    race_ethnicity = case_when(
-      HISP > 1 ~ "Hispanic",
-      RAC1P == 1 ~ "White",
-      RAC1P == 2 ~ "Black",
-      RAC1P %in% c(3,5) ~ "Native American/Alaska Native",
-      RAC1P == 6 ~ "Asian",
-      RAC1P == 7 ~ "Native Hawaiian/Pacific Islander",
-      RAC1P == 9 ~ "Multi-racial",
-      TRUE ~ "None of the above"
-    ),
-    gender = if_else(SEX == 1, "Male", "Female")
-  )
-
 # Aggregate data by state-PUMA combination
 puma_data <- rawdata %>%
   group_by(ST, PUMA) %>%
