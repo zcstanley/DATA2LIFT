@@ -1,22 +1,42 @@
+# -----------------------------------------------------------------------------
+# PUMS Data Retrieval
+# Author: Chad M. Topaz, Zofia Stanley
+# Date: Dec 9, 2023
+#
+# Description:
+# This code downloads the relevant PUMS data needed to assess the number of
+# disconnected youth in each PUMA.
+# -----------------------------------------------------------------------------
+
+# -------------------------
+# Load necessary libraries
+# -------------------------
 library(tidycensus)
 library(tidyverse)
 library(pbmcapply)  # parallel version of lapply
 library(sf)
 library(cartogram)
 
+# -----------------------------------
 # Set census api key
+# -----------------------------------
 census_api_key("d48d2c6fa999265383738be2b1f48aed4900866a")
 
-# Set your states
+# -----------------------------------
+# Define state postal abbreviations 
+# -----------------------------------
 states_list <- c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
                  "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
                  "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
                  "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", 
                  "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "DC")
 
-# Function to get data for a specific state with retries on failure
+
+# -------------------------------------------------------------------------
+# Define function to get data for a specific state with retries on failure
+# -------------------------------------------------------------------------
 getDataByState <- function(state, year, max_retries = 3) {
-  # Define the required variables from ACS
+  # Define the required variables from ACS (see ReadMe for description of each variable)
   vars <- c("AGEP", "SCH", "ESR", "RAC1P", "HISP", "SEX", "ST", "PUMA")
   
   retries <- 1
@@ -37,11 +57,15 @@ getDataByState <- function(state, year, max_retries = 3) {
   }
 }
 
+# ----------------------------------------
 # Use pbmclapply to fetch data in parallel
+# ----------------------------------------
 rawdata_list <- pbmclapply(states_list, function(state) {
   getDataByState(state, 2021)
 }, mc.cores = 23)
 
-# Combine all the data into one data frame
+# -------------------------------------------------
+# Combine all the data into one data frame and save
+# -------------------------------------------------
 rawdata <- bind_rows(rawdata_list)
 save(rawdata, file = "disconnected/RawData/disconnectedRawData.Rdata") 
