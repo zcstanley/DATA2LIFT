@@ -55,7 +55,7 @@ getGoodURL <- function(state_abbrev) {
 # Download the PDFs locally
 # ---------------------------
 download_file <- function(i) {
-  filename <- paste0("foster/pdf/", state_abbreviations[i], ".pdf")
+  filename <- paste0("foster/RawData/pdf/", state_abbreviations[i], ".pdf")
   download.file(successful_urls[i], filename, mode = "wb")
   return(NULL)
 }
