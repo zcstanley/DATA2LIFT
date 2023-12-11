@@ -67,20 +67,27 @@ rawdata_list <- pbmclapply(state_abbreviations, function(state) {
   getDataByState(state, 2021)
 }, mc.cores = 23)
 
-# --------------------
-# Data transformation
-# --------------------
 rawdata <- bind_rows(rawdata_list)
+
+# ----------------------------------------
+# Option to save/load PUMS data as needed
+# ----------------------------------------
+#save(rawdata, file = "foster/RawData/fosterRawPUMSData.Rdata")
+load("foster/RawData/fosterRawPUMSData.Rdata") 
+
+# ----------------------------------------------------------------------------------------------
+# Data transformation - Note that foster data does not contain race data for Hispanic children
+# ----------------------------------------------------------------------------------------------
 pumsData <- rawdata %>% 
   mutate(
     race = case_when(
       HISP > 1 ~ "Hispanic",
       RAC1P == 1 ~ "white",
       RAC1P == 2 ~ "Black",
-      RAC1P %in% c(3,4) ~ "Indigenous",
+      RAC1P %in% c(3,5) ~ "Indigenous",
       RAC1P == 6 ~ "Asian",
       RAC1P == 7 ~ "Pacific",
-      RAC1P == 8 ~ "Multi",
+      RAC1P == 9 ~ "Multi",
       TRUE ~ "Other"
     ),
     sex = if_else(SEX == 1, "male", "female")
@@ -120,5 +127,5 @@ pumaShapes <- merge(pumaShapes, fipsLookup) %>%
 # --------------------
 # Store the finalized data
 # --------------------
-save(pumsData, file = "foster/pumsData.Rdata")
-save(pumaShapes, file = "foster/pumaShapes.Rdata")
+save(pumsData, file = "foster/ProcessedData/pumsData.Rdata")
+save(pumaShapes, file = "foster/ProcessedData/pumaShapes.Rdata")
