@@ -44,7 +44,7 @@ state_abbreviations <- tolower(c(
 extractData <- function(state) {
   
   # Set filename for the PDF to be processed
-  filename <- paste0("foster/pdf/", state, ".pdf")
+  filename <- paste0("foster/RawData/pdf/", state, ".pdf")
   
   # Convert the first page of the PDF to an image
   bitmap <- pdf_convert(filename, pages = 1, dpi = 300)
@@ -197,4 +197,4 @@ scrapedFosterData <- agedata %>%
   select(state, age, sex, race, prop, total_state)
 
 # Save the final dataset to a file
-save(scrapedFosterData, file = "foster/scrapedFosterData.Rdata")
+save(scrapedFosterData, file = "foster/ProcessedData/scrapedFosterData.Rdata")
