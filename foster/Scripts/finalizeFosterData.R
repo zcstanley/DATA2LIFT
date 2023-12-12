@@ -81,7 +81,7 @@ fosterData <- merge(fosterData, pumaShapes) %>%
   mutate(foster_density = as.numeric(foster_density))
 
 # Save
-save(fosterData, file = "foster/ProcessedData/fosterData.Rdata")
+save(fosterData, file = "foster/ProcessedData/fosterProcessedData.Rdata")
 
 # Now let's make nice new data for a visualization
 
