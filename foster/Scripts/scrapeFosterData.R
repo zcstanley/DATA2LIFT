@@ -130,7 +130,7 @@ processData <- function(extracted, state) {
   counts_race <- strsplit(trimws(extracted$race), "\n")[[1]][-1] %>%
     map_dfr(~ tibble(race_count = extract_race_count(.)))
   racedata <- data.frame(
-    race = c("Indigenous", "Asian", "Black", "Pacific", "Hispanic", "white", NA, "Multi"), 
+    race = c("Indigenous", "Asian", "Black", "Pacific", "Hispanic", "white", "Other", "Multi"), 
     count = counts_race$race_count, 
     state = state
   ) %>%

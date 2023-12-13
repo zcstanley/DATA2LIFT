@@ -37,7 +37,6 @@ scrapedFosterData <- scrapedFosterData %>%
 # Calculate the proportion of each PUMA for a given combination of age/sex/race
 # e.g. of all the 1 y/o Black girls in a given state, what fraction are in a given PUMA?
 pumsData <- pumsData %>%
-  filter(race != "Other") %>%
   group_by(state, age, sex, race) %>%
   mutate(puma_prop = count / sum(count)) %>%
   ungroup() %>%
@@ -52,20 +51,20 @@ joined_data <- inner_join(scrapedFosterData, pumsData) %>%
 # Identify the total number of PUMAs for each state
 puma_count_per_state <- pumsData %>%
   group_by(state) %>%
-  summarise(total_pumas = n_distinct(PUMA)) %>%
-  ungroup()
+  mutate(total_pumas = n_distinct(PUMA)) %>%
+  ungroup() %>%
+  select(state, PUMA, total_pumas) %>%
+  unique()
 
 # Identify missing combinations and distribute children
 missing_distributed <- anti_join(scrapedFosterData, pumsData, by = c("state", "age", "sex", "race")) %>%
   left_join(puma_count_per_state, by = "state") %>%
   mutate(distributed_count = count / total_pumas) %>%
-  tidyr::uncount(total_pumas, .remove = FALSE) %>%
   select(-total_pumas, -count) %>%
   rename(foster = distributed_count)
 
 # Combine the datasets
-combined_data <- bind_rows(joined_data, missing_distributed) %>%
-  drop_na
+combined_data <- bind_rows(joined_data, missing_distributed) 
 
 # Total up foster kids in each PUMA
 fosterData <- combined_data %>%

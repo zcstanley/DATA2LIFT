@@ -65,7 +65,7 @@ getDataByState <- function(state, year, max_retries = 5) {
 # Fetch and process data
 rawdata_list <- pbmclapply(state_abbreviations, function(state) {
   getDataByState(state, 2021)
-}, mc.cores = 23)
+}, mc.cores = parallel::detectCores() - 1)
 
 rawdata <- bind_rows(rawdata_list)
 
@@ -84,7 +84,7 @@ pumsData <- rawdata %>%
       HISP > 1 ~ "Hispanic",
       RAC1P == 1 ~ "white",
       RAC1P == 2 ~ "Black",
-      RAC1P %in% c(3,5) ~ "Indigenous",
+      RAC1P %in% c(3,4,5) ~ "Indigenous",
       RAC1P == 6 ~ "Asian",
       RAC1P == 7 ~ "Pacific",
       RAC1P == 9 ~ "Multi",
@@ -113,7 +113,7 @@ pumsData <- merge(pumsData, fipsLookup) %>%
 # --------------------
 pumaShapes <- do.call(rbind, pbmclapply(state_abbreviations, function(state) {
   tigris::pumas(state = state, year = 2021, cb = FALSE)
-}, mc.cores = 23))
+}, mc.cores = parallel::detectCores() - 1))
 
 pumaShapes <- pumaShapes %>%
   rename(state_code = STATEFP10, PUMA = PUMACE10) %>%
