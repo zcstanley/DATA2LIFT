@@ -79,13 +79,14 @@ fosterData <- merge(fosterData, pumaShapes) %>%
   select(-puma_area) %>%
   mutate(foster_density = as.numeric(foster_density))
 
-# Save
-save(fosterData, file = "foster/ProcessedData/fosterProcessedData.Rdata")
+# Save/Load
+# save(fosterData, file = "foster/ProcessedData/fosterProcessedData.Rdata")
+load("foster/ProcessedData/fosterProcessedData.Rdata")
 
 # Now let's make nice new data for a visualization
 
 fosterPlotData <- fosterData %>%
-  filter(! state %in% c("ak","hi")) %>%
+  shift_geometry() %>% # move alaska and hawaii
   st_simplify(dTolerance = 1000)
 
 p1 <- fosterPlotData %>%
