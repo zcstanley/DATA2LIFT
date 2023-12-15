@@ -14,6 +14,7 @@
 library(tidyverse)
 library(tidycensus)
 library(sf)
+library(tigris)
 
 # --------------------
 # Load data
