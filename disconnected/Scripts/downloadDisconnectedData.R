@@ -62,7 +62,7 @@ getDataByState <- function(state, year, max_retries = 3) {
 # ----------------------------------------
 rawdata_list <- pbmclapply(states_list, function(state) {
   getDataByState(state, 2021)
-}, mc.cores = 23)
+}, mc.cores = parallel::detectCores() - 1)
 
 # -------------------------------------------------
 # Combine all the data into one data frame and save
