@@ -16,11 +16,12 @@ library(tidyverse)
 library(pbmcapply)  # parallel version of lapply
 library(sf)
 library(cartogram)
+library(tigris)
 
 # -----------------------------------
 # Define state postal abbreviations 
 # -----------------------------------
-states_list <- c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
+state_abbreviations <- c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
                  "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
                  "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
                  "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", 
@@ -47,52 +48,63 @@ puma_data <- rawdata %>%
 # -------------------------
 # Retrieve PUMA boundaries
 # -------------------------
-puma_shapes <- do.call(rbind, lapply(states_list, function(state) {
-  tigris::pumas(state = state, year = 2019, cb = TRUE)
-}))
+pumaShapes <- do.call(rbind, pbmclapply(state_abbreviations, function(state) {
+  tigris::pumas(state = state, year = 2021, cb = FALSE)
+}, mc.cores = parallel::detectCores() - 1))
+
+pumaShapes <- pumaShapes %>%
+  rename(ST = STATEFP10, PUMA = PUMACE10) %>%
+  select(ST, PUMA, geometry)
 
 # ---------------------------------------------
 # Merge the PUMS data with the PUMA shapefiles
 # ---------------------------------------------
-merged_data <- left_join(puma_shapes, puma_data, 
-                         by = c("STATEFP10" = "ST", "PUMACE10" = "PUMA"))
+disconnectedData <- left_join(pumaShapes, puma_data, by = c("ST", "PUMA")) %>%
+  st_as_sf() %>%
+  mutate(puma_area = st_area(.) / 1e6,
+         disconnected_density = disconnected_youths/puma_area) %>%
+  select(-puma_area) %>%
+  mutate(disconnected_density = as.numeric(disconnected_density))
+
 
 # ------------------------------------------
 # Save or load processed data, as necessary
 # ------------------------------------------
-#save(merged_data, file = "disconnected/ProcessedData/disconnectedProcessedData.Rdata") 
+#save(disconnectedData, file = "disconnected/ProcessedData/disconnectedProcessedData.Rdata") 
 #load("disconnected/ProcessedData/disconnectedProcessedData.Rdata")
 
 
-# -------------------------------------
-# Subset the data by geographic region
-# -------------------------------------
-us_contiguous <- merged_data[!merged_data$STATEFP %in% c("02", "15"), ]
-alaska <- merged_data[merged_data$STATEFP == "02", ]
-hawaii <- merged_data[merged_data$STATEFP == "15", ]
+# -------------------------
+# Format data for plotting
+# -------------------------
+disconnectedPlotData <- disconnectedData %>%
+  shift_geometry(geoid_column="ST") %>% # move Alaska and Hawaii
+  st_simplify(dTolerance = 1000)
 
-# ---------------------------------------------------
-# Create a ggplot object with the cartogram polygons
-# ---------------------------------------------------
-plotDisconnected <- function(data=us_contiguous){
-  p <- ggplot(data) +
-    geom_sf(aes(fill = disconnected_youths)) +
-    scale_fill_viridis_c(name = "Disconnected Youths") +
-    theme_void() +
-    theme(legend.position = "right")
-  return(p)
-}
+# ------------
+# Make plots
+# ------------
+# Plot absolute number of foster children
+p1 <- disconnectedPlotData %>%
+  ggplot() +
+  geom_sf(aes(fill = disconnected_youths), color = NA) +
+  ggtitle("Disconnected Youth") +
+  scale_fill_viridis_c(name = "Disconnected Youth", trans = "log10") +
+  theme_void() +
+  theme(legend.position = "right")
 
-# ---------------------------------------------------
-# Create plots for contiguous US, Alaska, and Hawaii
-# ---------------------------------------------------
-p1 <- plotDisconnected(us_contiguous)
-p2 <- plotDisconnected(alaska)
-p3 <- plotDisconnected(hawaii)
+# Plot density of foster children
+p2 <- disconnectedPlotData %>%
+  ggplot() +
+  geom_sf(aes(fill = disconnected_density), color = NA) +
+  ggtitle("Disconnected Youth", subtitle = "per sq. km") +
+  scale_fill_viridis_c(name = "Disconnected Density", trans = "log10") +
+  theme_void() +
+  theme(legend.position = "right")
 
-# ----------------------------
+
+# -----------------------------
 # Save the plots as PDF files
-# ----------------------------
-ggsave(filename = "disconnected/Plots/disconnectedContiguousUS2021Map.pdf", plot = p1, width = 10, height = 6)
-ggsave(filename = "disconnected/Plots/disconnectedAlaska2021Map.pdf", plot = p2, width = 10, height = 6)
-ggsave(filename = "disconnected/Plots/disconnectedHawaii2021Map.pdf", plot = p3, width = 10, height = 6)
+# -----------------------------
+ggsave(plot = p1, filename = "disconnected/Plots/disconnectedCountMap.pdf", width = 10, height = 6, units = "in", bg = "white")
+ggsave(plot = p2, filename = "disconnected/Plots/disconnectedDensityMap.pdf", width = 10, height = 6, units = "in", bg = "white")
