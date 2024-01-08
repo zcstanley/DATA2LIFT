@@ -66,6 +66,13 @@ arrestData <- merge(arrestData, pumaShapes) %>%
   select(-puma_area) %>%
   mutate(arrest_density = as.numeric(arrest_density))
 
+
+# ----------------------------------
+# Save final arrest data
+# ----------------------------------
+save(arrestData, file = "justiceimpacted/ProcessedData/arrestDataByPUMA.Rdata")
+write.csv(arrestData %>% st_drop_geometry(), file = "justiceimpacted/ProcessedData/arrestDataByPUMA.csv")
+
 # -------------------------
 # Format data for plotting
 # -------------------------
