@@ -44,6 +44,13 @@ fosterData <- merge(fosterData, pumaShapes) %>%
   select(-puma_area) %>%
   mutate(foster_density = as.numeric(foster_density))
 
+
+# ----------------------------------
+# Save final foster data
+# ----------------------------------
+save(fosterData, file = "foster/ProcessedData/fosterDataByPUMA.Rdata")
+write.csv(fosterData %>% st_drop_geometry(), file = "foster/ProcessedData/fosterDataByPUMA.csv")
+
 # -------------------------
 # Format data for plotting
 # -------------------------
