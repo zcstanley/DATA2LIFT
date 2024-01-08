@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "Disconnected Youth By PUMA",
+    "description": "This CSV file contains estimates of number of disconnected youth (aged 16-24) in Public Use Microdata Areas (PUMAs) for 50 states + DC in the United States. It includes data on the count of disconnected youth, the disconnected youth per population, and the disconnected youth density.",
+    "author": "Zofia Stanley",
+    "date": "2024-01-08",
+    "filename": "disconnectedDataByPUMA.csv"
+  },
+  "columns": [
+    {
+      "name": "state",
+      "description": "Two-letter state postal code",
+      "data_type": "String"
+    },
+    {
+      "name": "PUMA",
+      "description": "Public Use Microdata Area ID (unique within each state)",
+      "data_type": "Integer"
+    },
+    {
+      "name": "count",
+      "description": "Estimate of disconnected youth (aged 16-24) in the PUMA",
+      "data_type": "Decimal"
+    },
+    {
+      "name": "disconnected_per_pop",
+      "description": "Estimate of disconnected youth per 1,000 residents aged 16-24 in the PUMA",
+      "data_type": "Decimal"
+    },
+    {
+      "name": "disconnected_density",
+      "description": "Estimate of disconnected youth per sq. km. in the PUMA",
+      "data_type": "Decimal"
+    }
+  ]
+}
