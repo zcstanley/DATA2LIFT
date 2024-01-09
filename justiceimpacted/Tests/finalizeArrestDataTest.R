@@ -11,7 +11,7 @@
 # Load Processed Data
 # --------------------
 # Load the distributed arrest data
-load("justiceimpacted/ProcessedData/arrestDistributedData.Rdata")
+load("justiceimpacted/ProcessedData/arrestDataByPUMA.Rdata")
 
 # Load the processed arrest data
 load("justiceimpacted/ProcessedData/processedArrestData.Rdata")
@@ -21,6 +21,7 @@ load("justiceimpacted/ProcessedData/processedArrestData.Rdata")
 # --------------------
 # Calculate the total number of distributed arrests by state
 total_distributed_arrests_by_state <- arrestData %>%
+  st_drop_geometry() %>%
   group_by(state) %>%
   summarise(total_distributed = sum(count))
 
@@ -35,14 +36,55 @@ comparison <- inner_join(total_distributed_arrests_by_state, total_counts_by_sta
 comparison %>%
   mutate(test_passed = abs(total_distributed - total_count_state) < 1e-6)
 
+
 # Print the comparison and check for any test failures
-print(comparison)
+#print(comparison)
 all_tests_passed <- all(comparison$test_passed == TRUE)
-print(paste("All state tests passed:", all_tests_passed))
+
+# Using if statement to provide appropriate feedback
+if (all_tests_passed) {
+  print("Distributed arrests match total arrest counts for all states.")
+} else {
+  warning("Distributed arrests DO NOT match total arrest counts for some states.") 
+  print(comparison, n=51)
+}
 
 # --------------------
 # Test 2: No Negative or NaN Values in Distributed Arrests
 # --------------------
 # Check for negative or NaN values in arrestData
 test_negative_nan <- all(arrestData$count >= 0 & !is.nan(arrestData$count))
-print(paste("Negative or NaN values test passed:", test_negative_nan))
+
+if (test_negative_nan) {
+  print("Negative or NaN values test passed.")
+} else {
+  warning("Negative or NaN values test failed.")
+}
+
+# --------------------
+# Test 3: Data Types and Structure Validation
+# --------------------
+# Defining expected column names
+expected_cols <- c("state", "PUMA", "count", "arrest_per_pop", "arrest_density", "geometry")
+
+# Checking if all expected columns are present
+test_cols <- all(expected_cols %in% names(arrestData))
+
+# Checking if specific columns are of numeric type
+test_types <- is.numeric(arrestData$count) && 
+  is.numeric(arrestData$arrest_per_pop) && 
+  is.numeric(arrestData$arrest_density)
+
+# Using if statements to provide appropriate feedback
+if (test_cols) {
+  print("Column names test passed.")
+} else {
+  warning("Column names test failed.")
+}
+
+if (test_types) {
+  print("Data types test passed.")
+} else {
+  warning("Data types test failed.")
+}
+

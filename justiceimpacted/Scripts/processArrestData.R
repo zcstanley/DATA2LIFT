@@ -90,7 +90,8 @@ processedArrestData <- sex_data %>%
   select(-count) %>%
   inner_join(race_data %>% select(-count), by = "state") %>%
   group_by(state, age, sex, race, total_count_state) %>%
-  mutate(age_sex_race_prop = age_sex_prop * race_prop)
+  mutate(age_sex_race_prop = age_sex_prop * race_prop) %>%
+  ungroup()
 
 # --------------------
 # Save the processed data
