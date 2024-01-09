@@ -38,40 +38,7 @@ library(tigris)
 # --------------------
 # Load data
 # --------------------
-load("justiceimpacted/ProcessedData/arrestDistributedData.Rdata")
-load("justiceimpacted/ProcessedData/pumsData.Rdata")
-load("foster/ProcessedData/pumaShapes.Rdata")
-
-# ----------------------------------
-# Merge in population information
-# ----------------------------------
-pumaPopData <- pumsData %>%
-  group_by(state, PUMA) %>%
-  summarise(total_pop = sum(count)) 
-
-arrestData <- merge(arrestData, pumaPopData) %>%
-  mutate(arrest_per_pop = count/(total_pop/1000)) %>%
-  select(-total_pop)
-
-# ----------------------------------
-# Merge in geographical information
-# ----------------------------------
-pumaShapes <- pumaShapes %>%
-  mutate(state = toupper(state))
-
-arrestData <- merge(arrestData, pumaShapes) %>%
-  st_as_sf() %>%
-  mutate(puma_area = st_area(.) / 1e6,
-         arrest_density = count/puma_area) %>%
-  select(-puma_area) %>%
-  mutate(arrest_density = as.numeric(arrest_density))
-
-
-# ----------------------------------
-# Save final arrest data
-# ----------------------------------
-save(arrestData, file = "justiceimpacted/ProcessedData/arrestDataByPUMA.Rdata")
-write.csv(arrestData %>% st_drop_geometry(), file = "justiceimpacted/ProcessedData/arrestDataByPUMA.csv")
+load("justiceimpacted/ProcessedData/arrestDataByPUMA.Rdata")
 
 # -------------------------
 # Format data for plotting
