@@ -1,4 +1,4 @@
-# README for Arrest Data Processing and Analysis
+# README for Youth Arrest Data Processing and Analysis
 
 ## Overview
 
@@ -6,12 +6,11 @@ This repository contains scripts for processing and analyzing arrest data in the
 
 ## Contents
 
-
-- **Scripts**: Folder containing scripts for downloading and processing the data. 
-- **Tests**: Folder containing scripts to test the performance of the data download and processing.
-- **RawData**: Folder containing data downloaded from the FBI's Crime Data API.
-- **ProcessedData**: Folder containing data after it has undergone some amount of processing. 
-- **Plots**: Folder containing preliminary maps.
+- **`Scripts`**: Folder containing scripts for downloading and processing the data. 
+- **`Tests`**: Folder containing scripts to test the performance of the data download and processing.
+- **`RawData`**: Folder containing data downloaded from the FBI's Crime Data API.
+- **`ProcessedData`**: Folder containing data after it has undergone some amount of processing. 
+- **`Plots`**: Folder containing preliminary maps.
 - `README.md`: This file.
 
 ### Contents of the `Scripts` Folder
@@ -40,8 +39,9 @@ This repository contains scripts for processing and analyzing arrest data in the
 
 ### NIBRS vs. SRS
 
-- **UCR Data**: The UCR (Uniform Crime Reporting Program) provided summary arrest data until Jan. 1, 2021. Because of the 2020 pandemic, the 2019 data is the last relevant UCR dataset.
-- **NIBRS Data**: Post-2021, the FBI transitioned to NIBRS, offering more detailed data. The 2022 dataset combines NIBRS and SRS data for comprehensive coverage.
+- **UCR Data**: The UCR (Uniform Crime Reporting Program) provided summary arrest data until Jan. 1, 2021. This data is also known as SRS (Summary Reporting System). The last relevant dataset from UCR is from 2019, as the data from 2020 was heavily impacted by the pandemic.
+- **NIBRS Data**: Since 2021, the FBI has transitioned to NIBRS, which offers more detailed data. However, in its initial year, there was low participation from agencies. In 2022 the FBI reintroduced the acceptance of SRS data alongside NIBRS for more comprehensive coverage. 
+
 
 ### Accessing the Data
 
@@ -55,15 +55,15 @@ This repository contains scripts for processing and analyzing arrest data in the
 
 ### Race Data in NIBRS+SRS
 
-- The race categories in the NIBRS+SRS data are limited and may not accurately reflect the full racial diversity of arrestees.
+- The race categories in the NIBRS+SRS data are limited and may not accurately reflect the full racial diversity of arrestees. Notably, the FBI's classification lacks a "Multiracial" category, which is present in PUMS data. Consequently, arrests involving individuals of multiracial identity are likely inaccurately allocated. Furthermore, the data provides no practical information on the ethnicity of arrestees, presenting another limitation in demographic representation.
 
 ### Mapping to PUMAs
 
-- Currently, arrests are distributed to PUMAs based on age, sex, and the available race data. Future work could involve mapping arrests to PUMAs based on reporting agencies and FIPS codes, though this is a more complex task with its own set of challenges.
+- In the current approach, arrests are allocated to Public Use Microdata Areas (PUMAs) using data on age, sex, and race. The FBI's Crime Data API provides statistics on arrests categorized by age and sex, as well as by race. Our methodology is based on the assumption that race is independent of age and sex. Consequently, we calculate the fraction of arrests for each specific category combining age, sex, and race. These calculated fractions are then used to distribute arrests across PUMAs, in proportion to each PUMA's demographic composition. In instances where certain combinations of age, sex, and race categories are not represented in any PUMA within a particular state, the corresponding arrests are evenly distributed across all PUMAs in that state. Future work could involve mapping arrests to PUMAs based on reporting agencies and FIPS codes, though this is a more complex task with its own set of challenges.
 
 ## Closing Thoughts
 
-This project uses the 2022 NIBRS+SRS data, ignoring missing values, to distribute youth arrests to PUMAs using available age/sex/race data. While this approach provides a useful analysis framework, the limitations mentioned above should be carefully considered in any conclusions drawn from the data.
+This project uses the FBI's 2022 NIBRS+SRS data, ignoring missing values, to distribute youth arrests to PUMAs using available age/sex/race data. While this approach provides a useful analysis framework, the limitations mentioned above should be carefully considered in any conclusions drawn from the data.
 
 ---
 
