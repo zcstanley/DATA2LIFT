@@ -64,7 +64,3 @@ This repository contains scripts for processing and analyzing arrest data in the
 ## Closing Thoughts
 
 This project uses the FBI's 2022 NIBRS+SRS data, ignoring missing values, to distribute youth arrests to PUMAs using available age/sex/race data. While this approach provides a useful analysis framework, the limitations mentioned above should be carefully considered in any conclusions drawn from the data.
-
----
-
-For further details on the scripts, their usage, and any specific requirements or dependencies, please refer to the individual script files.
