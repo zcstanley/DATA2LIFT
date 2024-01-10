@@ -13,28 +13,6 @@ This repository contains scripts for processing and analyzing arrest data in the
 - **`Plots`**: Folder containing preliminary maps.
 - `README.md`: This file.
 
-### Contents of the `Scripts` Folder
-
-- `downloadArrestData.R`: Fetches arrest data by age/sex and age/race for each state.
-- `processArrestData.R`: Processes and transforms the arrest data.
-- `getArrestPUMS.R`: Retrieves PUMS data to integrate with arrest data.
-- `finalizeArrestData.R`: Distributes arrest data to PUMAs and saves the final dataset.
-- `makeArrestMap.R`: Makes maps of youth arrests by PUMA.
-
-### Selected Contents of the `ProcessedData` Folder
-
-- **`arrestDataByPUMA.csv`**: This CSV file contains detailed arrest data with the following columns:
-  - `state`: Two-letter state postal code.
-  - `PUMA`: Public Use Microdata Area ID (unique within each state).
-  - `count`: Estimate of youth arrests (aged 16-24) in the PUMA.
-  - `arrest_per_pop`: Estimate of youth arrests per 1,000 residents aged 16-24.
-  - `arrest_density`: Estimate of youth arrests per square kilometer.
-
-- **`arrestDataByPUMA.Rdata`**: Similar to the CSV file, but includes spatial data for PUMA shapes.
-
-- **`arrestMetadata.json`**: Metadata file for the CSV, providing additional context and information about the data.
-
-
 ## Data Sources and Access
 
 ### NIBRS vs. SRS

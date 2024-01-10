@@ -26,5 +26,5 @@ The `RawData` folder contains initial datasets downloaded from the FBI's Crime D
 
 ## Notes
 
-- The data is as reported to the FBI and may have limitations, such as incomplete reporting from certain regions or agencies.
+- The dataset is as reported to the FBI and may have limitations, such as incomplete reporting from certain regions or agencies.
 - For a comprehensive understanding of the data's scope, sources, and limitations, users are advised to refer to the main README file of the project.

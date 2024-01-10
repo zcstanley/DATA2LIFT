@@ -10,7 +10,7 @@
 #   2. Validating the data types and structure of the dataset.
 #   3. Checking for any negative or NaN values in age_sex_race_prop.
 #   4. Check that proportions are between 0 and 1.
-#   5. Check that race categroies are as expected. 
+#   5. Check that race categories are as expected. 
 #   6. Check that total counts are consistent within states.
 # -----------------------------------------------------------------------------
 
