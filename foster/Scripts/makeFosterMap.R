@@ -1,11 +1,21 @@
 # -----------------------------------------------------------------------------
 # Make Maps of Distributed Foster Children by PUMA
 # Author: Chad M. Topaz, Zofia Stanley
-# Date: Dec 14, 2023
+# Date: Jan 10, 2023
 #
 # Description:
-# This script accomplishes the following tasks:
-#   - 
+# This script is designed for visualizing distributed foster youth data across
+# Public Use Microdata Areas (PUMAs). It creates detailed maps, offering insights 
+# into the distribution and density of foster youth (ages 16-20) in relation to 
+# population and geography.
+#
+# Key Operations:
+# 1. Prepares data for plotting, including geometry adjustments for visualization.
+# 2. Generates three types of plots using ggplot2:
+#    a. Absolute number of foster youth aged 16-20 per PUMA.
+#    b. Density of foster youth per square kilometer per PUMA.
+#    c. Foster youth per 1,000 population aged 16-20 per PUMA.
+# 3. Saves the generated plots as PDF files.
 # -----------------------------------------------------------------------------
 
 # --------------------------
@@ -19,37 +29,7 @@ library(tigris)
 # --------------------
 # Load data
 # --------------------
-load("foster/ProcessedData/fosterProcessedData.Rdata")
-load("foster/ProcessedData/pumsData.Rdata")
-load("foster/ProcessedData/pumaShapes.Rdata")
-
-# ----------------------------------
-# Merge in population information
-# ----------------------------------
-pumaPopData <- pumsData %>%
-  group_by(state, PUMA) %>%
-  summarise(total_pop = sum(count)) 
-
-fosterData <- merge(fosterData, pumaPopData) %>%
-  mutate(foster_per_pop = count/(total_pop/1000)) %>%
-  select(-total_pop)
-
-# ----------------------------------
-# Merge in geographical information
-# ----------------------------------
-fosterData <- merge(fosterData, pumaShapes) %>%
-  st_as_sf() %>%
-  mutate(puma_area = st_area(.) / 1e6,
-         foster_density = count/puma_area) %>%
-  select(-puma_area) %>%
-  mutate(foster_density = as.numeric(foster_density))
-
-
-# ----------------------------------
-# Save final foster data
-# ----------------------------------
-save(fosterData, file = "foster/ProcessedData/fosterDataByPUMA.Rdata")
-write.csv(fosterData %>% st_drop_geometry(), file = "foster/ProcessedData/fosterDataByPUMA.csv")
+load("foster/ProcessedData/fosterDataByPUMA.Rdata")
 
 # -------------------------
 # Format data for plotting
@@ -65,7 +45,7 @@ fosterPlotData <- fosterData %>%
 p1 <- fosterPlotData %>%
   ggplot() +
   geom_sf(aes(fill = count), color = NA) +
-  ggtitle("Children in Foster Care") +
+  ggtitle("Children in Foster Care, aged 16-20") +
   scale_fill_viridis_c(name = "Foster Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -74,16 +54,15 @@ p1 <- fosterPlotData %>%
 p2 <- fosterPlotData %>%
   ggplot() +
   geom_sf(aes(fill = foster_density), color = NA) +
-  ggtitle("Children in Foster Care", subtitle = "per sq. km") +
+  ggtitle("Children in Foster Care, aged 16-20", subtitle = "per sq. km") +
   scale_fill_viridis_c(name = "Foster Density", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
 
-# Plot foster youth per 1,000 youth (age 0-20)
 p3 <- fosterPlotData %>%
   ggplot() +
   geom_sf(aes(fill = foster_per_pop), color = NA) +
-  ggtitle("Children in Foster Care", subtitle = "per 1,000 residents under the age of 21") +
+  ggtitle("Children in Foster Care, aged 16-20", subtitle = "per 1,000 residents aged 16-20") +
   scale_fill_viridis_c(name = "Foster Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")

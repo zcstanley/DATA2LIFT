@@ -166,13 +166,9 @@ racedata <- bind_rows(lapply(results, `[[`, "racedata"))
 # Create master data frame
 # -------------------------
 
-# Remove rows with NA values from the data
-agedata <- agedata %>% drop_na
-sexdata <- sexdata %>% drop_na
-racedata <- racedata %>% drop_na
-
 # Compute proportions for age, sex, and race within each state
 agedata <- agedata %>%
+  filter(age >= 16) %>%
   group_by(state) %>%
   mutate(age_prop = count / sum(count)) %>%
   ungroup()
@@ -192,9 +188,9 @@ scrapedFosterData <- agedata %>%
   inner_join(sexdata, by = "state") %>%
   inner_join(racedata, by = "state") %>%
   inner_join(totaldata, by = "state") %>%
-  rename(total_state = count.y.y) %>%
-  mutate(prop = age_prop * sex_prop * race_prop) %>%
-  select(state, age, sex, race, prop, total_state)
+  rename(total_foster = count.y.y) %>%
+  mutate(age_sex_race_prop = age_prop * sex_prop * race_prop) %>%
+  select(state, age, sex, race, age_sex_race_prop, total_foster)
 
 # Save the final dataset to a file
 save(scrapedFosterData, file = "foster/ProcessedData/scrapedFosterData.Rdata")

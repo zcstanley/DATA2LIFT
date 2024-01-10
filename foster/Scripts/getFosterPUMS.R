@@ -1,13 +1,11 @@
 # -----------------------------------------------------------------------------
 # Census Data Retrieval, Transformation and Geographical Integration
-# Author: Chad M. Topaz
+# Author: Chad M. Topaz, Zofia C. Stanley
 # Date: Sep 19, 2023
 #
 # Description:
 # This script accomplishes the following tasks:
-#   - Imports required libraries.
-#   - Specifies census API key and fetches PUMS data by state.
-#   - Processes and transforms raw data.
+#   - Processes and transforms raw PUMS data.
 #   - Integrates geographical data.
 #   - Stores the finalized data.
 # -----------------------------------------------------------------------------
@@ -15,14 +13,15 @@
 # --------------------
 # Import required libraries
 # --------------------
-library(tidyverse)
-library(tidycensus)
-library(tigris)
-library(pbmcapply)
+library(tidyverse)     # For data manipulation and visualization
+library(tidycensus)    # For working with census data
+library(pbmcapply)     # For parallel workflows
 
-# --------------------
-# Data retrieval settings
-# --------------------
+# ----------------------------------------
+# Load PUMS data from a saved Rdata file
+# ----------------------------------------
+load("RawData/PUMSRawData.Rdata") 
+
 # Define state abbreviations
 state_abbreviations <- tolower(c(
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
@@ -32,53 +31,11 @@ state_abbreviations <- tolower(c(
   "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "DC"
 ))
 
-# Set census API key
-census_api_key("985901667535f61f5ea97bfbf8e4fdfcd8c743c4")
-
-# Function to get data by state
-getDataByState <- function(state, year, max_retries = 5) {
-  vars <- c("AGEP", "RAC1P", "HISP", "SEX", "ST", "PUMA")
-  retries <- 1
-  
-  while (retries <= max_retries) {
-    tryCatch({
-      data <- get_pums(variables = vars, year = year, state = state, survey = "acs1") %>%
-        filter(AGEP <= 20)
-      
-      if (any(sapply(data, class) == "list")) {
-        stop("Nonatomic columns detected.")
-      }
-      return(data)
-      
-    }, error = function(e) {
-      if (retries == max_retries) {
-        warning(paste("Fetching data for state", state, "failed after", max_retries, "attempts. Returning empty data frame."))
-        return(data.frame())
-      }
-      warning(paste("Error fetching data for state", state, "on attempt", retries, ". Retrying in 5 seconds. Error message:", e$message))
-      Sys.sleep(5)
-      retries <- retries + 1
-    })
-  }
-}
-
-# Fetch and process data
-rawdata_list <- pbmclapply(state_abbreviations, function(state) {
-  getDataByState(state, 2021)
-}, mc.cores = parallel::detectCores() - 1)
-
-rawdata <- bind_rows(rawdata_list)
-
-# ----------------------------------------
-# Option to save/load PUMS data as needed
-# ----------------------------------------
-#save(rawdata, file = "foster/RawData/fosterRawPUMSData.Rdata")
-load("foster/RawData/fosterRawPUMSData.Rdata") 
-
 # ----------------------------------------------------------------------------------------------
 # Data transformation - Note that foster data does not contain race data for Hispanic children
 # ----------------------------------------------------------------------------------------------
-pumsData <- rawdata %>% 
+pumsData <- rawPumsData %>% 
+  filter(AGEP >= 16 & AGEP <= 20) %>%
   mutate(
     race = case_when(
       HISP > 1 ~ "Hispanic",
