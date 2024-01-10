@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # Census Data Retrieval, Transformation and Geographical Integration
-# Author: Zofia C. Stanely
+# Author: Zofia C. Stanley
 # Date: Dec 22, 2023
 #
 # Description:
