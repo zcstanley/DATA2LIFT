@@ -4,16 +4,11 @@
 
 The `Plots` folder contains preliminary visualizations that are part of the analysis of youth arrest data across Public Use Microdata Areas (PUMAs). These visualizations are intended as an initial exploration and will inform the creation of a comprehensive, public-facing dashboard in Tableau.
 
-## Contents of the Folder
+## Contents
 
-### 1. **`arrestCountMap.pdf`**
-   - This map visualizes the estimated number of youth arrests (aged 16-24) in each PUMA. It provides a spatial representation of the total arrest counts, offering a visual understanding of geographical distribution patterns.
-
-### 2. **`arrestPerPopMap.pdf`**
-   - This map showcases the estimated number of youth arrests per 1,000 residents aged 16-24 in each PUMA. It offers insights into the arrest rate relative to the young adult population in each area, highlighting regions with higher or lower arrest frequencies.
-
-### 3. **`arrestDensityMap.pdf`**
-   - This visualization depicts the estimated youth arrests per square kilometer, providing a density perspective of youth arrests in PUMAs. This helps in identifying areas with high arrest concentration.
+- **`arrestCountMap.pdf`**: This map visualizes the estimated number of youth arrests (aged 16-24) in each PUMA. 
+- **`arrestPerPopMap.pdf`**: This map shows the estimated number of youth arrests per 1,000 residents aged 16-24 in each PUMA. 
+- **`arrestDensityMap.pdf`**: This visualization depicts the estimated youth arrests per square kilometer.
 
 ## Usage
 

@@ -4,9 +4,11 @@
 
 The `ProcessedData` folder contains datasets that have been processed and transformed from their original state. These datasets are used to analyze and understand youth arrest patterns in the United States and their distribution across Public Use Microdata Areas (PUMAs).
 
-## Key Files in the Folder
+## Contents
 
-### 1. **`arrestDataByPUMA.csv`**
+### Key Files
+
+- **`arrestDataByPUMA.csv`**
    - This CSV file includes detailed arrest data, structured with the following columns:
      - `state`: Two-letter state postal code.
      - `PUMA`: Public Use Microdata Area ID, unique within each state.
@@ -14,18 +16,18 @@ The `ProcessedData` folder contains datasets that have been processed and transf
      - `arrest_per_pop`: Estimated youth arrests per 1,000 residents aged 16-24.
      - `arrest_density`: Estimated youth arrests per square kilometer.
 
-### 2. **`arrestDataByPUMA.Rdata`**
+- **`arrestDataByPUMA.Rdata`**
    - A similar dataset to the CSV file, but in Rdata format and includes spatial data for PUMA shapes.
 
-### 3. **`arrestMetadata.json`**
+- **`arrestMetadata.json`**
    - Provides metadata for the CSV file, offering additional context and information about the arrest data.
 
-### Additional Data Files
+### Additional Files
 
-#### 4. **`processedArrestData.Rdata`**
+- **`processedArrestData.Rdata`**
    - Contains combined age, sex, and race proportions for each state. This file is produced during one of the analysis steps.
 
-#### 5. **`pumsData.Rdata`**
+- **`pumsData.Rdata`**
    - Holds the count of age, sex, and race categories in each PUMA. The race data has been recoded to align with the FBI's race categories, facilitating a more accurate analysis.
 
 ## Usage

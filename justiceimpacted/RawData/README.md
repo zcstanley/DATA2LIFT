@@ -4,7 +4,7 @@
 
 The `RawData` folder contains initial datasets downloaded from the FBI's Crime Data API. These datasets offer comprehensive arrest data across the United States, broken down by various demographic categories.
 
-## Folder Structure
+## Contents
 
 - **`ArrestData` Subfolder**: This subfolder stores CSV files with arrest data for each of the 50 U.S. states plus the District of Columbia (DC).
 
@@ -26,5 +26,5 @@ The `RawData` folder contains initial datasets downloaded from the FBI's Crime D
 
 ## Notes
 
-- The dataset is as reported to the FBI and may have limitations, such as incomplete reporting from certain regions or agencies.
+- The dataset is as reported to the FBI and has limitations, such as incomplete reporting from certain regions or agencies.
 - For a comprehensive understanding of the data's scope, sources, and limitations, users are advised to refer to the main README file of the project.
