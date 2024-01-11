@@ -6,31 +6,15 @@ The `RawData` folder contains PDF files sourced from the Adoption and Foster Car
 
 ## Contents
 
-### `pdf` Subfolder
-- **Contents**: 
+- **`pdf` Subfolder**:
   - Contains a PDF file for each of the 50 states plus the District of Columbia (DC).
-- **File Naming**: 
   - The files are named using two-letter lowercase postal codes for each state, e.g., `ak.pdf` for Alaska.
-- **Data Source**: 
   - The PDF files are from The States AFCARS Report.
 
-### Data Files
-- **`scrapedAgeData.Rdata`**:
-  - Description: Foster youth data broken down by age and state.
-  - Source: Data scraped directly from the PDF files.
-  
-- **`scrapedRaceData.Rdata`**:
-  - Description: Foster youth data broken down by race and state.
-  - Source: Data scraped directly from the PDF files.
-  
-- **`scrapedSexData.Rdata`**:
-  - Description: Foster youth data broken down by sex and state.
-  - Source: Data scraped directly from the PDF files.
-  
-- **`scrapedTotalData.Rdata`**:
-  - Description: Total count of foster youth by state.
-  - Source: Data scraped directly from the PDF files.
-
+- **`scrapedAgeData.Rdata`**: Scraped foster youth data broken down by age and state.
+- **`scrapedRaceData.Rdata`**: Scraped foster youth data broken down by race and state.
+- **`scrapedSexData.Rdata`**: Scraped foster youth data broken down by sex and state.
+- **`scrapedTotalData.Rdata`**: Scraped total count of foster youth by state.
 
 ## AFCARS Report Overview
 

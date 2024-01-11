@@ -4,16 +4,11 @@
 
 The `Plots` folder contains preliminary visualizations that are part of the analysis of foster youth data across Public Use Microdata Areas (PUMAs). These visualizations are intended as an initial exploration and will inform the creation of a comprehensive, public-facing dashboard in Tableau.
 
-## Contents of the Folder
+## Contents
 
-### 1. **`fosterCountMap.pdf`**
-   - This map visualizes the estimated number of foster youth (aged 16-20) in each PUMA. 
-
-### 2. **`fosterPerPopMap.pdf`**
-   - This map showcases the estimated number of foster youth per 1,000 residents aged 16-20 in each PUMA. 
-
-### 3. **`fosterDensityMap.pdf`**
-   - This visualization depicts the estimated number of foster youth per square kilometer. 
+- **`fosterCountMap.pdf`**: This map visualizes the estimated number of foster youth (aged 16-20) in each PUMA. 
+- **`fosterPerPopMap.pdf`**: This map showcases the estimated number of foster youth per 1,000 residents aged 16-20 in each PUMA. 
+- **`fosterDensityMap.pdf`**: This visualization depicts the estimated number of foster youth per square kilometer. 
 
 ## Usage
 
