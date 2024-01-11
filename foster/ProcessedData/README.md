@@ -8,30 +8,20 @@ The `ProcessedData` folder contains datasets that have been processed and transf
 
 ### Key Files
 
-- **`fosterDataByPUMA.csv`**
-   - This CSV file includes estimated foster distribution data, structured with the following columns:
+- **`fosterDataByPUMA.csv`**: This CSV file includes estimated foster distribution data, structured with the following columns:
      - `state`: Two-letter state postal code.
      - `PUMA`: Public Use Microdata Area ID, unique within each state.
      - `count`: Estimated number of foster youth (aged 16-20) in the PUMA.
      - `foster_per_pop`: Estimated foster youth per 1,000 residents aged 16-20.
      - `foster_density`: Estimated foster youth per square kilometer.
-
-- **`fosterDataByPUMA.Rdata`**
-   - A similar dataset to the CSV file, but in Rdata format and includes spatial data for PUMA shapes.
-
-- **`fosterMetadata.json`**
-   - Provides metadata for the CSV file, offering additional context and information about the foster youth data.
+- **`fosterDataByPUMA.Rdata`**: A similar dataset to the CSV file, but in Rdata format and includes spatial data for PUMA shapes.
+- **`fosterMetadata.json`**: Provides metadata for the CSV file, offering additional context and information about the foster youth data.
 
 ### Additional Files
 
-- **`scrapedFosterData.Rdata`**
-   - Contains combined age, sex, and race proportions for each state. This file is produced during one of the analysis steps.
-
-- **`pumsData.Rdata`**
-   - Holds the count of age, sex, and race categories in each PUMA. The race data has been recoded to align with the AFCARS race categories, facilitating a more accurate analysis.
-   
-- **`pumsShapes.Rdata`**
-   - Holds the shapes of each PUMA. 
+- **`scrapedFosterData.Rdata`**: Contains combined age, sex, and race proportions for each state. This file is produced during one of the analysis steps.
+- **`pumsData.Rdata`**: Holds the count of age, sex, and race categories in each PUMA. The race data has been recoded to align with the AFCARS race categories, facilitating a more accurate analysis.
+- **`pumsShapes.Rdata`**: Holds the shapes of each PUMA. 
 
 ## Usage
 
