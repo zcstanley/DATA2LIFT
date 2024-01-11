@@ -1,102 +1,34 @@
 # -----------------------------------------------------------------------------
-# Count the Number of Disconnected Youth and Make Maps
-# Author: Chad M. Topaz, Zofia Stanley
-# Date: Dec 9, 2023
+# Make Maps of Disconnected Youth
+# Author: Chad M. Topaz, Zofia C. Stanley
+# Date: Jan 9, 2023
 #
 # Description:
-# This code determines the number of disconnected youth from PUMS data and
-# saves maps of where disconnected youth live.
+# This code creates maps of where disconnected youth live.
+#
+# Key Operations:
+# 1. Prepares data for plotting, including geometry adjustments for visualization.
+# 2. Generates three types of plots using ggplot2:
+#    a. Absolute number of disconnected youth per PUMA.
+#    b. Density of disconnected youth per square kilometer per PUMA.
+#    c. Disconnected youth per 1,000 population aged 16-24 per PUMA.
+# 3. Saves the generated plots as PDF files.
+#
 # -----------------------------------------------------------------------------
+
 
 # -------------------------
 # Load necessary libraries
 # -------------------------
-library(tidycensus)
 library(tidyverse)
-library(pbmcapply)  # parallel version of lapply
 library(sf)
-library(cartogram)
 library(tigris)
 
-# -----------------------------------
-# Define state postal abbreviations 
-# -----------------------------------
-state_abbreviations <- c("AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
-                 "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
-                 "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
-                 "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", 
-                 "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "DC")
-
-# -------------------------------------------------------------------
-# Load raw data if it exists, 
-# else prompt user to download data using downloadDisconnectedData.R
-# -------------------------------------------------------------------
-tryCatch({
-  load("disconnected/RawData/disconnectedRawData.Rdata")
-  }, 
-  error = function(e) {
-    warning("The file disconnected/RawData/disconnectedRawData.Rdata does not exist. Please run Scripts/downloadDisconnectedData.R to create it.")
-  })
-
-load("RawData/PUMSRawData.Rdata") 
-load("foster/ProcessedData/pumaShapes.Rdata")
-
-# -----------------------------------------
-# Aggregate data by state-PUMA combination
-# -----------------------------------------
-disconnectedData <- rawdata %>%
-  group_by(ST, PUMA) %>%
-  summarise(count = sum(PWGTP), .groups = 'drop') %>%
-  rename(state_code = ST)
-
-# ----------------------------------
-# Merge in population information
-# ----------------------------------
-# Process and filter PUMS data for youth ages 16-24
-pumaPopData <- rawPumsData %>% 
-  select("PWGTP", "AGEP", "PUMA", "ST") %>%
-  filter(AGEP >= 16 & AGEP <= 24) %>%
-  rename(age = AGEP, state_code = ST, count = PWGTP) %>%
-  select(state_code, PUMA, age, count) %>%
-  group_by(state_code, PUMA) %>%
-  summarise(total_pop = sum(count), .groups = 'drop') %>%
-  ungroup
-
-# Compute disconnected youth per 1,000 youth aged 16-24
-disconnectedData <- merge(disconnectedData, pumaPopData) %>%
-  mutate(disconnected_per_pop = count/(total_pop/1000)) %>%
-  select(-total_pop) 
-
-# ---------------------------------------------
-# Get state abbreviations from state codes
-# ---------------------------------------------
-# Create a lookup table for state FIPS codes
-fipsLookup <- fips_codes %>%
-  select(state, state_code) %>%
-  unique 
-
-# Merge PUMS data with FIPS codes to integrate geographical data
-disconnectedData <- merge(disconnectedData, fipsLookup) %>%
-  select(-state_code) %>%
-  mutate(state = tolower(state)) 
-
-# ---------------------------------------------
-# Merge the PUMS data with the PUMA shapefiles
-# ---------------------------------------------
-disconnectedData <- left_join(pumaShapes, disconnectedData, by = c("state", "PUMA")) %>%
-  st_as_sf() %>%
-  mutate(puma_area = st_area(.) / 1e6,
-         disconnected_density = count/puma_area) %>%
-  select(-puma_area) %>%
-  mutate(disconnected_density = as.numeric(disconnected_density))
 
 # ------------------------------------------
-# Save or load processed data, as necessary
+# Load processed disconnected youth data
 # ------------------------------------------
-save(disconnectedData, file = "disconnected/ProcessedData/disconnectedDataByPUMA.Rdata") 
-write.csv(disconnectedData %>% st_drop_geometry(), file = "disconnected/ProcessedData/disconnectedDataByPUMA.csv")
-#load("disconnected/ProcessedData/disconnectedProcessedData.Rdata")
-
+load("disconnected/ProcessedData/disconnectedDataByPUMA.Rdata")
 
 # -------------------------
 # Format data for plotting

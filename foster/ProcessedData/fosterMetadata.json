@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Foster Youth By PUMA",
-    "description": "This CSV file contains estimates of foster youth under the age of 21 in Public Use Microdata Areas (PUMAs) for 50 states + DC in the United States. It includes data on the count of foster youth, the foster youth per population, and the foster youth density.",
+    "description": "This CSV file contains estimates of foster youth aged 16-20 in Public Use Microdata Areas (PUMAs) for 50 states + DC in the United States. It includes data on the count of foster youth, the foster youth per population, and the foster youth density.",
     "author": "Zofia Stanley",
     "date": "2024-01-08",
     "filename": "fosterDataByPUMA.csv"
@@ -19,12 +19,12 @@
     },
     {
       "name": "count",
-      "description": "Estimate of foster youth under the age of 21 in the PUMA",
+      "description": "Estimate of foster youth aged 16-20 in the PUMA",
       "data_type": "Decimal"
     },
     {
       "name": "foster_per_pop",
-      "description": "Estimate of foster youth per 1,000 residents under the age of 21 in the PUMA",
+      "description": "Estimate of foster youth per 1,000 residents aged 16-20 in the PUMA",
       "data_type": "Decimal"
     },
     {

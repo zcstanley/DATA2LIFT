@@ -5,23 +5,17 @@
 #
 # Description:
 # This script is designed for visualizing distributed youth arrest data across
-# Public Use Microdata Areas (PUMAs). It combines spatial data with demographic
-# and arrest data to create detailed maps, offering insights into the distribution
-# and density of youth arrests (ages 16-24) in relation to population and geography.
+# Public Use Microdata Areas (PUMAs). It creates detailed maps, offering insights 
+# into the distribution and density of youth arrests (ages 16-24) in relation to 
+# population and geography.
 #
 # Key Operations:
-# 1. Imports R libraries for data manipulation, census data handling, and spatial data.
-# 2. Loads processed arrest data, PUMS data, and PUMA shapefiles.
-# 3. Aggregates PUMS data to calculate total population per PUMA and merges this with
-#    arrest data to calculate arrests per 1,000 population.
-# 4. Enhances arrest data with geographical information from PUMA shapefiles, calculates
-#    arrest density, and converts data for spatial analysis.
-# 5. Prepares data for plotting, including geometry adjustments for visualization.
-# 6. Generates three types of plots using ggplot2:
+# 1. Prepares data for plotting, including geometry adjustments for visualization.
+# 2. Generates three types of plots using ggplot2:
 #    a. Absolute number of youth arrests per PUMA.
 #    b. Density of youth arrests per square kilometer per PUMA.
 #    c. Youth arrests per 1,000 population aged 16-24 per PUMA.
-# 7. Saves the generated plots as PDF files.
+# 3. Saves the generated plots as PDF files.
 #
 # -----------------------------------------------------------------------------
 

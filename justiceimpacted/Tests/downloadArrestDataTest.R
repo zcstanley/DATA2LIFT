@@ -1,10 +1,11 @@
 # -----------------------------------------------------------------------------
 # Informal Tests for Downloading Arrest Data
 # Author: Zofia C. Stanley
-# Date: Jan 8, 2024
+# Date: Jan 9, 2024
 #
 # Description:
-# This script tests whether all of the expected arrest files have been downloaded. 
+# This script tests whether all of the expected arrest files have been downloaded 
+# and verifies their size.
 # -----------------------------------------------------------------------------
 
 # Load necessary libraries
@@ -26,7 +27,9 @@ generate_filename <- function(state_abbreviation, category) {
   paste0("justiceimpacted/RawData/ArrestData/fbi_arrest_", state_abbreviation, "_", category, ".csv")
 }
 
-# Function to test if all files exist for each state/category combination
+# --------------------
+# Test 1: File Existence Check
+# --------------------
 test_all_files_exist <- function() {
   all_files_exist <- TRUE  # Flag to track if all files exist
   
@@ -51,5 +54,29 @@ test_all_files_exist <- function() {
   }
 }
 
-# Execute the file existence check
+# --------------------
+# Test 2: File Size Check (Less than 2 KB)
+# --------------------
+test_file_size <- function() {
+  for (state in state_abbreviations) {
+    for (category in categories) {
+      filename <- generate_filename(state, category)
+      
+      # Check if file exists to avoid error in file size check
+      if (file.exists(filename)) {
+        file_size <- file.info(filename)$size
+        if (file_size >= 2048) {  # 2 KB = 2048 bytes
+          warning(paste("File size exceeds 2 KB:", filename))
+        }
+      }
+    }
+  }
+  print("File size check completed.")
+}
+
+# --------------------
+# Execute the tests
+# --------------------
 test_all_files_exist()
+test_file_size()
+
