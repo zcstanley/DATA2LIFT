@@ -162,6 +162,12 @@ agedata <- bind_rows(lapply(results, `[[`, "agedata"))
 sexdata <- bind_rows(lapply(results, `[[`, "sexdata"))
 racedata <- bind_rows(lapply(results, `[[`, "racedata"))
 
+# Save the scraped files
+save(totaldata, file = "foster/RawData/scrapedTotalData.Rdata")
+save(agedata, file = "foster/RawData/scrapedAgeData.Rdata")
+save(sexdata, file = "foster/RawData/scrapedSexData.Rdata")
+save(racedata, file = "foster/RawData/scrapedRaceData.Rdata")
+
 # -------------------------
 # Create master data frame
 # -------------------------
@@ -171,6 +177,7 @@ agedata <- agedata %>%
   filter(age >= 16) %>%
   group_by(state) %>%
   mutate(age_prop = count / sum(count)) %>%
+  mutate(total_foster = sum(count)) %>%
   ungroup()
 
 sexdata <- sexdata %>%
@@ -187,8 +194,6 @@ racedata <- racedata %>%
 scrapedFosterData <- agedata %>%
   inner_join(sexdata, by = "state") %>%
   inner_join(racedata, by = "state") %>%
-  inner_join(totaldata, by = "state") %>%
-  rename(total_foster = count.y.y) %>%
   mutate(age_sex_race_prop = age_prop * sex_prop * race_prop) %>%
   select(state, age, sex, race, age_sex_race_prop, total_foster)
 
