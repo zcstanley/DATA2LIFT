@@ -2,24 +2,20 @@
 
 ## Overview
 
-The `Tests` folder contains test scripts specifically designed to assess and ensure the integrity of the PUMS data filtering process.
+This folder contains test scripts specifically designed to assess and ensure the integrity of the PUMS data filtering process.
 
-## Test Script Description
+## Contents
 
-### `getDisconnectedPUMSTest.R`
-   - **Purpose**: Performs a series of informal tests on `disconnectedDataByPUMA.Rdata`. The tests are designed to validate various aspects of the data, ensuring its integrity for further analysis.
-   - **Tests included**:
-     - Data types and structure validation
-     - Negative or NaN values check
-     - Data filtering and counting accuracy
+- **`getDisconnectedPUMSTest.R`**: Performs a series of informal tests on `disconnectedDataByPUMA.Rdata`. The tests are designed to validate various aspects of the data, ensuring its integrity for further analysis.
+
 
 ## Usage
 
-- To run the test script, ensure that the necessary data files (`disconnectedDataByPUMA.Rdata` and `RawData/PUMSRawData.Rdata`) are in the appropriate directories.
-- Load the script in R or RStudio and execute it. The script will automatically run all the tests and provide feedback on their success or failure.
-- Review the output of each test to confirm the integrity of the processed data or identify any issues that need to be addressed.
+- To run these tests, ensure that all required data files are in the appropriate directories as specified in each test script.
+- Execute each test script in R to perform the specified checks.
+- Review the output of each test to confirm data integrity or to identify areas needing correction.
 
-## Importance
+## Notes
 
 - These tests are crucial for maintaining the quality and reliability of the analysis.
 - Regular execution of these tests is recommended, especially after any data updates or changes to processing scripts.

@@ -4,16 +4,11 @@
 
 The `Plots` folder contains preliminary visualizations that are part of the analysis of disconnected youth data across Public Use Microdata Areas (PUMAs). These visualizations are intended as an initial exploration and will inform the creation of a comprehensive, public-facing dashboard in Tableau.
 
-## Contents of the Folder
+## Contents
 
-### 1. **`disconnectedCountMap.pdf`**
-   - This map visualizes the estimated number of disconnected youth (aged 16-24, not in school and not employed) in each PUMA. 
-
-### 2. **`disconnectedPerPopMap.pdf`**
-   - This map showcases the estimated number of disconnected youth arrests per 1,000 residents aged 16-24 in each PUMA. 
-
-### 3. **`disconnectedDensityMap.pdf`**
-   - This visualization depicts the estimated disconnected youth per square kilometer in each PUMA. 
+- **`disconnectedCountMap.pdf`**: This map visualizes the estimated number of disconnected youth (aged 16-24, not in school and not employed) in each PUMA. 
+- **`disconnectedPerPopMap.pdf`**: This map showcases the estimated number of disconnected youth arrests per 1,000 residents aged 16-24 in each PUMA. 
+- **`disconnectedDensityMap.pdf`**: This visualization depicts the estimated disconnected youth per square kilometer in each PUMA. 
 
 ## Usage
 
