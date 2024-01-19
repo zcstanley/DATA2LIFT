@@ -8,11 +8,11 @@ The `RawData` folder contains data sourced from two major programs: the Survey o
 
 - **`SPI` Subfolder**:
   - Contains data from the Survey of Prison Inmates (SPI).
-  - Files store data for tables, figures, and other resources from the *Parents in Prison and Their Minor Children: Survey of Prison Inmates, 2016* by Maruschak and Bronson (2021).
+  - Files store data for tables, figures, and other resources from the report *Parents in Prison and Their Minor Children: Survey of Prison Inmates, 2016* by Maruschak and Bronson (2021).
 
 - **`NPS` Subfolder**:
   - Contains data from the National Prisoner Statistics (NPS) program.
-  - Files store data for tables, figures, and other resources from the *Prisoners in 2022 – Statistical Tables* report by Carson and Kluckow (2023).
+  - Files store data for tables, figures, and other resources from the report *Prisoners in 2022 – Statistical Tables* by Carson and Kluckow (2023).
 
 ## Usage
 
