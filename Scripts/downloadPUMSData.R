@@ -13,8 +13,7 @@
 library(tidycensus)
 library(tidyverse)
 library(pbmcapply)  # parallel version of lapply
-library(sf)
-library(cartogram)
+library(parallel)
 
 # -----------------------------------
 # Set census api key
@@ -43,8 +42,7 @@ getDataByState <- function(state, year, max_retries = 3) {
   while (retries <= max_retries) {
     tryCatch({
       # Retrieve the data for the given year and state with specified variables
-      data <- get_pums(variables = vars, year = year, state = state, survey = "acs1") %>%
-        filter(AGEP <= 24)  # Filtering conditions
+      data <- get_pums(variables = vars, year = year, state = state, survey = "acs1")
       return(data)
     }, error = function(e) {
       if (retries == max_retries) {
@@ -57,11 +55,11 @@ getDataByState <- function(state, year, max_retries = 3) {
 }
 
 # ----------------------------------------
-# Use pbmclapply to fetch data in parallel
+# Fetch data (use pbmclapply to fetch data in parallel)
 # ----------------------------------------
-rawdata_list <- pbmclapply(state_abbreviations, function(state) {
+rawdata_list <- lapply(state_abbreviations, function(state) {
   getDataByState(state, 2021)
-}, mc.cores = parallel::detectCores() - 1)
+})
 
 # -------------------------------------------------
 # Combine all the data into one data frame and save
