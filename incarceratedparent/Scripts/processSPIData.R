@@ -1,14 +1,20 @@
 # -----------------------------------------------------------------------------
-# Process data on incarcerated persons from SPI and NPS.
+# Process data on incarcerated persons from the 2021 report:
+# "Parents in Prison and Their Minor Children: Survey of Prison Inmates, 2016".
 # Author: Zofia Stanley
 # Date: Jan 19, 2024
 #
 # Description:
-# This script loads SPI the following data and reformats it into a long format. 
+# This script loads tables from the report and reformats it into a long format. 
 #   1. Percent of prisoners who are parents by sex and race.
 #   2. Number of children with incarcerated parent by sex of parent. 
 #   3. Percent of children with incarcerated parent by age of child and sex of parent.
 #   4. Number of prisoners by sex and race.
+#
+# Citation:
+# Maruschak, L. M., & Bronson, J. (2021). Parents in Prison and Their Minor Children: Survey of Prison Inmates, 
+# 2016 (NCJ 252645). Bureau of Justice Statistics. https://www.bjs.gov/index.cfm?ty=pbdetail&iid=7317
+#
 # -----------------------------------------------------------------------------
 
 # Load necessary libraries
