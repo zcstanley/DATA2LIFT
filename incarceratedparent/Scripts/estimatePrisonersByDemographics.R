@@ -71,19 +71,21 @@ estimatedPrisonersBySexRace <- estimatedPrisonersBySexRace %>%
 
 # Match and re-categorize race categories
 selectedPrisonersByAgeSexRace <- prisonersByAgeSexRace %>%
-  mutate(race = case_when(
-    race == "American Indian" ~ "Indigenous",
-    race == "Asian" ~ "AsianPacific",
-    TRUE ~ race  # Keeps the race category unchanged if it doesn't match any of the above
+  mutate(
+    race = case_when(
+      race == "American Indian" ~ "Indigenous",
+      race == "Asian" ~ "AsianPacific",
+      TRUE ~ race  # Keeps the race category unchanged if it doesn't match any of the above
   )) %>%
   bind_rows(
     prisonersByAgeSexRace %>%
       filter(race == "Other") %>%
       mutate(race = "Multi") # Match age distributions for "Other" and "Multi"
   ) %>%
-  mutate(age = gsub("–", "-", age)) %>%
-  filter(age %in% c("30-34","35-39","40-44","45-49","50-54","55-59")) %>%
-  mutate(percent_by_sex_race = as.numeric(percent_by_sex_race) / 100)
+  mutate(
+    age = gsub("–", "-", age), 
+    percent_by_sex_race = replace_na(as.numeric(percent_by_sex_race), 0) / 100
+  ) 
 
 # Compute state prisoners by state, sex, race and age
 prisonersByStateAgeSexRace <- merge(estimatedPrisonersBySexRace, selectedPrisonersByAgeSexRace, by = c("sex", "race")) %>%

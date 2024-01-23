@@ -29,28 +29,13 @@ load("RawData/PUMSRawData.Rdata")
 # Distribute Incarcerated Persons to PUMAs
 # -----------------------------------------
 
-# Define a function to convert age ranges to individual ages
-assign_age_category <- function(age) {
-  if (age >= 30 & age <= 34) {
-    return("30-34")
-  } else if (age >= 35 & age <= 39) {
-    return("35-39")
-  } else if (age >= 40 & age <= 44) {
-    return("40-44")
-  } else if (age >= 45 & age <= 49) {
-    return("45-49")
-  } else if (age >= 50 & age <= 54) {
-    return("50-54")
-  } else if (age >= 55 & age <= 59) {
-    return("55-59")
-  } else {
-    return(NA)  # For ages not in the specified ranges
-  }
-}
+# Define breaks and labels for the age categories
+age_breaks <- c(18, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, Inf)
+age_labels <- c("18-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65 or older")
 
 # Calculate the proportion of each demographic group in each PUMA
 pumsPropData <- pumsData %>%
-  mutate(age = sapply(age, assign_age_category)) %>%
+  mutate(age = cut(age, breaks = age_breaks, labels = age_labels, right = FALSE)) %>%
   group_by(state, PUMA, age, sex, race) %>%
   summarise(count = sum(count)) %>%
   ungroup() %>%
@@ -116,7 +101,7 @@ pumaPopData <- rawPumsData %>%
   group_by(ST, PUMA) %>%
   summarise(total_pop = sum(PWGTP)) %>%
   select(ST, PUMA, total_pop) %>%
-  rename(state_code = ST)
+  rename(state_code = ST) %>%
   ungroup()
 
 # Create a lookup table for state FIPS codes

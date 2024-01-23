@@ -19,21 +19,12 @@ library(tidycensus)    # For working with census data
 # ----------------------------------------
 load("RawData/PUMSRawData.Rdata") 
 
-# Define state abbreviations for processing
-state_abbreviations <- c(
-  "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", 
-  "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
-  "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
-  "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", 
-  "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "DC"
-)
-
 # ---------------------
 # Data Transformation 
 # ---------------------
-# Process and filter PUMS data for parents (assumed 30-59), and transform race and sex data
+# Process and filter PUMS data for incarcerated persons, and transform race and sex data
 pumsData <- rawPumsData %>% 
-  filter(AGEP >= 30 & AGEP <= 59) %>%
+  filter(AGEP >= 18) %>%
   mutate(
     race = case_when(
       HISP > 1 ~ "Hispanic",
