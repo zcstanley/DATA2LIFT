@@ -31,9 +31,9 @@ state_abbreviations <- c(
 # ---------------------
 # Data Transformation 
 # ---------------------
-# Process and filter PUMS data for parents (assumed 30-50), and transform race and sex data
+# Process and filter PUMS data for parents (assumed 30-60), and transform race and sex data
 pumsData <- rawPumsData %>% 
-  filter(AGEP >= 30 & AGEP <= 50) %>%
+  filter(AGEP >= 30 & AGEP <= 60) %>%
   mutate(
     race = case_when(
       HISP > 1 ~ "Hispanic",
