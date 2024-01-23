@@ -10,9 +10,8 @@
 #   4. Number of state prisoners by state and race.
 #
 # Citation:
-# Carson, E.A. & Kluckow, M. (2023). Prisoners in 2022 – Statistical Tables. 
-# Bureau of Justice Statistics. https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables
-#
+# Carson, E.A. & Kluckow, M. (2023). Prisoners in 2022 – Statistical Tables. Bureau of Justice Statistics. 
+# https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables
 # -----------------------------------------------------------------------------
 
 # Load necessary libraries
