@@ -4,15 +4,13 @@
 # Date: Jan 18, 2024
 #
 # Description:
-# This R script downloads and unzips the data tables associated with the Prisoners in 2022 report.
-# This report provides data on persons in state and federal prisons. 
+#   This R script downloads and unzips the data tables associated with the Prisoners in 2022 report.
+#   This report provides data on persons in state and federal prisons. 
 #
 # Citation:
-# Citation:
-# Bureau of Justice Statistics (2023). Prisoners in 2022 – Statistical Tables.
-# Retrieved from https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables
-# Data Tables Downloaded from: https://bjs.ojp.gov/document/p22st.zip
-#
+#   Bureau of Justice Statistics (2023). Prisoners in 2022 – Statistical Tables.
+#   Retrieved from https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables
+#   Data Tables Downloaded from: https://bjs.ojp.gov/document/p22st.zip
 # -----------------------------------------------------------------------------
 
 # Load necessary libraries
