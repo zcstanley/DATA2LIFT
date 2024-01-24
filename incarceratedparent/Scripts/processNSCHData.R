@@ -19,6 +19,8 @@ library(ggplot2)
 library(maps)
 library(scales)
 
+load("RawData/PUMSRawData.Rdata")
+
 # -------------------------------------------------------------
 # Data Preparation
 # -------------------------------------------------------------
@@ -34,6 +36,28 @@ nsch_data <- read_excel(file_path) %>%
   ) %>%
   select(state, nsch_count)
 
+pumaPopData <- rawPumsData %>%
+  filter(AGEP <= 18) %>%
+  group_by(ST) %>%
+  summarise(total_pop = sum(PWGTP)) %>%
+  select(ST, total_pop) %>%
+  rename(state_code = ST) %>%
+  ungroup()
+
+# Create a lookup table for state FIPS codes
+fipsLookup <- fips_codes %>%
+  select(state, state_code) %>%
+  unique 
+
+# Merge PUMS data with FIPS codes to integrate geographical data
+pumaPopData <- merge(pumaPopData, fipsLookup) %>%
+  select(-state_code) 
+
+# Compute children with incarcerated parent per 1,000 children (aged 15-17)
+nsch_data <- merge(nsch_data, pumaPopData) %>%
+  mutate(nsch_per_pop = nsch_count/(total_pop/1000)) %>%
+  select(-total_pop)
+
 # Read QSIDE data from CSV file and process
 csv_file_path <- "incarceratedparent/ProcessedData/incarceratedParentDataByPUMA.csv"
 qside_estimate <- read.csv(csv_file_path, stringsAsFactors = FALSE) %>%
@@ -41,12 +65,35 @@ qside_estimate <- read.csv(csv_file_path, stringsAsFactors = FALSE) %>%
   group_by(state) %>%
   summarise(qside_count = sum(count))
 
+pumaPopData <- rawPumsData %>%
+  filter(AGEP >= 15 & AGEP <= 17) %>%
+  group_by(ST) %>%
+  summarise(total_pop = sum(PWGTP)) %>%
+  select(ST, total_pop) %>%
+  rename(state_code = ST) %>%
+  ungroup()
+
+# Merge PUMS data with FIPS codes to integrate geographical data
+pumaPopData <- merge(pumaPopData, fipsLookup) %>%
+  select(-state_code) 
+
+# Compute children with incarcerated parent per 1,000 children (aged 15-17)
+qside_estimate <- merge(qside_estimate, pumaPopData) %>%
+  mutate(qside_per_pop = qside_count/(total_pop/1000)) %>%
+  select(-total_pop)
+
 # Merge NSCH and QSIDE data, compute ratio
 merged_data <- inner_join(nsch_data, qside_estimate, by = "state") %>%
   mutate(ratio = ifelse(qside_count == 0, NA, nsch_count / qside_count)) 
 
 # Calculate national factor
 national_factor <- sum(nsch_data$nsch_count) / sum(qside_estimate$qside_count)
+
+# Compute the Pearson correlation coefficient
+correlation_coefficient <- cor(merged_data$nsch_per_pop, merged_data$qside_per_pop, use = "complete.obs")
+
+# Print the correlation coefficient
+print(correlation_coefficient)
 
 # Prepare map data with US states
 states_map <- map_data("state") %>%
@@ -120,6 +167,17 @@ p3 <- ggplot(data = data_to_plot, aes(x = long, y = lat, group = group, fill = r
   map_theme() +
   scale_fill_continuous(labels = label_comma())
 
+p4 <- ggplot(merged_data, aes(x = nsch_per_pop, y = qside_per_pop)) +
+  geom_point() +  # Add points
+  geom_smooth(method = lm, se = FALSE, color = "blue") +  # Add a regression line
+  labs(
+    x = "Annie E. Casey Estimate per 1,000 Youth Aged 0-17",
+    y = "QSIDE Estimate per 1,000 Youth Aged 15-17",
+    title = "Comparative Analysis of Children with an Incarcerated Parent",
+    subtitle = "State-Level Rates per Population"
+  ) +
+  theme_minimal()
+
 # -------------------------------------------------------------
 # Save Plots
 # -------------------------------------------------------------
@@ -127,3 +185,4 @@ p3 <- ggplot(data = data_to_plot, aes(x = long, y = lat, group = group, fill = r
 ggsave(plot = p1, filename = "incarceratedparent/Plots/NSCHCountMap.pdf", width = 10, height = 6, units = "in", bg = "white")
 ggsave(plot = p2, filename = "incarceratedparent/Plots/QSIDECountMap.pdf", width = 10, height = 6, units = "in", bg = "white")
 ggsave(plot = p3, filename = "incarceratedparent/Plots/NSCH_QSIDE_RatioMap.pdf", width = 10, height = 6, units = "in", bg = "white")
+ggsave(plot = p4, filename = "incarceratedparent/Plots/NSCH_QSIDE_Scatter.pdf", width = 10, height = 6, units = "in", bg = "white")
