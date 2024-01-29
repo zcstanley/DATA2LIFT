@@ -48,7 +48,7 @@ incarceratedParentPlotData <- incarceratedParentData %>%
 p1 <- incarceratedParentPlotData %>%
   ggplot() +
   geom_sf(aes(fill = count), color = NA) +
-  ggtitle("Children with an Incarcerated Parent in State Prison, ages 15-17") +
+  ggtitle("Children with an Incarcerated Parent in State Prison, 15-17 Years Old") +
   scale_fill_viridis_c(name = "Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -57,7 +57,7 @@ p1 <- incarceratedParentPlotData %>%
 p2 <- incarceratedParentPlotData %>%
   ggplot() +
   geom_sf(aes(fill = incarcerated_parent_density), color = NA) +
-  ggtitle("Children with an Incarcerated Parent in State Prison, ages 15-17", subtitle = "per sq. km") +
+  ggtitle("Children with an Incarcerated Parent in State Prison, 15-17 Years Old", subtitle = "per sq. km") +
   scale_fill_viridis_c(name = "Density", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -66,7 +66,7 @@ p2 <- incarceratedParentPlotData %>%
 p3 <- incarceratedParentPlotData %>%
   ggplot() +
   geom_sf(aes(fill = incarcerated_parent_per_pop), color = NA) +
-  ggtitle("Children with an Incarcerated Parent in State Prison, ages 15-17", subtitle = "per 1,000 residents 15-17 years old") +
+  ggtitle("Children with an Incarcerated Parent in State Prison, 15-17 Years Old", subtitle = "per 1,000 Residents 15-17 Years Old") +
   scale_fill_viridis_c(name = "Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")

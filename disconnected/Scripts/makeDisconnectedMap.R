@@ -44,7 +44,7 @@ disconnectedPlotData <- disconnectedData %>%
 p1 <- disconnectedPlotData %>%
   ggplot() +
   geom_sf(aes(fill = count), color = NA) +
-  ggtitle("Disconnected Youth, ages 16-24") +
+  ggtitle("Disconnected Youth, 16-24 Years Old") +
   scale_fill_viridis_c(name = "Disconnected Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -53,7 +53,7 @@ p1 <- disconnectedPlotData %>%
 p2 <- disconnectedPlotData %>%
   ggplot() +
   geom_sf(aes(fill = disconnected_density), color = NA) +
-  ggtitle("Disconnected Youth, ages 16-24", subtitle = "per sq. km") +
+  ggtitle("Disconnected Youth, 16-24 Years Old", subtitle = "per sq. km") +
   scale_fill_viridis_c(name = "Disconnected Density", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -62,7 +62,7 @@ p2 <- disconnectedPlotData %>%
 p3 <- disconnectedPlotData %>%
   ggplot() +
   geom_sf(aes(fill = disconnected_per_pop), color = NA) +
-  ggtitle("Disconnected Youth, ages 16-24", subtitle = "per 1,000 residents 16-24 years old") +
+  ggtitle("Disconnected Youth, 16-24 Years Old", subtitle = "per 1,000 Residents 16-24 Years Old") +
   scale_fill_viridis_c(name = "Disconnected Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")

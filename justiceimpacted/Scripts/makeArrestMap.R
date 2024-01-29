@@ -48,7 +48,7 @@ arrestPlotData <- arrestData %>%
 p1 <- arrestPlotData %>%
   ggplot() +
   geom_sf(aes(fill = count), color = NA) +
-  ggtitle("Youth Arrests, ages 16-24") +
+  ggtitle("Youth Arrests, 16-24 Years Old") +
   scale_fill_viridis_c(name = "Arrests", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -57,7 +57,7 @@ p1 <- arrestPlotData %>%
 p2 <- arrestPlotData %>%
   ggplot() +
   geom_sf(aes(fill = arrest_density), color = NA) +
-  ggtitle("Youth Arrests, ages 16-24", subtitle = "per sq. km") +
+  ggtitle("Youth Arrests, 16-24 Years Old", subtitle = "per sq. km") +
   scale_fill_viridis_c(name = "Arrest Density", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -66,7 +66,7 @@ p2 <- arrestPlotData %>%
 p3 <- arrestPlotData %>%
   ggplot() +
   geom_sf(aes(fill = arrest_per_pop), color = NA) +
-  ggtitle("Youth Arrests, ages 16-24", subtitle = "per 1,000 residents 16-24 years old") +
+  ggtitle("Youth Arrests, 16-24 Years Old", subtitle = "per 1,000 Residents 16-24 Years Old") +
   scale_fill_viridis_c(name = "Arrests", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")

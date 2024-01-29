@@ -45,7 +45,7 @@ fosterPlotData <- fosterData %>%
 p1 <- fosterPlotData %>%
   ggplot() +
   geom_sf(aes(fill = count), color = NA) +
-  ggtitle("Children in Foster Care, aged 16-20") +
+  ggtitle("Children in Foster Care, 16-20 Years Old") +
   scale_fill_viridis_c(name = "Foster Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -54,7 +54,7 @@ p1 <- fosterPlotData %>%
 p2 <- fosterPlotData %>%
   ggplot() +
   geom_sf(aes(fill = foster_density), color = NA) +
-  ggtitle("Children in Foster Care, aged 16-20", subtitle = "per sq. km") +
+  ggtitle("Children in Foster Care, 16-20 Years Old", subtitle = "per sq. km") +
   scale_fill_viridis_c(name = "Foster Density", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
@@ -62,7 +62,7 @@ p2 <- fosterPlotData %>%
 p3 <- fosterPlotData %>%
   ggplot() +
   geom_sf(aes(fill = foster_per_pop), color = NA) +
-  ggtitle("Children in Foster Care, aged 16-20", subtitle = "per 1,000 residents aged 16-20") +
+  ggtitle("Children in Foster Care, 16-20 Years Old", subtitle = "per 1,000 Residents 16-20 Years Old") +
   scale_fill_viridis_c(name = "Foster Youth", trans = "log10") +
   theme_void() +
   theme(legend.position = "right")
