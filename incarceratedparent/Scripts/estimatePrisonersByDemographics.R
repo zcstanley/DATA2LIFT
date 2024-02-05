@@ -23,75 +23,103 @@ library(reshape2)
 library(dplyr)
 library(tidyr)
 
-# Load required datasets
-load("incarceratedparent/RawData/prisonersByStateRace.Rdata")
-load("incarceratedparent/RawData/prisonersByAgeSexRace.Rdata")
-load("incarceratedparent/RawData/prisonersByStateSex.Rdata")
-
 # --------------------------------------------------
 # Estimate state prisoners by state, race, and sex. 
 # --------------------------------------------------
+calculate_proportion_by_race <- function(prisonersByStateRace) {
+  # Calculate total prisoners by state
+  totalPrisonersByState <- prisonersByStateRace %>%
+    group_by(state) %>%
+    summarize(total_count = sum(count))
 
-# Calculate total prisoners by state
-totalPrisonersByState <- prisonersByStateRace %>%
-  group_by(state) %>%
-  summarise(total_count = sum(count))
+  # Calculate proportion of each race in each state
+  proportionByRace <- prisonersByStateRace %>%
+    left_join(totalPrisonersByState, by = "state") %>%
+    mutate(proportion = count / total_count) %>%
+    select(state, race, proportion)
+  
+  return(proportionByRace)
+}
 
-# Calculate proportion of each race in each state
-proportionByRace <- prisonersByStateRace %>%
-  left_join(totalPrisonersByState, by = "state") %>%
-  mutate(proportion = count / total_count) %>%
-  select(state, race, proportion)
-
-# Estimate prisoners by state, sex, and race
-estimatedPrisonersBySexRace <- prisonersByStateSex %>%
-  left_join(proportionByRace, by = "state") %>%
-  mutate(estimated_count = count * proportion) %>%
-  select(state, sex, race, estimated_count)
+estimate_prisoners_by_sex_race <- function(prisonersByStateSex, proportionByRace) {
+  # Compute number of prisoners by state, sex, and race
+  estimatedPrisonersBySexRace <- prisonersByStateSex %>%
+    left_join(proportionByRace, by = "state", relationship = "many-to-many") %>%
+    mutate(estimated_count = count * proportion) %>%
+    select(state, sex, race, estimated_count)
+  return(estimatedPrisonersBySexRace)
+}
 
 # ------------------------------------------------------
 # Estimate state prisoners by state, race, sex, and age. 
 # ------------------------------------------------------
 
-# Match and re-categorize race categories
-estimatedPrisonersBySexRace <- estimatedPrisonersBySexRace %>%
-  mutate(race = case_when(
-    race == "White" ~ "white",
-    race == "American Indian" ~ "Indigenous",
-    race == "Asian" ~ "AsianPacific",
-    race == "Native Hawaiian" ~ "AsianPacific",
-    race == "Two or more races" ~ "Multi",
-    race == "Unknown" ~ "Other",
-    race == "Did not report" ~ "Other",
-    TRUE ~ race  # Keeps the race category unchanged if it doesn't match any of the above
-  )) %>%
-  group_by(state, sex, race) %>%
-  summarise(count = sum(estimated_count)) %>%
-  ungroup()
-
-# Match and re-categorize race categories
-selectedPrisonersByAgeSexRace <- prisonersByAgeSexRace %>%
-  mutate(
-    race = case_when(
+prepare_state_race_sex_data <- function(estimatedPrisonersBySexRace) {
+  # Match and re-categorize race categories
+  estimatedPrisonersBySexRace <- estimatedPrisonersBySexRace %>%
+    mutate(race = case_when(
+      race == "White" ~ "white",
       race == "American Indian" ~ "Indigenous",
       race == "Asian" ~ "AsianPacific",
+      race == "Native Hawaiian" ~ "AsianPacific",
+      race == "Two or more races" ~ "Multi",
+      race == "Unknown" ~ "Other",
+      race == "Did not report" ~ "Other",
       TRUE ~ race  # Keeps the race category unchanged if it doesn't match any of the above
-  )) %>%
-  bind_rows(
-    prisonersByAgeSexRace %>%
-      filter(race == "Other") %>%
-      mutate(race = "Multi") # Match age distributions for "Other" and "Multi"
-  ) %>%
-  mutate(
-    age = gsub("–", "-", age), 
-    percent_by_sex_race = replace_na(as.numeric(percent_by_sex_race), 0) / 100
-  ) 
+    )) %>%
+    group_by(state, sex, race) %>%
+    summarize(count = sum(estimated_count)) %>%
+    ungroup()
+  return(estimatedPrisonersBySexRace)
+}
+  
+prepare_age_sex_race_data <- function(prisonersByAgeSexRace) {
+  # Match and re-categorize race categories
+  selectedPrisonersByAgeSexRace <- prisonersByAgeSexRace %>%
+    mutate(
+      race = case_when(
+        race == "American Indian" ~ "Indigenous",
+        race == "Asian" ~ "AsianPacific",
+        TRUE ~ race  # Keeps the race category unchanged if it doesn't match any of the above
+    )) %>%
+    bind_rows(
+      prisonersByAgeSexRace %>%
+        filter(race == "Other") %>%
+        mutate(race = "Multi") # Use age distribution "Other" for new row "Multi"
+    ) %>%
+    mutate(
+      age = gsub("–", "-", age), 
+      percent_by_sex_race = replace_na(as.numeric(percent_by_sex_race), 0) / 100
+    ) 
+  return(selectedPrisonersByAgeSexRace)
+}
 
-# Compute state prisoners by state, sex, race and age
-prisonersByStateAgeSexRace <- merge(estimatedPrisonersBySexRace, selectedPrisonersByAgeSexRace, by = c("sex", "race")) %>%
-  mutate(result = count * percent_by_sex_race) %>%
-  select(state, age, sex, race, result) %>%
-  rename(count = result)
+compute_state_prisoners_by_age_sex_race <- function(estimatedPrisonersBySexRace, selectedPrisonersByAgeSexRace) {
+  # Compute state prisoners by state, sex, race and age
+  prisonersByStateAgeSexRace <- merge(estimatedPrisonersBySexRace, selectedPrisonersByAgeSexRace, by = c("sex", "race")) %>%
+    mutate(result = count * percent_by_sex_race) %>%
+    select(state, age, sex, race, result) %>%
+    rename(count = result)
+  return(prisonersByStateAgeSexRace)
+}
 
-# Save estimates
-save(prisonersByStateAgeSexRace, file = "incarceratedparent/ProcessedData/prisonersByStateAgeSexRace.Rdata")
+# ----------------
+# Save final data
+# ----------------
+# Main execution logic (only run when not testing)
+if (!exists("testing")) {
+  # Load required datasets
+  load("incarceratedparent/RawData/prisonersByStateRace.Rdata")
+  load("incarceratedparent/RawData/prisonersByAgeSexRace.Rdata")
+  load("incarceratedparent/RawData/prisonersByStateSex.Rdata")
+  
+  # Call functions
+  proportionByRace <- calculate_proportion_by_race(prisonersByStateRace) 
+  estimatedPrisonersBySexRace <- estimate_prisoners_by_sex_race(prisonersByStateSex, proportionByRace)
+  estimatedPrisonersBySexRace <- prepare_state_race_sex_data(estimatedPrisonersBySexRace)
+  selectedPrisonersByAgeSexRace <- prepare_age_sex_race_data(prisonersByAgeSexRace) 
+  prisonersByStateAgeSexRace <- compute_state_prisoners_by_age_sex_race(estimatedPrisonersBySexRace, selectedPrisonersByAgeSexRace) 
+  
+  # Save data
+  save(prisonersByStateAgeSexRace, file = "incarceratedparent/ProcessedData/prisonersByStateAgeSexRace.Rdata")
+}
