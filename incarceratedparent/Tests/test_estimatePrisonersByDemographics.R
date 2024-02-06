@@ -1,3 +1,15 @@
+# -----------------------------------------------------------------------------
+# Unit Tests for Estimating Number of State Prisoners by State, Sex, Race, and Age
+# Author: Zofia C. Stanley
+# Date: Feb 6, 2024
+#
+# Description:
+# This test script validates the functionality and accuracy of the functions used
+# in estimating the number of state prisoners by state, sex, race, and age, as
+# described in the BJS report "Prisoners in 2022 - Statistical Tables".
+# -----------------------------------------------------------------------------
+
+
 # Load libraries
 library(testthat)
 library(reshape2)

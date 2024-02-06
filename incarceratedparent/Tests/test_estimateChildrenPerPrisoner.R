@@ -1,3 +1,15 @@
+# -----------------------------------------------------------------------------
+# Unit Tests for Estimating Number of Children Per State Prisoner
+# Author: Zofia C. Stanley
+# Date: Feb 6, 2024
+#
+# Description:
+# This test script validates the functionality and accuracy of the functions used
+# in estimating the number of children per state prisoners by sex and race of the 
+# parent.
+# -----------------------------------------------------------------------------
+
+
 # Load libraries 
 library(testthat)
 library(reshape2)
