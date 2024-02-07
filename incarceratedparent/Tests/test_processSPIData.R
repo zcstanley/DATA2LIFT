@@ -5,7 +5,7 @@
 #
 # Description:
 #   This test suite validates the integrity of the data tables processed from the
-#   BJS report ""Parents in Prison and Their Minor Children: Survey of Prison Inmates, 2016" 
+#   BJS report "Parents in Prison and Their Minor Children: Survey of Prison Inmates, 2016" 
 #   into a long format. 
 # -----------------------------------------------------------------------------
 
