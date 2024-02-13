@@ -1,0 +1,26 @@
+Bureau of Justice Statistics,,,,,,,,,,
+Filename: pptmcspi16stt02.csv,,,,,,,,,,
+"Table 2. Percent of state and federal prisoners with a minor child and estimated number of minor children, by sex of prisoner, 2016",,,,,,,,,,
+"Report title: Parents in Prison and Their Minor Children: Survey of Prison Inmates, 2016   NCJ 252645",,,,,,,,,,
+"Data source: Bureau of Justice Statistics, Survey of Prison Inmates, 2016",,,,,,,,,,
+"Authors: Laura M. Maruschak, BJS Statistician, and Jennifer Bronson, Ph.D., and Mariel Alper, Ph.D., former BJS Statisticians",,,,,,,,,,
+Refer questions to: askbjs@usdoj.gov 202-307-0765,,,,,,,,,,
+Date of version: 3/30/2021,,,,,,,,,,
+,,,,,,,,,,
+"Table 2. Percent of state and federal prisoners with a minor child and estimated number of minor children, by sex of prisoner, 2016",,,,,,,,,,
+,,,Prisoners with a minor child/a,,,,,,Minor children of prisoners/b,
+Sex of prisoners,,,Percent ,,,Standard error,,,Number,Standard error
+State,,,,,,,,,,
+,Total,,46.9,%,,0.66,%,,"1,252,100","23,300"
+,,Male*,46.1,,,0.7,,,"1,133,800","22,800"
+,,Female,57.7, †,,1.37,,,"118,300","4,400"
+Federal,,,,,,,,,,
+,Total,,57,%,,1.43,,,"221,600","6,400"
+,,Male*,57,,,1.51,%,,"208,200","6,400"
+,,Female,57.9,,,2.47,,,"13,400",800
+Note: Numbers are rounded to the nearest 100. Parental status was unknown for 1.2% of state and 1.8% of federal prisoners. Adjustments were made for item non-response and counts represent estimates for the total number of prisoners in 2016. See appendix table 1 for prisoner estimates. ,,,,,,,,,,
+*Comparison group.,,,,,,,,,,
+†Difference with the comparison group is significant at the 95% confidence level.,,,,,,,,,,
+a/Includes prisoners who reported having a biological or adopted child age 17 or younger at the time of the interview. ,,,,,,,,,,
+b/Includes biological or adopted children age 17 or younger at the time of the interview.,,,,,,,,,,
+"Source: Bureau of Justice Statistics, Survey of Prison Inmates, 2016.",,,,,,,,,,

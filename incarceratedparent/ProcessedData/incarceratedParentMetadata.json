@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "Children with a Parent Incarcerated in State Prison By PUMA",
+    "description": "This CSV file contains estimates of number of youth (aged 15-17) with an incarcerated parent in Public Use Microdata Areas (PUMAs) for 50 states in the United States. It includes data on the count of children with an incarcerated parent, count per population, and count density.",
+    "author": "Zofia Stanley",
+    "date": "2024-02-06",
+    "filename": "incarceratedParentDataByPUMA.csv"
+  },
+  "columns": [
+    {
+      "name": "state",
+      "description": "Two-letter state postal code",
+      "data_type": "String"
+    },
+    {
+      "name": "PUMA",
+      "description": "Public Use Microdata Area ID (unique within each state)",
+      "data_type": "Integer"
+    },
+    {
+      "name": "count",
+      "description": "Estimate of children (aged 15-17) with an incarercated parent by PUMA",
+      "data_type": "Decimal"
+    },
+    {
+      "name": "incarcerated_parent_per_pop",
+      "description": "Estimate of children with an incarercated parent per 1,000 residents aged 15-17 in the PUMA",
+      "data_type": "Decimal"
+    },
+    {
+      "name": "incarcerated_parent_density",
+      "description": "Estimate of children with an incarcerated parent per sq. km. in the PUMA",
+      "data_type": "Decimal"
+    }
+  ]
+}
