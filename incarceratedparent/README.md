@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains scripts for processing and analyzing parental incarceration rates in the United States. The project aims to distribute children with an incarcerated parent to Public Use Microdata Areas (PUMAs) based on demographic proportions of age, sex, and race. The data is sourced from BJS reports. 
+This repository contains scripts for processing and analyzing parental incarceration rates in the United States. The project aims to distribute children with an incarcerated parent to Public Use Microdata Areas (PUMAs) based on demographic proportions of age, sex, and race. The data are sourced from BJS reports. 
 
 ## Contents
 
@@ -29,7 +29,7 @@ This project uses American Community Survey (ACS) Public Use Microdata Sample (P
 
 ### Accessing the Data
 
-- Data tables from the BJS reports are downloaded directly from the report websites: [*Parents in Prison*](https://bjs.ojp.gov/library/publications/parents-prison-and-their-minor-children-survey-prison-inmates-2016) and  [*Prisoners in 2022*](https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables) 
+- Data tables from the BJS reports are downloaded directly from the report websites: [*Parents in Prison*](https://bjs.ojp.gov/library/publications/parents-prison-and-their-minor-children-survey-prison-inmates-2016) and  [*Prisoners in 2022*](https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables). 
 - The ACS PUMS data is accessed and manipulated using the R package `tidycensus`, which provides a user-friendly interface for interacting with the Census Bureau’s APIs and extracting the required data efficiently.
 
 ### Acknowledgements
