@@ -38,7 +38,7 @@ This project uses American Community Survey (ACS) Public Use Microdata Sample (P
 
 ### Race Data in the AFCARS Report
 
-- The race categories in the AFCARS data are limited and may not accurately reflect the full racial diversity of arrestees. Notably, AFCARS does not report race data for youth of Hispanic ethnicity. 
+- The race categories in the AFCARS data are limited and may not accurately reflect the full racial diversity of youth in foster care. Notably, AFCARS does not report race data for youth of Hispanic ethnicity. 
 
 ### Mapping to PUMAs
 
