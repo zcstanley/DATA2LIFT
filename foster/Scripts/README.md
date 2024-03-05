@@ -2,7 +2,7 @@
 
 ## Overview
 
-This folder contains a series of R scripts developed for the processing and analysis of foster youth data in the United States. These scripts handle various tasks from downloading data to processing and final distribution of arrest data to Public Use Microdata Areas (PUMAs).
+This folder contains a series of R scripts developed for the processing and analysis of foster youth data in the United States. These scripts handle various tasks from downloading data to processing and final distribution of foster youth data to Public Use Microdata Areas (PUMAs).
 
 ## Contents
 

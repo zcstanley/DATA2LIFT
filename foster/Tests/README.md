@@ -6,7 +6,7 @@ This folder contains a collection of test scripts designed to ensure the integri
 
 ## Contents
 
-- **`downloadFosterDataTest.R`**: Verifies that all expected arrest data files from the States AFCARS Report are successfully downloaded.
+- **`downloadFosterDataTest.R`**: Verifies that all expected foster youth data files from the States AFCARS Report are successfully downloaded.
 - **`scrapeFosterDataTest.R`**: Checks the processed foster youth data for consistency and accuracy.
 - **`getFosterPUMSTest.R`**: Assesses the integrity of the PUMS data integration process.
 - **`finalizeFosterDataTest.R`**: Ensures that the final distributed foster youth data aligns with the processed data and maintains data integrity.
