@@ -23,6 +23,7 @@ The PUMS data variables used in this project include:
 - `PWGTP`: Integer weight of person.
 - `RAC1P`: Race code.
 - `SCH`: School enrollment.
+- `SEX`: Sex.
 - `ST`: State code based on 2010 Census definitions.
 
 Definitions of all PUMS variables used in 2021 are available in the [PUMS Data Dictionary 2021](https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2021.pdf).
