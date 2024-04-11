@@ -8,7 +8,7 @@ The `RawData` folder contains ACS PUMS data files and PUMA shape files.
 
 - **`PUMA_Shapes.shp`**: PUMA shapefile for use in Tableau dashboard.
 - **`pumaShapes.Rdata`**: PUMA shapes for use in preliminary plotting routines in R. 
-- **`pumsRawData.Rdata`**: PUMS data.
+- **`pumsRawData.Rdata`**: PUMS dataset containing selected variables for all surveyed individuals. 
 
 ## Data Sources
 
