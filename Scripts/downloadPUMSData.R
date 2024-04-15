@@ -1,10 +1,11 @@
 # -----------------------------------------------------------------------------
 # PUMS Data Retrieval
-# Author: Chad M. Topaz, Zofia Stanley
-# Date: Dec 15, 2023
+# Author: Chad M. Topaz, Zofia C. Stanley
+# Date: Apr 10, 2024
 #
 # Description:
-# This code downloads all PUMS data for residents under 25 years old.
+# This code downloads PUMS data for the following variables:
+#    "AGEP", "SCH", "ESR", "RAC1P", "HISP", "SEX", "ST", "PUMA"
 # -----------------------------------------------------------------------------
 
 # -------------------------
