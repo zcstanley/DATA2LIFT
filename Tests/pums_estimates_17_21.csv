@@ -1,0 +1,1697 @@
+ST,STATE,CHARACTERISTIC,PUMS_EST_17_TO_21,PUMS_SE_17_TO_21,PUMS_MOE_17_TO_21
+01,Alabama,Total population,4997675,2,3
+01,Alabama,Housing unit population (RELSHIPP=20-36),4882809,2,3
+01,Alabama,GQ population (RELSHIPP=37-38),114866,0,0
+01,Alabama,GQ institutional population (RELSHIPP=37),61905,8,13
+01,Alabama,GQ noninstitutional population (RELSHIPP=38),52961,8,13
+01,Alabama,Total males (SEX=1),2430328,1026,1688
+01,Alabama,Total females (SEX=2),2567347,1026,1688
+01,Alabama,Age 0-4,294653,558,918
+01,Alabama,Age 5-9,300554,2701,4443
+01,Alabama,Age 10-14,331259,2806,4615
+01,Alabama,Age 15-19,329192,1516,2493
+01,Alabama,Age 20-24,326581,1355,2229
+01,Alabama,Age 25-34,648411,1429,2351
+01,Alabama,Age 35-44,617209,1252,2059
+01,Alabama,Age 45-54,632175,1075,1768
+01,Alabama,Age 55-59,336991,2688,4421
+01,Alabama,Age 60-64,336307,2727,4486
+01,Alabama,Age 65-74,511982,858,1411
+01,Alabama,Age 75-84,250522,1411,2322
+01,Alabama,Age 85 and over,81839,1361,2240
+01,Alabama,Total housing units (TYPEHUGQ=1),2278526,341,560
+01,Alabama,Total occupied units,1902977,3566,5867
+01,Alabama,"Owner occupied units (TEN in 1,2)",1316960,4941,8127
+01,Alabama,"Renter occupied units (TEN in 3,4)",586017,3614,5945
+01,Alabama,Owned with a mortgage (TEN=1),727214,4464,7344
+01,Alabama,Owned free and clear (TEN=2),589746,4100,6745
+01,Alabama,Rented for cash (TEN=3),525269,3720,6120
+01,Alabama,No cash rent (TEN=4),60748,1663,2736
+01,Alabama,Total vacant units,375549,3695,6079
+01,Alabama,For rent (VACS=1),59322,1819,2992
+01,Alabama,For sale only (VACS=3),19846,995,1637
+01,Alabama,"All Other Vacant (VACS in 2,4,5,6,7)",296381,3099,5098
+02,Alaska,Total population,735951,0,0
+02,Alaska,Housing unit population (RELSHIPP=20-36),710024,0,0
+02,Alaska,GQ population (RELSHIPP=37-38),25927,0,0
+02,Alaska,GQ institutional population (RELSHIPP=37),6153,14,23
+02,Alaska,GQ noninstitutional population (RELSHIPP=38),19774,14,23
+02,Alaska,Total males (SEX=1),385211,658,1082
+02,Alaska,Total females (SEX=2),350740,658,1082
+02,Alaska,Age 0-4,49897,355,584
+02,Alaska,Age 5-9,54340,1234,2030
+02,Alaska,Age 10-14,49993,1207,1985
+02,Alaska,Age 15-19,47114,673,1107
+02,Alaska,Age 20-24,50142,854,1405
+02,Alaska,Age 25-34,115206,1003,1650
+02,Alaska,Age 35-44,99160,930,1530
+02,Alaska,Age 45-54,86887,761,1253
+02,Alaska,Age 55-59,46708,1275,2097
+02,Alaska,Age 60-64,46664,1110,1826
+02,Alaska,Age 65-74,60907,629,1035
+02,Alaska,Age 75-84,22131,559,919
+02,Alaska,Age 85 and over,6802,475,781
+02,Alaska,Total housing units (TYPEHUGQ=1),324434,284,467
+02,Alaska,Total occupied units,260556,809,1330
+02,Alaska,"Owner occupied units (TEN in 1,2)",173096,1633,2687
+02,Alaska,"Renter occupied units (TEN in 3,4)",87460,1759,2894
+02,Alaska,Owned with a mortgage (TEN=1),106127,1674,2753
+02,Alaska,Owned free and clear (TEN=2),66969,1518,2497
+02,Alaska,Rented for cash (TEN=3),80058,1670,2748
+02,Alaska,No cash rent (TEN=4),7402,540,889
+02,Alaska,Total vacant units,63878,812,1337
+02,Alaska,For rent (VACS=1),7948,709,1166
+02,Alaska,For sale only (VACS=3),2674,343,565
+02,Alaska,"All Other Vacant (VACS in 2,4,5,6,7)",53256,809,1330
+04,Arizona,Total population,7079203,0,0
+04,Arizona,Housing unit population (RELSHIPP=20-36),6930677,0,0
+04,Arizona,GQ population (RELSHIPP=37-38),148526,0,0
+04,Arizona,GQ institutional population (RELSHIPP=37),80080,14,23
+04,Arizona,GQ noninstitutional population (RELSHIPP=38),68446,14,23
+04,Arizona,Total males (SEX=1),3533857,889,1462
+04,Arizona,Total females (SEX=2),3545346,889,1462
+04,Arizona,Age 0-4,412738,462,760
+04,Arizona,Age 5-9,439633,2989,4916
+04,Arizona,Age 10-14,481103,2893,4759
+04,Arizona,Age 15-19,475982,1656,2725
+04,Arizona,Age 20-24,476583,1637,2692
+04,Arizona,Age 25-34,965285,1632,2684
+04,Arizona,Age 35-44,885465,1413,2325
+04,Arizona,Age 45-54,838939,1105,1818
+04,Arizona,Age 55-59,428928,2741,4509
+04,Arizona,Age 60-64,430217,2796,4600
+04,Arizona,Age 65-74,732136,929,1529
+04,Arizona,Age 75-84,381229,1670,2747
+04,Arizona,Age 85 and over,130965,1634,2688
+04,Arizona,Total housing units (TYPEHUGQ=1),3056890,305,502
+04,Arizona,Total occupied units,2683560,3646,5998
+04,Arizona,"Owner occupied units (TEN in 1,2)",1760356,5542,9117
+04,Arizona,"Renter occupied units (TEN in 3,4)",923204,4203,6914
+04,Arizona,Owned with a mortgage (TEN=1),1116253,5166,8497
+04,Arizona,Owned free and clear (TEN=2),644103,3838,6313
+04,Arizona,Rented for cash (TEN=3),879235,4218,6938
+04,Arizona,No cash rent (TEN=4),43969,1212,1994
+04,Arizona,Total vacant units,373330,3776,6212
+04,Arizona,For rent (VACS=1),48287,1302,2141
+04,Arizona,For sale only (VACS=3),24114,1054,1734
+04,Arizona,"All Other Vacant (VACS in 2,4,5,6,7)",300929,3331,5479
+05,Arkansas,Total population,3006310,6,10
+05,Arkansas,Housing unit population (RELSHIPP=20-36),2928890,4,7
+05,Arkansas,GQ population (RELSHIPP=37-38),77420,2,3
+05,Arkansas,GQ institutional population (RELSHIPP=37),44664,7,12
+05,Arkansas,GQ noninstitutional population (RELSHIPP=38),32756,8,14
+05,Arkansas,Total males (SEX=1),1483966,780,1283
+05,Arkansas,Total females (SEX=2),1522344,779,1282
+05,Arkansas,Age 0-4,184424,399,657
+05,Arkansas,Age 5-9,196159,2080,3422
+05,Arkansas,Age 10-14,202793,2232,3671
+05,Arkansas,Age 15-19,203164,992,1632
+05,Arkansas,Age 20-24,198350,1014,1667
+05,Arkansas,Age 25-34,387789,1116,1836
+05,Arkansas,Age 35-44,376489,949,1561
+05,Arkansas,Age 45-54,365796,1020,1678
+05,Arkansas,Age 55-59,198987,1817,2990
+05,Arkansas,Age 60-64,187238,1901,3127
+05,Arkansas,Age 65-74,299837,572,941
+05,Arkansas,Age 75-84,150835,1131,1861
+05,Arkansas,Age 85 and over,54449,969,1594
+05,Arkansas,Total housing units (TYPEHUGQ=1),1361880,338,557
+05,Arkansas,Total occupied units,1158464,2260,3718
+05,Arkansas,"Owner occupied units (TEN in 1,2)",763240,3626,5964
+05,Arkansas,"Renter occupied units (TEN in 3,4)",395224,3126,5143
+05,Arkansas,Owned with a mortgage (TEN=1),412916,2876,4732
+05,Arkansas,Owned free and clear (TEN=2),350324,2769,4555
+05,Arkansas,Rented for cash (TEN=3),360394,2924,4810
+05,Arkansas,No cash rent (TEN=4),34830,1012,1664
+05,Arkansas,Total vacant units,203416,2417,3977
+05,Arkansas,For rent (VACS=1),30835,1189,1956
+05,Arkansas,For sale only (VACS=3),12374,636,1047
+05,Arkansas,"All Other Vacant (VACS in 2,4,5,6,7)",160207,2200,3619
+06,California,Total population,39455353,0,0
+06,California,Housing unit population (RELSHIPP=20-36),38640268,0,0
+06,California,GQ population (RELSHIPP=37-38),815085,0,0
+06,California,GQ institutional population (RELSHIPP=37),357571,134,221
+06,California,GQ noninstitutional population (RELSHIPP=38),457514,134,221
+06,California,Total males (SEX=1),19712190,2395,3940
+06,California,Total females (SEX=2),19743163,2395,3940
+06,California,Age 0-4,2344652,1342,2207
+06,California,Age 5-9,2430137,6568,10805
+06,California,Age 10-14,2661381,6725,11062
+06,California,Age 15-19,2588119,2371,3900
+06,California,Age 20-24,2629958,3064,5040
+06,California,Age 25-34,5936709,2933,4825
+06,California,Age 35-44,5347334,3174,5222
+06,California,Age 45-54,5045223,2558,4207
+06,California,Age 55-59,2496719,7165,11787
+06,California,Age 60-64,2301868,7316,12034
+06,California,Age 65-74,3368391,2042,3359
+06,California,Age 75-84,1580439,4037,6641
+06,California,Age 85 and over,724423,4240,6975
+06,California,Total housing units (TYPEHUGQ=1),14328539,970,1595
+06,California,Total occupied units,13217580,12056,19832
+06,California,"Owner occupied units (TEN in 1,2)",7291744,15582,25632
+06,California,"Renter occupied units (TEN in 3,4)",5925836,8021,13195
+06,California,Owned with a mortgage (TEN=1),5056277,12031,19791
+06,California,Owned free and clear (TEN=2),2235467,8485,13958
+06,California,Rented for cash (TEN=3),5741567,8007,13171
+06,California,No cash rent (TEN=4),184269,2311,3801
+06,California,Total vacant units,1110959,11338,18651
+06,California,For rent (VACS=1),238574,4172,6862
+06,California,For sale only (VACS=3),73648,1908,3139
+06,California,"All Other Vacant (VACS in 2,4,5,6,7)",798737,7889,12978
+08,Colorado,Total population,5723176,2,3
+08,Colorado,Housing unit population (RELSHIPP=20-36),5608531,2,3
+08,Colorado,GQ population (RELSHIPP=37-38),114645,0,0
+08,Colorado,GQ institutional population (RELSHIPP=37),56458,16,26
+08,Colorado,GQ noninstitutional population (RELSHIPP=38),58187,16,26
+08,Colorado,Total males (SEX=1),2894927,1022,1681
+08,Colorado,Total females (SEX=2),2828249,1022,1681
+08,Colorado,Age 0-4,322589,478,786
+08,Colorado,Age 5-9,343231,2549,4193
+08,Colorado,Age 10-14,374993,2521,4147
+08,Colorado,Age 15-19,371094,1402,2306
+08,Colorado,Age 20-24,373212,1293,2128
+08,Colorado,Age 25-34,888646,1560,2567
+08,Colorado,Age 35-44,807346,1438,2365
+08,Colorado,Age 45-54,712460,1106,1819
+08,Colorado,Age 55-59,363119,2639,4342
+08,Colorado,Age 60-64,346236,2565,4220
+08,Colorado,Age 65-74,519544,812,1335
+08,Colorado,Age 75-84,212019,1624,2672
+08,Colorado,Age 85 and over,88687,1507,2479
+08,Colorado,Total housing units (TYPEHUGQ=1),2454873,356,585
+08,Colorado,Total occupied units,2227932,2323,3822
+08,Colorado,"Owner occupied units (TEN in 1,2)",1471070,4424,7277
+08,Colorado,"Renter occupied units (TEN in 3,4)",756862,4072,6698
+08,Colorado,Owned with a mortgage (TEN=1),1042064,4088,6724
+08,Colorado,Owned free and clear (TEN=2),429006,3085,5074
+08,Colorado,Rented for cash (TEN=3),732289,3994,6569
+08,Colorado,No cash rent (TEN=4),24573,866,1425
+08,Colorado,Total vacant units,226941,2503,4117
+08,Colorado,For rent (VACS=1),39987,1209,1989
+08,Colorado,For sale only (VACS=3),13641,772,1269
+08,Colorado,"All Other Vacant (VACS in 2,4,5,6,7)",173313,1964,3230
+09,Connecticut,Total population,3605330,0,0
+09,Connecticut,Housing unit population (RELSHIPP=20-36),3495401,0,0
+09,Connecticut,GQ population (RELSHIPP=37-38),109929,0,0
+09,Connecticut,GQ institutional population (RELSHIPP=37),38928,37,61
+09,Connecticut,GQ noninstitutional population (RELSHIPP=38),71001,37,61
+09,Connecticut,Total males (SEX=1),1768506,646,1063
+09,Connecticut,Total females (SEX=2),1836824,646,1063
+09,Connecticut,Age 0-4,182329,270,444
+09,Connecticut,Age 5-9,197054,2088,3434
+09,Connecticut,Age 10-14,223895,2093,3443
+09,Connecticut,Age 15-19,244624,1374,2260
+09,Connecticut,Age 20-24,240860,1276,2099
+09,Connecticut,Age 25-34,446500,1037,1706
+09,Connecticut,Age 35-44,440241,925,1522
+09,Connecticut,Age 45-54,487873,797,1312
+09,Connecticut,Age 55-59,268275,2392,3934
+09,Connecticut,Age 60-64,253870,2369,3897
+09,Connecticut,Age 65-74,357797,677,1113
+09,Connecticut,Age 75-84,171988,1464,2409
+09,Connecticut,Age 85 and over,90024,1433,2357
+09,Connecticut,Total housing units (TYPEHUGQ=1),1527039,186,305
+09,Connecticut,Total occupied units,1397324,2100,3455
+09,Connecticut,"Owner occupied units (TEN in 1,2)",923061,3481,5726
+09,Connecticut,"Renter occupied units (TEN in 3,4)",474263,3199,5262
+09,Connecticut,Owned with a mortgage (TEN=1),618880,3529,5805
+09,Connecticut,Owned free and clear (TEN=2),304181,2232,3672
+09,Connecticut,Rented for cash (TEN=3),455775,3190,5248
+09,Connecticut,No cash rent (TEN=4),18488,821,1350
+09,Connecticut,Total vacant units,129715,2128,3500
+09,Connecticut,For rent (VACS=1),26583,1000,1645
+09,Connecticut,For sale only (VACS=3),12092,797,1311
+09,Connecticut,"All Other Vacant (VACS in 2,4,5,6,7)",91040,1778,2925
+10,Delaware,Total population,981892,0,0
+10,Delaware,Housing unit population (RELSHIPP=20-36),957428,0,0
+10,Delaware,GQ population (RELSHIPP=37-38),24464,0,0
+10,Delaware,GQ institutional population (RELSHIPP=37),11300,59,97
+10,Delaware,GQ noninstitutional population (RELSHIPP=38),13164,59,97
+10,Delaware,Total males (SEX=1),477776,253,416
+10,Delaware,Total females (SEX=2),504116,253,416
+10,Delaware,Age 0-4,54200,133,218
+10,Delaware,Age 5-9,55239,1133,1864
+10,Delaware,Age 10-14,62233,1102,1812
+10,Delaware,Age 15-19,61509,608,1000
+10,Delaware,Age 20-24,58039,552,908
+10,Delaware,Age 25-34,127881,348,572
+10,Delaware,Age 35-44,115582,349,574
+10,Delaware,Age 45-54,121315,264,433
+10,Delaware,Age 55-59,68499,1199,1972
+10,Delaware,Age 60-64,71386,1207,1986
+10,Delaware,Age 65-74,114014,414,682
+10,Delaware,Age 75-84,52701,756,1244
+10,Delaware,Age 85 and over,19294,788,1296
+10,Delaware,Total housing units (TYPEHUGQ=1),445104,173,284
+10,Delaware,Total occupied units,381097,943,1552
+10,Delaware,"Owner occupied units (TEN in 1,2)",271450,1636,2691
+10,Delaware,"Renter occupied units (TEN in 3,4)",109647,1502,2470
+10,Delaware,Owned with a mortgage (TEN=1),176191,1688,2776
+10,Delaware,Owned free and clear (TEN=2),95259,1521,2503
+10,Delaware,Rented for cash (TEN=3),105354,1513,2489
+10,Delaware,No cash rent (TEN=4),4293,422,694
+10,Delaware,Total vacant units,64007,999,1643
+10,Delaware,For rent (VACS=1),6416,456,750
+10,Delaware,For sale only (VACS=3),3669,344,565
+10,Delaware,"All Other Vacant (VACS in 2,4,5,6,7)",53922,934,1536
+11,District of Columbia,Total population,683154,0,0
+11,District of Columbia,Housing unit population (RELSHIPP=20-36),645897,0,0
+11,District of Columbia,GQ population (RELSHIPP=37-38),37257,0,0
+11,District of Columbia,GQ institutional population (RELSHIPP=37),5950,40,65
+11,District of Columbia,GQ noninstitutional population (RELSHIPP=38),31307,40,65
+11,District of Columbia,Total males (SEX=1),325441,262,431
+11,District of Columbia,Total females (SEX=2),357713,262,431
+11,District of Columbia,Age 0-4,42825,46,75
+11,District of Columbia,Age 5-9,34857,888,1460
+11,District of Columbia,Age 10-14,31900,893,1469
+11,District of Columbia,Age 15-19,36841,718,1182
+11,District of Columbia,Age 20-24,48885,782,1286
+11,District of Columbia,Age 25-34,155434,375,616
+11,District of Columbia,Age 35-44,107502,434,714
+11,District of Columbia,Age 45-54,73221,424,697
+11,District of Columbia,Age 55-59,34572,943,1551
+11,District of Columbia,Age 60-64,33872,935,1538
+11,District of Columbia,Age 65-74,48949,348,572
+11,District of Columbia,Age 75-84,23980,507,834
+11,District of Columbia,Age 85 and over,10316,520,855
+11,District of Columbia,Total housing units (TYPEHUGQ=1),344306,87,143
+11,District of Columbia,Total occupied units,310104,1047,1722
+11,District of Columbia,"Owner occupied units (TEN in 1,2)",129272,1614,2655
+11,District of Columbia,"Renter occupied units (TEN in 3,4)",180832,1652,2718
+11,District of Columbia,Owned with a mortgage (TEN=1),98340,1543,2537
+11,District of Columbia,Owned free and clear (TEN=2),30932,766,1260
+11,District of Columbia,Rented for cash (TEN=3),176986,1725,2838
+11,District of Columbia,No cash rent (TEN=4),3846,402,660
+11,District of Columbia,Total vacant units,34202,1051,1729
+11,District of Columbia,For rent (VACS=1),13684,645,1060
+11,District of Columbia,For sale only (VACS=3),2082,258,425
+11,District of Columbia,"All Other Vacant (VACS in 2,4,5,6,7)",18436,778,1280
+12,Florida,Total population,21339762,0,0
+12,Florida,Housing unit population (RELSHIPP=20-36),20924324,0,0
+12,Florida,GQ population (RELSHIPP=37-38),415438,0,0
+12,Florida,GQ institutional population (RELSHIPP=37),240133,41,68
+12,Florida,GQ noninstitutional population (RELSHIPP=38),175305,41,68
+12,Florida,Total males (SEX=1),10489654,1862,3062
+12,Florida,Total females (SEX=2),10850108,1862,3062
+12,Florida,Age 0-4,1118164,814,1338
+12,Florida,Age 5-9,1147157,5297,8714
+12,Florida,Age 10-14,1252081,5200,8553
+12,Florida,Age 15-19,1227649,2385,3924
+12,Florida,Age 20-24,1244172,2476,4073
+12,Florida,Age 25-34,2739265,2450,4030
+12,Florida,Age 35-44,2629745,1879,3091
+12,Florida,Age 45-54,2736800,1879,3091
+12,Florida,Age 55-59,1477685,6044,9943
+12,Florida,Age 60-64,1420712,5787,9519
+12,Florida,Age 65-74,2442280,1612,2651
+12,Florida,Age 75-84,1357486,3651,6005
+12,Florida,Age 85 and over,546566,3735,6143
+12,Florida,Total housing units (TYPEHUGQ=1),9764897,431,709
+12,Florida,Total occupied units,8157421,13355,21969
+12,Florida,"Owner occupied units (TEN in 1,2)",5411914,13727,22581
+12,Florida,"Renter occupied units (TEN in 3,4)",2745507,8861,14577
+12,Florida,Owned with a mortgage (TEN=1),3082237,10738,17664
+12,Florida,Owned free and clear (TEN=2),2329677,8172,13444
+12,Florida,Rented for cash (TEN=3),2633511,8471,13935
+12,Florida,No cash rent (TEN=4),111996,1988,3270
+12,Florida,Total vacant units,1607476,13468,22154
+12,Florida,For rent (VACS=1),237163,3491,5743
+12,Florida,For sale only (VACS=3),101768,2193,3608
+12,Florida,"All Other Vacant (VACS in 2,4,5,6,7)",1268545,10964,18036
+13,Georgia,Total population,10625615,6,10
+13,Georgia,Housing unit population (RELSHIPP=20-36),10373321,6,10
+13,Georgia,GQ population (RELSHIPP=37-38),252294,0,0
+13,Georgia,GQ institutional population (RELSHIPP=37),130852,26,42
+13,Georgia,GQ noninstitutional population (RELSHIPP=38),121442,26,42
+13,Georgia,Total males (SEX=1),5191833,1506,2478
+13,Georgia,Total females (SEX=2),5433782,1507,2478
+13,Georgia,Age 0-4,643422,862,1417
+13,Georgia,Age 5-9,685012,4281,7043
+13,Georgia,Age 10-14,756366,3991,6565
+13,Georgia,Age 15-19,754006,2248,3697
+13,Georgia,Age 20-24,711550,2179,3585
+13,Georgia,Age 25-34,1460086,1819,2993
+13,Georgia,Age 35-44,1412601,1892,3113
+13,Georgia,Age 45-54,1408276,1530,2517
+13,Georgia,Age 55-59,687611,4131,6795
+13,Georgia,Age 60-64,628959,3974,6537
+13,Georgia,Age 65-74,922750,1232,2027
+13,Georgia,Age 75-84,408464,2364,3888
+13,Georgia,Age 85 and over,146512,2050,3373
+13,Georgia,Total housing units (TYPEHUGQ=1),4375039,362,595
+13,Georgia,Total occupied units,3885371,5434,8938
+13,Georgia,"Owner occupied units (TEN in 1,2)",2497462,8823,14514
+13,Georgia,"Renter occupied units (TEN in 3,4)",1387909,6871,11303
+13,Georgia,Owned with a mortgage (TEN=1),1611009,7183,11817
+13,Georgia,Owned free and clear (TEN=2),886453,4672,7685
+13,Georgia,Rented for cash (TEN=3),1317455,6948,11429
+13,Georgia,No cash rent (TEN=4),70454,1586,2609
+13,Georgia,Total vacant units,489668,5588,9192
+13,Georgia,For rent (VACS=1),96975,2426,3991
+13,Georgia,For sale only (VACS=3),39232,1400,2304
+13,Georgia,"All Other Vacant (VACS in 2,4,5,6,7)",353461,4230,6959
+15,Hawaii,Total population,1453498,0,0
+15,Hawaii,Housing unit population (RELSHIPP=20-36),1410960,0,0
+15,Hawaii,GQ population (RELSHIPP=37-38),42538,0,0
+15,Hawaii,GQ institutional population (RELSHIPP=37),10521,34,56
+15,Hawaii,GQ noninstitutional population (RELSHIPP=38),32017,34,56
+15,Hawaii,Total males (SEX=1),732091,515,847
+15,Hawaii,Total females (SEX=2),721407,515,847
+15,Hawaii,Age 0-4,87859,251,413
+15,Hawaii,Age 5-9,86782,1278,2103
+15,Hawaii,Age 10-14,88303,1244,2046
+15,Hawaii,Age 15-19,79221,652,1072
+15,Hawaii,Age 20-24,90520,768,1264
+15,Hawaii,Age 25-34,202649,783,1287
+15,Hawaii,Age 35-44,189008,704,1158
+15,Hawaii,Age 45-54,174936,579,952
+15,Hawaii,Age 55-59,92466,1306,2149
+15,Hawaii,Age 60-64,92965,1251,2058
+15,Hawaii,Age 65-74,155756,393,647
+15,Hawaii,Age 75-84,74691,994,1636
+15,Hawaii,Age 85 and over,38342,976,1605
+15,Hawaii,Total housing units (TYPEHUGQ=1),556937,113,185
+15,Hawaii,Total occupied units,478409,1225,2015
+15,Hawaii,"Owner occupied units (TEN in 1,2)",289968,1947,3202
+15,Hawaii,"Renter occupied units (TEN in 3,4)",188441,1811,2979
+15,Hawaii,Owned with a mortgage (TEN=1),187699,1773,2917
+15,Hawaii,Owned free and clear (TEN=2),102269,1445,2377
+15,Hawaii,Rented for cash (TEN=3),177591,1890,3110
+15,Hawaii,No cash rent (TEN=4),10850,539,887
+15,Hawaii,Total vacant units,78528,1208,1987
+15,Hawaii,For rent (VACS=1),17122,694,1142
+15,Hawaii,For sale only (VACS=3),3198,370,609
+15,Hawaii,"All Other Vacant (VACS in 2,4,5,6,7)",58208,1271,2091
+16,Idaho,Total population,1811617,4,7
+16,Idaho,Housing unit population (RELSHIPP=20-36),1782529,4,7
+16,Idaho,GQ population (RELSHIPP=37-38),29088,0,0
+16,Idaho,GQ institutional population (RELSHIPP=37),16950,8,13
+16,Idaho,GQ noninstitutional population (RELSHIPP=38),12138,8,13
+16,Idaho,Total males (SEX=1),913558,748,1230
+16,Idaho,Total females (SEX=2),898059,748,1230
+16,Idaho,Age 0-4,114420,487,800
+16,Idaho,Age 5-9,126769,1547,2545
+16,Idaho,Age 10-14,136261,1533,2521
+16,Idaho,Age 15-19,130326,859,1413
+16,Idaho,Age 20-24,118485,751,1235
+16,Idaho,Age 25-34,235081,842,1386
+16,Idaho,Age 35-44,233448,753,1239
+16,Idaho,Age 45-54,208275,727,1196
+16,Idaho,Age 55-59,110151,1496,2461
+16,Idaho,Age 60-64,111629,1467,2414
+16,Idaho,Age 65-74,177568,520,855
+16,Idaho,Age 75-84,80278,811,1334
+16,Idaho,Age 85 and over,28926,794,1306
+16,Idaho,Total housing units (TYPEHUGQ=1),742145,190,313
+16,Idaho,Total occupied units,657098,1558,2563
+16,Idaho,"Owner occupied units (TEN in 1,2)",468796,2492,4099
+16,Idaho,"Renter occupied units (TEN in 3,4)",188302,2188,3599
+16,Idaho,Owned with a mortgage (TEN=1),300340,2496,4106
+16,Idaho,Owned free and clear (TEN=2),168456,2244,3692
+16,Idaho,Rented for cash (TEN=3),176467,2187,3598
+16,Idaho,No cash rent (TEN=4),11835,591,972
+16,Idaho,Total vacant units,85047,1460,2402
+16,Idaho,For rent (VACS=1),7696,562,924
+16,Idaho,For sale only (VACS=3),4231,438,720
+16,Idaho,"All Other Vacant (VACS in 2,4,5,6,7)",73120,1338,2200
+17,Illinois,Total population,12821813,0,0
+17,Illinois,Housing unit population (RELSHIPP=20-36),12531764,0,0
+17,Illinois,GQ population (RELSHIPP=37-38),290049,0,0
+17,Illinois,GQ institutional population (RELSHIPP=37),153530,12,20
+17,Illinois,GQ noninstitutional population (RELSHIPP=38),136519,12,20
+17,Illinois,Total males (SEX=1),6333553,1154,1898
+17,Illinois,Total females (SEX=2),6488260,1154,1898
+17,Illinois,Age 0-4,744847,750,1234
+17,Illinois,Age 5-9,783248,4353,7161
+17,Illinois,Age 10-14,844511,4451,7322
+17,Illinois,Age 15-19,848879,1856,3053
+17,Illinois,Age 20-24,835128,1913,3147
+17,Illinois,Age 25-34,1750882,1754,2885
+17,Illinois,Age 35-44,1677458,1720,2829
+17,Illinois,Age 45-54,1640722,1607,2644
+17,Illinois,Age 55-59,863358,3776,6212
+17,Illinois,Age 60-64,820409,3737,6147
+17,Illinois,Age 65-74,1190875,1274,2096
+17,Illinois,Age 75-84,569662,2791,4592
+17,Illinois,Age 85 and over,251834,2727,4486
+17,Illinois,Total housing units (TYPEHUGQ=1),5412995,605,995
+17,Illinois,Total occupied units,4930251,4772,7850
+17,Illinois,"Owner occupied units (TEN in 1,2)",3274131,8991,14791
+17,Illinois,"Renter occupied units (TEN in 3,4)",1656120,6781,11155
+17,Illinois,Owned with a mortgage (TEN=1),2042510,7622,12538
+17,Illinois,Owned free and clear (TEN=2),1231621,5763,9480
+17,Illinois,Rented for cash (TEN=3),1586002,6704,11029
+17,Illinois,No cash rent (TEN=4),70118,1832,3014
+17,Illinois,Total vacant units,482744,5125,8430
+17,Illinois,For rent (VACS=1),105094,2367,3895
+17,Illinois,For sale only (VACS=3),49819,1691,2782
+17,Illinois,"All Other Vacant (VACS in 2,4,5,6,7)",327831,3568,5869
+18,Indiana,Total population,6751340,8,13
+18,Indiana,Housing unit population (RELSHIPP=20-36),6569246,8,13
+18,Indiana,GQ population (RELSHIPP=37-38),182094,0,0
+18,Indiana,GQ institutional population (RELSHIPP=37),90735,8,13
+18,Indiana,GQ noninstitutional population (RELSHIPP=38),91359,8,13
+18,Indiana,Total males (SEX=1),3344474,1105,1818
+18,Indiana,Total females (SEX=2),3406866,1105,1818
+18,Indiana,Age 0-4,414483,537,883
+18,Indiana,Age 5-9,435595,2949,4852
+18,Indiana,Age 10-14,464335,2849,4687
+18,Indiana,Age 15-19,471470,1642,2701
+18,Indiana,Age 20-24,464181,1613,2653
+18,Indiana,Age 25-34,878327,1463,2406
+18,Indiana,Age 35-44,844411,1190,1958
+18,Indiana,Age 45-54,838431,1301,2140
+18,Indiana,Age 55-59,446440,2959,4868
+18,Indiana,Age 60-64,434374,2905,4779
+18,Indiana,Age 65-74,637340,870,1432
+18,Indiana,Age 75-84,294122,1758,2892
+18,Indiana,Age 85 and over,127831,1694,2787
+18,Indiana,Total housing units (TYPEHUGQ=1),2911562,231,380
+18,Indiana,Total occupied units,2622605,4006,6589
+18,Indiana,"Owner occupied units (TEN in 1,2)",1829803,6215,10224
+18,Indiana,"Renter occupied units (TEN in 3,4)",792802,4914,8083
+18,Indiana,Owned with a mortgage (TEN=1),1194007,5592,9199
+18,Indiana,Owned free and clear (TEN=2),635796,4522,7439
+18,Indiana,Rented for cash (TEN=3),750225,4829,7944
+18,Indiana,No cash rent (TEN=4),42577,1269,2087
+18,Indiana,Total vacant units,288957,3970,6531
+18,Indiana,For rent (VACS=1),53950,1564,2574
+18,Indiana,For sale only (VACS=3),21520,1010,1661
+18,Indiana,"All Other Vacant (VACS in 2,4,5,6,7)",213487,3178,5227
+19,Iowa,Total population,3179090,16,26
+19,Iowa,Housing unit population (RELSHIPP=20-36),3086331,16,26
+19,Iowa,GQ population (RELSHIPP=37-38),92759,0,0
+19,Iowa,GQ institutional population (RELSHIPP=37),38112,8,13
+19,Iowa,GQ noninstitutional population (RELSHIPP=38),54647,8,13
+19,Iowa,Total males (SEX=1),1589146,744,1225
+19,Iowa,Total females (SEX=2),1589944,744,1224
+19,Iowa,Age 0-4,194385,520,856
+19,Iowa,Age 5-9,203843,1891,3110
+19,Iowa,Age 10-14,216084,1922,3162
+19,Iowa,Age 15-19,220420,1051,1729
+19,Iowa,Age 20-24,224524,1096,1803
+19,Iowa,Age 25-34,392233,1324,2179
+19,Iowa,Age 35-44,395010,1291,2124
+19,Iowa,Age 45-54,372133,1103,1814
+19,Iowa,Age 55-59,208624,1942,3195
+19,Iowa,Age 60-64,211340,1983,3262
+19,Iowa,Age 65-74,312884,718,1181
+19,Iowa,Age 75-84,153361,1234,2030
+19,Iowa,Age 85 and over,74249,1211,1992
+19,Iowa,Total housing units (TYPEHUGQ=1),1407100,355,583
+19,Iowa,Total occupied units,1275892,1978,3254
+19,Iowa,"Owner occupied units (TEN in 1,2)",914801,3852,6336
+19,Iowa,"Renter occupied units (TEN in 3,4)",361091,3219,5296
+19,Iowa,Owned with a mortgage (TEN=1),551330,3303,5433
+19,Iowa,Owned free and clear (TEN=2),363471,2823,4643
+19,Iowa,Rented for cash (TEN=3),338121,3025,4975
+19,Iowa,No cash rent (TEN=4),22970,934,1537
+19,Iowa,Total vacant units,131208,2100,3455
+19,Iowa,For rent (VACS=1),25635,1120,1842
+19,Iowa,For sale only (VACS=3),10764,713,1173
+19,Iowa,"All Other Vacant (VACS in 2,4,5,6,7)",94809,1788,2942
+20,Kansas,Total population,2932099,14,23
+20,Kansas,Housing unit population (RELSHIPP=20-36),2856396,14,23
+20,Kansas,GQ population (RELSHIPP=37-38),75703,0,0
+20,Kansas,GQ institutional population (RELSHIPP=37),38168,113,186
+20,Kansas,GQ noninstitutional population (RELSHIPP=38),37535,113,186
+20,Kansas,Total males (SEX=1),1468547,814,1338
+20,Kansas,Total females (SEX=2),1463552,815,1340
+20,Kansas,Age 0-4,185214,433,713
+20,Kansas,Age 5-9,199059,1763,2900
+20,Kansas,Age 10-14,206876,1793,2949
+20,Kansas,Age 15-19,205783,1006,1654
+20,Kansas,Age 20-24,213977,1359,2236
+20,Kansas,Age 25-34,376485,1407,2314
+20,Kansas,Age 35-44,367497,1086,1787
+20,Kansas,Age 45-54,337797,902,1483
+20,Kansas,Age 55-59,187676,1575,2591
+20,Kansas,Age 60-64,188072,1574,2590
+20,Kansas,Age 65-74,273373,602,990
+20,Kansas,Age 75-84,127695,1292,2125
+20,Kansas,Age 85 and over,62595,1236,2033
+20,Kansas,Total housing units (TYPEHUGQ=1),1272291,330,542
+20,Kansas,Total occupied units,1139750,2277,3745
+20,Kansas,"Owner occupied units (TEN in 1,2)",757060,3639,5986
+20,Kansas,"Renter occupied units (TEN in 3,4)",382690,2986,4913
+20,Kansas,Owned with a mortgage (TEN=1),441552,3482,5728
+20,Kansas,Owned free and clear (TEN=2),315508,2433,4002
+20,Kansas,Rented for cash (TEN=3),361708,2836,4666
+20,Kansas,No cash rent (TEN=4),20982,762,1254
+20,Kansas,Total vacant units,132541,2086,3432
+20,Kansas,For rent (VACS=1),29569,1072,1763
+20,Kansas,For sale only (VACS=3),11358,702,1155
+20,Kansas,"All Other Vacant (VACS in 2,4,5,6,7)",91614,1695,2789
+21,Kentucky,Total population,4494141,8,13
+21,Kentucky,Housing unit population (RELSHIPP=20-36),4367713,8,13
+21,Kentucky,GQ population (RELSHIPP=37-38),126428,0,0
+21,Kentucky,GQ institutional population (RELSHIPP=37),63599,18,30
+21,Kentucky,GQ noninstitutional population (RELSHIPP=38),62829,18,30
+21,Kentucky,Total males (SEX=1),2223324,1079,1774
+21,Kentucky,Total females (SEX=2),2270817,1078,1774
+21,Kentucky,Age 0-4,269813,558,917
+21,Kentucky,Age 5-9,280479,2715,4466
+21,Kentucky,Age 10-14,295633,2655,4367
+21,Kentucky,Age 15-19,297584,1434,2359
+21,Kentucky,Age 20-24,297648,1331,2190
+21,Kentucky,Age 25-34,580946,1165,1916
+21,Kentucky,Age 35-44,562857,923,1518
+21,Kentucky,Age 45-54,570867,1068,1757
+21,Kentucky,Age 55-59,305101,2226,3661
+21,Kentucky,Age 60-64,298595,2201,3620
+21,Kentucky,Age 65-74,450685,785,1292
+21,Kentucky,Age 75-84,209237,1422,2340
+21,Kentucky,Age 85 and over,74696,1297,2134
+21,Kentucky,Total housing units (TYPEHUGQ=1),1988420,204,335
+21,Kentucky,Total occupied units,1748469,3059,5032
+21,Kentucky,"Owner occupied units (TEN in 1,2)",1180219,4861,7996
+21,Kentucky,"Renter occupied units (TEN in 3,4)",568250,3843,6322
+21,Kentucky,Owned with a mortgage (TEN=1),672532,4125,6785
+21,Kentucky,Owned free and clear (TEN=2),507687,3132,5152
+21,Kentucky,Rented for cash (TEN=3),517290,3752,6172
+21,Kentucky,No cash rent (TEN=4),50960,1338,2200
+21,Kentucky,Total vacant units,239951,3121,5135
+21,Kentucky,For rent (VACS=1),32831,1115,1834
+21,Kentucky,For sale only (VACS=3),15083,698,1148
+21,Kentucky,"All Other Vacant (VACS in 2,4,5,6,7)",192037,2692,4429
+22,Louisiana,Total population,4657305,18,30
+22,Louisiana,Housing unit population (RELSHIPP=20-36),4534907,18,30
+22,Louisiana,GQ population (RELSHIPP=37-38),122398,0,0
+22,Louisiana,GQ institutional population (RELSHIPP=37),82466,13,21
+22,Louisiana,GQ noninstitutional population (RELSHIPP=38),39932,13,21
+22,Louisiana,Total males (SEX=1),2284568,922,1517
+22,Louisiana,Total females (SEX=2),2372737,922,1517
+22,Louisiana,Age 0-4,297220,465,764
+22,Louisiana,Age 5-9,299665,2582,4248
+22,Louisiana,Age 10-14,319743,2466,4057
+22,Louisiana,Age 15-19,301914,1335,2196
+22,Louisiana,Age 20-24,304323,1504,2473
+22,Louisiana,Age 25-34,647806,1338,2201
+22,Louisiana,Age 35-44,601509,1358,2234
+22,Louisiana,Age 45-54,554477,1016,1671
+22,Louisiana,Age 55-59,308052,2546,4189
+22,Louisiana,Age 60-64,300369,2633,4331
+22,Louisiana,Age 65-74,443771,756,1243
+22,Louisiana,Age 75-84,200508,1416,2329
+22,Louisiana,Age 85 and over,77948,1345,2213
+22,Louisiana,Total housing units (TYPEHUGQ=1),2066324,575,946
+22,Louisiana,Total occupied units,1748695,3523,5795
+22,Louisiana,"Owner occupied units (TEN in 1,2)",1160055,4743,7802
+22,Louisiana,"Renter occupied units (TEN in 3,4)",588640,4160,6843
+22,Louisiana,Owned with a mortgage (TEN=1),607340,4400,7238
+22,Louisiana,Owned free and clear (TEN=2),552715,3620,5955
+22,Louisiana,Rented for cash (TEN=3),528550,3997,6575
+22,Louisiana,No cash rent (TEN=4),60090,1364,2244
+22,Louisiana,Total vacant units,317629,3390,5576
+22,Louisiana,For rent (VACS=1),52115,1437,2363
+22,Louisiana,For sale only (VACS=3),18334,830,1366
+22,Louisiana,"All Other Vacant (VACS in 2,4,5,6,7)",247180,2882,4741
+23,Maine,Total population,1357046,0,0
+23,Maine,Housing unit population (RELSHIPP=20-36),1321671,0,0
+23,Maine,GQ population (RELSHIPP=37-38),35375,0,0
+23,Maine,GQ institutional population (RELSHIPP=37),13136,4,7
+23,Maine,GQ noninstitutional population (RELSHIPP=38),22239,4,7
+23,Maine,Total males (SEX=1),668033,633,1042
+23,Maine,Total females (SEX=2),689013,633,1042
+23,Maine,Age 0-4,63680,314,517
+23,Maine,Age 5-9,69722,1115,1835
+23,Maine,Age 10-14,74124,1139,1873
+23,Maine,Age 15-19,79114,691,1137
+23,Maine,Age 20-24,75349,547,900
+23,Maine,Age 25-34,162180,733,1206
+23,Maine,Age 35-44,158868,552,908
+23,Maine,Age 45-54,179590,533,876
+23,Maine,Age 55-59,103596,1655,2723
+23,Maine,Age 60-64,110305,1603,2636
+23,Maine,Age 65-74,170925,436,718
+23,Maine,Age 75-84,78283,946,1556
+23,Maine,Age 85 and over,31310,916,1506
+23,Maine,Total housing units (TYPEHUGQ=1),737782,143,236
+23,Maine,Total occupied units,571065,1213,1995
+23,Maine,"Owner occupied units (TEN in 1,2)",420676,2027,3334
+23,Maine,"Renter occupied units (TEN in 3,4)",150389,1789,2943
+23,Maine,Owned with a mortgage (TEN=1),254122,2105,3464
+23,Maine,Owned free and clear (TEN=2),166554,2096,3449
+23,Maine,Rented for cash (TEN=3),139128,1844,3033
+23,Maine,No cash rent (TEN=4),11261,656,1079
+23,Maine,Total vacant units,166717,1199,1972
+23,Maine,For rent (VACS=1),8376,685,1127
+23,Maine,For sale only (VACS=3),5184,483,795
+23,Maine,"All Other Vacant (VACS in 2,4,5,6,7)",153157,1244,2046
+24,Maryland,Total population,6148545,0,0
+24,Maryland,Housing unit population (RELSHIPP=20-36),6010454,0,0
+24,Maryland,GQ population (RELSHIPP=37-38),138091,0,0
+24,Maryland,GQ institutional population (RELSHIPP=37),63799,201,330
+24,Maryland,GQ noninstitutional population (RELSHIPP=38),74292,201,330
+24,Maryland,Total males (SEX=1),2995247,742,1221
+24,Maryland,Total females (SEX=2),3153298,742,1221
+24,Maryland,Age 0-4,363468,297,489
+24,Maryland,Age 5-9,372544,2914,4793
+24,Maryland,Age 10-14,400345,2940,4836
+24,Maryland,Age 15-19,391085,1546,2543
+24,Maryland,Age 20-24,379008,1442,2372
+24,Maryland,Age 25-34,829689,1178,1939
+24,Maryland,Age 35-44,806370,1016,1671
+24,Maryland,Age 45-54,819752,930,1529
+24,Maryland,Age 55-59,431008,3030,4985
+24,Maryland,Age 60-64,405004,3054,5024
+24,Maryland,Age 65-74,571467,766,1260
+24,Maryland,Age 75-84,264926,1663,2736
+24,Maryland,Age 85 and over,113879,1513,2489
+24,Maryland,Total housing units (TYPEHUGQ=1),2516341,241,397
+24,Maryland,Total occupied units,2294271,2485,4088
+24,Maryland,"Owner occupied units (TEN in 1,2)",1541649,5064,8330
+24,Maryland,"Renter occupied units (TEN in 3,4)",752622,4135,6802
+24,Maryland,Owned with a mortgage (TEN=1),1115203,4952,8145
+24,Maryland,Owned free and clear (TEN=2),426446,2814,4629
+24,Maryland,Rented for cash (TEN=3),728935,4173,6865
+24,Maryland,No cash rent (TEN=4),23687,821,1350
+24,Maryland,Total vacant units,222070,2456,4040
+24,Maryland,For rent (VACS=1),43600,1325,2179
+24,Maryland,For sale only (VACS=3),20131,774,1273
+24,Maryland,"All Other Vacant (VACS in 2,4,5,6,7)",158339,1995,3281
+25,Massachusetts,Total population,6991854,35,57
+25,Massachusetts,Housing unit population (RELSHIPP=20-36),6744828,35,57
+25,Massachusetts,GQ population (RELSHIPP=37-38),247026,0,0
+25,Massachusetts,GQ institutional population (RELSHIPP=37),63992,15,25
+25,Massachusetts,GQ noninstitutional population (RELSHIPP=38),183034,15,25
+25,Massachusetts,Total males (SEX=1),3413710,1046,1720
+25,Massachusetts,Total females (SEX=2),3578144,1043,1715
+25,Massachusetts,Age 0-4,357650,438,721
+25,Massachusetts,Age 5-9,372569,2801,4607
+25,Massachusetts,Age 10-14,405521,2954,4859
+25,Massachusetts,Age 15-19,466378,1733,2850
+25,Massachusetts,Age 20-24,485436,1712,2817
+25,Massachusetts,Age 25-34,989673,1250,2056
+25,Massachusetts,Age 35-44,874996,1401,2304
+25,Massachusetts,Age 45-54,919792,1431,2354
+25,Massachusetts,Age 55-59,499006,2912,4790
+25,Massachusetts,Age 60-64,463684,3014,4957
+25,Massachusetts,Age 65-74,684829,1140,1875
+25,Massachusetts,Age 75-84,315044,1923,3164
+25,Massachusetts,Age 85 and over,157276,1987,3269
+25,Massachusetts,Total housing units (TYPEHUGQ=1),2979623,425,699
+25,Massachusetts,Total occupied units,2714444,2521,4148
+25,Massachusetts,"Owner occupied units (TEN in 1,2)",1690207,4459,7335
+25,Massachusetts,"Renter occupied units (TEN in 3,4)",1024237,3945,6490
+25,Massachusetts,Owned with a mortgage (TEN=1),1159461,4564,7508
+25,Massachusetts,Owned free and clear (TEN=2),530746,3815,6275
+25,Massachusetts,Rented for cash (TEN=3),988835,3802,6254
+25,Massachusetts,No cash rent (TEN=4),35402,1192,1961
+25,Massachusetts,Total vacant units,265179,2729,4490
+25,Massachusetts,For rent (VACS=1),34318,1259,2072
+25,Massachusetts,For sale only (VACS=3),14618,763,1255
+25,Massachusetts,"All Other Vacant (VACS in 2,4,5,6,7)",216243,2297,3778
+26,Michigan,Total population,10062512,6,10
+26,Michigan,Housing unit population (RELSHIPP=20-36),9845312,6,10
+26,Michigan,GQ population (RELSHIPP=37-38),217200,0,0
+26,Michigan,GQ institutional population (RELSHIPP=37),98015,14,22
+26,Michigan,GQ noninstitutional population (RELSHIPP=38),119185,14,22
+26,Michigan,Total males (SEX=1),4984460,1367,2249
+26,Michigan,Total females (SEX=2),5078052,1366,2247
+26,Michigan,Age 0-4,563822,603,992
+26,Michigan,Age 5-9,589937,3538,5819
+26,Michigan,Age 10-14,640152,3480,5725
+26,Michigan,Age 15-19,662894,1657,2726
+26,Michigan,Age 20-24,679603,1914,3148
+26,Michigan,Age 25-34,1298179,1910,3142
+26,Michigan,Age 35-44,1196078,1629,2679
+26,Michigan,Age 45-54,1280597,1605,2641
+26,Michigan,Age 55-59,703892,3540,5823
+26,Michigan,Age 60-64,716140,3454,5682
+26,Michigan,Age 65-74,1046917,1002,1649
+26,Michigan,Age 75-84,477388,2139,3519
+26,Michigan,Age 85 and over,206913,2071,3408
+26,Michigan,Total housing units (TYPEHUGQ=1),4566504,493,811
+26,Michigan,Total occupied units,3976728,5040,8290
+26,Michigan,"Owner occupied units (TEN in 1,2)",2867405,7562,12439
+26,Michigan,"Renter occupied units (TEN in 3,4)",1109323,5031,8277
+26,Michigan,Owned with a mortgage (TEN=1),1704414,6656,10949
+26,Michigan,Owned free and clear (TEN=2),1162991,4943,8132
+26,Michigan,Rented for cash (TEN=3),1053627,4872,8015
+26,Michigan,No cash rent (TEN=4),55696,1596,2625
+26,Michigan,Total vacant units,589776,4714,7755
+26,Michigan,For rent (VACS=1),55971,1915,3150
+26,Michigan,For sale only (VACS=3),32771,1025,1685
+26,Michigan,"All Other Vacant (VACS in 2,4,5,6,7)",501034,4145,6818
+27,Minnesota,Total population,5670472,6,10
+27,Minnesota,Housing unit population (RELSHIPP=20-36),5545274,6,10
+27,Minnesota,GQ population (RELSHIPP=37-38),125198,0,0
+27,Minnesota,GQ institutional population (RELSHIPP=37),51688,27,45
+27,Minnesota,GQ noninstitutional population (RELSHIPP=38),73510,27,45
+27,Minnesota,Total males (SEX=1),2837130,1585,2607
+27,Minnesota,Total females (SEX=2),2833342,1585,2608
+27,Minnesota,Age 0-4,347650,742,1221
+27,Minnesota,Age 5-9,372198,3396,5586
+27,Minnesota,Age 10-14,381192,3364,5534
+27,Minnesota,Age 15-19,365537,1579,2597
+27,Minnesota,Age 20-24,354821,1717,2824
+27,Minnesota,Age 25-34,755805,2025,3331
+27,Minnesota,Age 35-44,745123,2007,3301
+27,Minnesota,Age 45-54,685052,1695,2788
+27,Minnesota,Age 55-59,393047,3232,5317
+27,Minnesota,Age 60-64,369895,3103,5105
+27,Minnesota,Age 65-74,535556,1105,1818
+27,Minnesota,Age 75-84,249161,1975,3249
+27,Minnesota,Age 85 and over,115435,1866,3070
+27,Minnesota,Total housing units (TYPEHUGQ=1),2470483,396,651
+27,Minnesota,Total occupied units,2229095,2912,4790
+27,Minnesota,"Owner occupied units (TEN in 1,2)",1611821,5831,9591
+27,Minnesota,"Renter occupied units (TEN in 3,4)",617274,4436,7297
+27,Minnesota,Owned with a mortgage (TEN=1),1054329,5479,9013
+27,Minnesota,Owned free and clear (TEN=2),557492,4380,7205
+27,Minnesota,Rented for cash (TEN=3),592197,4562,7504
+27,Minnesota,No cash rent (TEN=4),25077,915,1506
+27,Minnesota,Total vacant units,241388,2693,4430
+27,Minnesota,For rent (VACS=1),29179,1354,2227
+27,Minnesota,For sale only (VACS=3),12069,691,1137
+27,Minnesota,"All Other Vacant (VACS in 2,4,5,6,7)",200140,2265,3726
+28,Mississippi,Total population,2967023,2,3
+28,Mississippi,Housing unit population (RELSHIPP=20-36),2879329,2,3
+28,Mississippi,GQ population (RELSHIPP=37-38),87694,0,0
+28,Mississippi,GQ institutional population (RELSHIPP=37),51573,16,27
+28,Mississippi,GQ noninstitutional population (RELSHIPP=38),36121,16,27
+28,Mississippi,Total males (SEX=1),1443907,1030,1694
+28,Mississippi,Total females (SEX=2),1523116,1030,1694
+28,Mississippi,Age 0-4,181750,497,818
+28,Mississippi,Age 5-9,186554,2059,3387
+28,Mississippi,Age 10-14,213959,1957,3219
+28,Mississippi,Age 15-19,212046,1250,2056
+28,Mississippi,Age 20-24,199199,1092,1796
+28,Mississippi,Age 25-34,379191,1165,1916
+28,Mississippi,Age 35-44,372599,1126,1853
+28,Mississippi,Age 45-54,364458,899,1479
+28,Mississippi,Age 55-59,190721,2054,3378
+28,Mississippi,Age 60-64,193289,2065,3397
+28,Mississippi,Age 65-74,288450,629,1035
+28,Mississippi,Age 75-84,137697,1057,1738
+28,Mississippi,Age 85 and over,47110,1026,1688
+28,Mississippi,Total housing units (TYPEHUGQ=1),1317375,508,836
+28,Mississippi,Total occupied units,1108673,2592,4263
+28,Mississippi,"Owner occupied units (TEN in 1,2)",759197,2973,4890
+28,Mississippi,"Renter occupied units (TEN in 3,4)",349476,2571,4229
+28,Mississippi,Owned with a mortgage (TEN=1),375290,2644,4349
+28,Mississippi,Owned free and clear (TEN=2),383907,2767,4552
+28,Mississippi,Rented for cash (TEN=3),306605,2465,4055
+28,Mississippi,No cash rent (TEN=4),42871,1033,1700
+28,Mississippi,Total vacant units,208702,2583,4248
+28,Mississippi,For rent (VACS=1),35987,1265,2081
+28,Mississippi,For sale only (VACS=3),12569,611,1005
+28,Mississippi,"All Other Vacant (VACS in 2,4,5,6,7)",160146,2549,4194
+29,Missouri,Total population,6141534,12,20
+29,Missouri,Housing unit population (RELSHIPP=20-36),5978416,12,20
+29,Missouri,GQ population (RELSHIPP=37-38),163118,0,0
+29,Missouri,GQ institutional population (RELSHIPP=37),83742,9,15
+29,Missouri,GQ noninstitutional population (RELSHIPP=38),79376,9,15
+29,Missouri,Total males (SEX=1),3027390,1291,2123
+29,Missouri,Total females (SEX=2),3114144,1293,2127
+29,Missouri,Age 0-4,365909,719,1182
+29,Missouri,Age 5-9,382709,2777,4569
+29,Missouri,Age 10-14,402982,2715,4466
+29,Missouri,Age 15-19,401721,1654,2720
+29,Missouri,Age 20-24,400362,1528,2513
+29,Missouri,Age 25-34,812629,1670,2748
+29,Missouri,Age 35-44,762593,1483,2439
+29,Missouri,Age 45-54,746238,1384,2276
+29,Missouri,Age 55-59,418441,3126,5142
+29,Missouri,Age 60-64,414589,3022,4971
+29,Missouri,Age 65-74,611607,845,1390
+29,Missouri,Age 75-84,300205,1755,2887
+29,Missouri,Age 85 and over,121549,1670,2746
+29,Missouri,Total housing units (TYPEHUGQ=1),2782081,445,732
+29,Missouri,Total occupied units,2433818,3307,5439
+29,Missouri,"Owner occupied units (TEN in 1,2)",1644209,5828,9587
+29,Missouri,"Renter occupied units (TEN in 3,4)",789609,4611,7585
+29,Missouri,Owned with a mortgage (TEN=1),1005925,4819,7927
+29,Missouri,Owned free and clear (TEN=2),638284,3937,6476
+29,Missouri,Rented for cash (TEN=3),742594,4636,7627
+29,Missouri,No cash rent (TEN=4),47015,1162,1912
+29,Missouri,Total vacant units,348263,3571,5874
+29,Missouri,For rent (VACS=1),46360,1459,2400
+29,Missouri,For sale only (VACS=3),21944,923,1518
+29,Missouri,"All Other Vacant (VACS in 2,4,5,6,7)",279959,2983,4907
+30,Montana,Total population,1077978,6,10
+30,Montana,Housing unit population (RELSHIPP=20-36),1050544,6,10
+30,Montana,GQ population (RELSHIPP=37-38),27434,0,0
+30,Montana,GQ institutional population (RELSHIPP=37),11184,5,9
+30,Montana,GQ noninstitutional population (RELSHIPP=38),16250,5,9
+30,Montana,Total males (SEX=1),545554,616,1014
+30,Montana,Total females (SEX=2),532424,617,1015
+30,Montana,Age 0-4,59776,260,428
+30,Montana,Age 5-9,65590,1169,1924
+30,Montana,Age 10-14,67880,1206,1983
+30,Montana,Age 15-19,67141,631,1037
+30,Montana,Age 20-24,72053,789,1299
+30,Montana,Age 25-34,136533,860,1414
+30,Montana,Age 35-44,133524,752,1238
+30,Montana,Age 45-54,120969,570,937
+30,Montana,Age 55-59,71659,1247,2051
+30,Montana,Age 60-64,79661,1281,2107
+30,Montana,Age 65-74,125715,355,585
+30,Montana,Age 75-84,56318,839,1379
+30,Montana,Age 85 and over,21159,745,1226
+30,Montana,Total housing units (TYPEHUGQ=1),512553,911,1499
+30,Montana,Total occupied units,436476,1372,2257
+30,Montana,"Owner occupied units (TEN in 1,2)",301332,1757,2890
+30,Montana,"Renter occupied units (TEN in 3,4)",135144,1802,2964
+30,Montana,Owned with a mortgage (TEN=1),166936,1657,2726
+30,Montana,Owned free and clear (TEN=2),134396,1504,2474
+30,Montana,Rented for cash (TEN=3),124135,1659,2730
+30,Montana,No cash rent (TEN=4),11009,552,908
+30,Montana,Total vacant units,76077,1137,1871
+30,Montana,For rent (VACS=1),9556,586,964
+30,Montana,For sale only (VACS=3),3712,314,517
+30,Montana,"All Other Vacant (VACS in 2,4,5,6,7)",62809,1088,1789
+31,Nebraska,Total population,1951480,8,13
+31,Nebraska,Housing unit population (RELSHIPP=20-36),1902505,8,13
+31,Nebraska,GQ population (RELSHIPP=37-38),48975,0,0
+31,Nebraska,GQ institutional population (RELSHIPP=37),21709,7,11
+31,Nebraska,GQ noninstitutional population (RELSHIPP=38),27266,7,11
+31,Nebraska,Total males (SEX=1),977903,827,1361
+31,Nebraska,Total females (SEX=2),973577,828,1361
+31,Nebraska,Age 0-4,130228,265,435
+31,Nebraska,Age 5-9,132471,1731,2847
+31,Nebraska,Age 10-14,142243,1754,2885
+31,Nebraska,Age 15-19,137228,938,1544
+31,Nebraska,Age 20-24,134761,992,1632
+31,Nebraska,Age 25-34,253788,770,1266
+31,Nebraska,Age 35-44,248380,896,1474
+31,Nebraska,Age 45-54,221948,845,1390
+31,Nebraska,Age 55-59,121524,1628,2678
+31,Nebraska,Age 60-64,123736,1596,2626
+31,Nebraska,Age 65-74,180015,563,926
+31,Nebraska,Age 75-84,84505,996,1639
+31,Nebraska,Age 85 and over,40653,871,1433
+31,Nebraska,Total housing units (TYPEHUGQ=1),840802,350,576
+31,Nebraska,Total occupied units,766897,1454,2392
+31,Nebraska,"Owner occupied units (TEN in 1,2)",511749,2696,4435
+31,Nebraska,"Renter occupied units (TEN in 3,4)",255148,2271,3736
+31,Nebraska,Owned with a mortgage (TEN=1),303507,2506,4122
+31,Nebraska,Owned free and clear (TEN=2),208242,2135,3513
+31,Nebraska,Rented for cash (TEN=3),240915,2225,3659
+31,Nebraska,No cash rent (TEN=4),14233,627,1032
+31,Nebraska,Total vacant units,73905,1221,2008
+31,Nebraska,For rent (VACS=1),15028,796,1310
+31,Nebraska,For sale only (VACS=3),4218,419,690
+31,Nebraska,"All Other Vacant (VACS in 2,4,5,6,7)",54659,1196,1968
+32,Nevada,Total population,3059238,0,0
+32,Nevada,Housing unit population (RELSHIPP=20-36),3023387,0,0
+32,Nevada,GQ population (RELSHIPP=37-38),35851,0,0
+32,Nevada,GQ institutional population (RELSHIPP=37),26162,7,12
+32,Nevada,GQ noninstitutional population (RELSHIPP=38),9689,7,12
+32,Nevada,Total males (SEX=1),1541684,624,1026
+32,Nevada,Total females (SEX=2),1517554,624,1026
+32,Nevada,Age 0-4,180984,327,538
+32,Nevada,Age 5-9,190372,1688,2776
+32,Nevada,Age 10-14,204692,1706,2806
+32,Nevada,Age 15-19,185816,715,1177
+32,Nevada,Age 20-24,181444,762,1253
+32,Nevada,Age 25-34,442128,708,1165
+32,Nevada,Age 35-44,413379,846,1391
+32,Nevada,Age 45-54,396344,748,1231
+32,Nevada,Age 55-59,197140,1669,2745
+32,Nevada,Age 60-64,184404,1816,2987
+32,Nevada,Age 65-74,302141,418,687
+32,Nevada,Age 75-84,136547,1267,2085
+32,Nevada,Age 85 and over,43847,1219,2005
+32,Nevada,Total housing units (TYPEHUGQ=1),1269846,200,328
+32,Nevada,Total occupied units,1141955,1571,2584
+32,Nevada,"Owner occupied units (TEN in 1,2)",659387,3387,5571
+32,Nevada,"Renter occupied units (TEN in 3,4)",482568,3090,5082
+32,Nevada,Owned with a mortgage (TEN=1),447531,3026,4978
+32,Nevada,Owned free and clear (TEN=2),211856,2574,4234
+32,Nevada,Rented for cash (TEN=3),468876,3084,5073
+32,Nevada,No cash rent (TEN=4),13692,584,960
+32,Nevada,Total vacant units,127891,1645,2706
+32,Nevada,For rent (VACS=1),35779,1082,1779
+32,Nevada,For sale only (VACS=3),10275,678,1116
+32,Nevada,"All Other Vacant (VACS in 2,4,5,6,7)",81837,1511,2485
+33,New Hampshire,Total population,1372174,35,58
+33,New Hampshire,Housing unit population (RELSHIPP=20-36),1332093,35,58
+33,New Hampshire,GQ population (RELSHIPP=37-38),40081,0,0
+33,New Hampshire,GQ institutional population (RELSHIPP=37),13576,11,17
+33,New Hampshire,GQ noninstitutional population (RELSHIPP=38),26505,11,17
+33,New Hampshire,Total males (SEX=1),684034,515,848
+33,New Hampshire,Total females (SEX=2),688140,511,841
+33,New Hampshire,Age 0-4,63279,308,507
+33,New Hampshire,Age 5-9,69486,1200,1974
+33,New Hampshire,Age 10-14,78902,1186,1951
+33,New Hampshire,Age 15-19,87562,695,1144
+33,New Hampshire,Age 20-24,86812,772,1270
+33,New Hampshire,Age 25-34,171587,667,1097
+33,New Hampshire,Age 35-44,161518,732,1204
+33,New Hampshire,Age 45-54,186322,566,932
+33,New Hampshire,Age 55-59,111848,1408,2317
+33,New Hampshire,Age 60-64,104138,1357,2232
+33,New Hampshire,Age 65-74,154037,458,753
+33,New Hampshire,Age 75-84,68421,762,1254
+33,New Hampshire,Age 85 and over,28262,843,1388
+33,New Hampshire,Total housing units (TYPEHUGQ=1),636491,114,188
+33,New Hampshire,Total occupied units,540509,1205,1982
+33,New Hampshire,"Owner occupied units (TEN in 1,2)",385737,2020,3322
+33,New Hampshire,"Renter occupied units (TEN in 3,4)",154772,1810,2978
+33,New Hampshire,Owned with a mortgage (TEN=1),248203,2012,3310
+33,New Hampshire,Owned free and clear (TEN=2),137534,1619,2663
+33,New Hampshire,Rented for cash (TEN=3),148527,1789,2943
+33,New Hampshire,No cash rent (TEN=4),6245,549,903
+33,New Hampshire,Total vacant units,95982,1176,1935
+33,New Hampshire,For rent (VACS=1),6013,475,781
+33,New Hampshire,For sale only (VACS=3),3094,414,680
+33,New Hampshire,"All Other Vacant (VACS in 2,4,5,6,7)",86875,1055,1735
+34,New Jersey,Total population,9234024,0,0
+34,New Jersey,Housing unit population (RELSHIPP=20-36),9050134,0,0
+34,New Jersey,GQ population (RELSHIPP=37-38),183890,0,0
+34,New Jersey,GQ institutional population (RELSHIPP=37),93517,11,18
+34,New Jersey,GQ noninstitutional population (RELSHIPP=38),90373,11,18
+34,New Jersey,Total males (SEX=1),4538600,963,1585
+34,New Jersey,Total females (SEX=2),4695424,963,1585
+34,New Jersey,Age 0-4,530458,458,753
+34,New Jersey,Age 5-9,553286,3203,5268
+34,New Jersey,Age 10-14,594421,3175,5222
+34,New Jersey,Age 15-19,584584,1539,2532
+34,New Jersey,Age 20-24,558380,1610,2648
+34,New Jersey,Age 25-34,1178570,1546,2543
+34,New Jersey,Age 35-44,1198700,1381,2272
+34,New Jersey,Age 45-54,1265959,1216,2001
+34,New Jersey,Age 55-59,664053,3568,5870
+34,New Jersey,Age 60-64,611179,3645,5996
+34,New Jersey,Age 65-74,868342,983,1618
+34,New Jersey,Age 75-84,425196,2299,3782
+34,New Jersey,Age 85 and over,200896,2346,3859
+34,New Jersey,Total housing units (TYPEHUGQ=1),3738342,263,433
+34,New Jersey,Total occupied units,3397159,3495,5749
+34,New Jersey,"Owner occupied units (TEN in 1,2)",2166765,6320,10396
+34,New Jersey,"Renter occupied units (TEN in 3,4)",1230394,5006,8235
+34,New Jersey,Owned with a mortgage (TEN=1),1420525,5343,8789
+34,New Jersey,Owned free and clear (TEN=2),746240,4144,6816
+34,New Jersey,Rented for cash (TEN=3),1194613,5167,8499
+34,New Jersey,No cash rent (TEN=4),35781,972,1599
+34,New Jersey,Total vacant units,341183,3495,5750
+34,New Jersey,For rent (VACS=1),53052,1400,2303
+34,New Jersey,For sale only (VACS=3),27552,1044,1717
+34,New Jersey,"All Other Vacant (VACS in 2,4,5,6,7)",260579,2862,4708
+35,New Mexico,Total population,2109366,0,0
+35,New Mexico,Housing unit population (RELSHIPP=20-36),2068271,0,0
+35,New Mexico,GQ population (RELSHIPP=37-38),41095,0,0
+35,New Mexico,GQ institutional population (RELSHIPP=37),24199,6,10
+35,New Mexico,GQ noninstitutional population (RELSHIPP=38),16896,6,10
+35,New Mexico,Total males (SEX=1),1048674,735,1209
+35,New Mexico,Total females (SEX=2),1060692,735,1209
+35,New Mexico,Age 0-4,120419,414,680
+35,New Mexico,Age 5-9,132537,1709,2811
+35,New Mexico,Age 10-14,146980,1822,2997
+35,New Mexico,Age 15-19,141396,962,1583
+35,New Mexico,Age 20-24,139799,989,1627
+35,New Mexico,Age 25-34,281285,1140,1876
+35,New Mexico,Age 35-44,261292,958,1576
+35,New Mexico,Age 45-54,240961,719,1184
+35,New Mexico,Age 55-59,134772,1691,2781
+35,New Mexico,Age 60-64,140413,1800,2962
+35,New Mexico,Age 65-74,224971,551,906
+35,New Mexico,Age 75-84,103058,1081,1778
+35,New Mexico,Age 85 and over,41483,1135,1867
+35,New Mexico,Total housing units (TYPEHUGQ=1),937397,167,274
+35,New Mexico,Total occupied units,797596,1660,2731
+35,New Mexico,"Owner occupied units (TEN in 1,2)",543492,3029,4982
+35,New Mexico,"Renter occupied units (TEN in 3,4)",254104,2638,4340
+35,New Mexico,Owned with a mortgage (TEN=1),287778,2740,4508
+35,New Mexico,Owned free and clear (TEN=2),255714,2400,3948
+35,New Mexico,Rented for cash (TEN=3),232182,2503,4117
+35,New Mexico,No cash rent (TEN=4),21922,839,1380
+35,New Mexico,Total vacant units,139801,1678,2760
+35,New Mexico,For rent (VACS=1),19370,778,1280
+35,New Mexico,For sale only (VACS=3),7910,619,1017
+35,New Mexico,"All Other Vacant (VACS in 2,4,5,6,7)",112521,1388,2283
+36,New York,Total population,20114745,2,3
+36,New York,Housing unit population (RELSHIPP=20-36),19542206,2,3
+36,New York,GQ population (RELSHIPP=37-38),572539,0,0
+36,New York,GQ institutional population (RELSHIPP=37),209048,11,18
+36,New York,GQ noninstitutional population (RELSHIPP=38),363491,11,18
+36,New York,Total males (SEX=1),9824158,1846,3037
+36,New York,Total females (SEX=2),10290587,1846,3037
+36,New York,Age 0-4,1152215,813,1337
+36,New York,Age 5-9,1127363,4922,8097
+36,New York,Age 10-14,1213203,4797,7891
+36,New York,Age 15-19,1243260,2361,3884
+36,New York,Age 20-24,1296934,2670,4392
+36,New York,Age 25-34,2902101,2224,3658
+36,New York,Age 35-44,2550665,2103,3460
+36,New York,Age 45-54,2596426,1992,3277
+36,New York,Age 55-59,1381114,5047,8302
+36,New York,Age 60-64,1320437,5092,8376
+36,New York,Age 65-74,1930290,1702,2800
+36,New York,Age 75-84,950586,2926,4813
+36,New York,Age 85 and over,450151,2913,4791
+36,New York,Total housing units (TYPEHUGQ=1),8449178,903,1485
+36,New York,Total occupied units,7530146,8209,13504
+36,New York,"Owner occupied units (TEN in 1,2)",4087849,11719,19278
+36,New York,"Renter occupied units (TEN in 3,4)",3442297,7659,12599
+36,New York,Owned with a mortgage (TEN=1),2426735,9522,15664
+36,New York,Owned free and clear (TEN=2),1661114,6670,10972
+36,New York,Rented for cash (TEN=3),3329275,7656,12594
+36,New York,No cash rent (TEN=4),113022,2127,3499
+36,New York,Total vacant units,919032,7495,12330
+36,New York,For rent (VACS=1),143601,2638,4340
+36,New York,For sale only (VACS=3),55299,1448,2382
+36,New York,"All Other Vacant (VACS in 2,4,5,6,7)",720132,6399,10527
+37,North Carolina,Total population,10367011,12,20
+37,North Carolina,Housing unit population (RELSHIPP=20-36),10103760,12,20
+37,North Carolina,GQ population (RELSHIPP=37-38),263251,0,0
+37,North Carolina,GQ institutional population (RELSHIPP=37),97570,25,42
+37,North Carolina,GQ noninstitutional population (RELSHIPP=38),165681,25,42
+37,North Carolina,Total males (SEX=1),5067710,1279,2104
+37,North Carolina,Total females (SEX=2),5299301,1277,2100
+37,North Carolina,Age 0-4,593636,589,968
+37,North Carolina,Age 5-9,620215,3533,5812
+37,North Carolina,Age 10-14,683436,3590,5906
+37,North Carolina,Age 15-19,696821,1873,3081
+37,North Carolina,Age 20-24,686230,2128,3500
+37,North Carolina,Age 25-34,1376301,1951,3209
+37,North Carolina,Age 35-44,1311011,1514,2490
+37,North Carolina,Age 45-54,1363082,1496,2461
+37,North Carolina,Age 55-59,685328,3715,6112
+37,North Carolina,Age 60-64,665549,3904,6422
+37,North Carolina,Age 65-74,1030806,1123,1847
+37,North Carolina,Age 75-84,474189,2180,3587
+37,North Carolina,Age 85 and over,180407,2068,3401
+37,North Carolina,Total housing units (TYPEHUGQ=1),4673927,332,546
+37,North Carolina,Total occupied units,4034673,5497,9043
+37,North Carolina,"Owner occupied units (TEN in 1,2)",2653209,7862,12933
+37,North Carolina,"Renter occupied units (TEN in 3,4)",1381464,5434,8940
+37,North Carolina,Owned with a mortgage (TEN=1),1656886,7237,11905
+37,North Carolina,Owned free and clear (TEN=2),996323,4144,6817
+37,North Carolina,Rented for cash (TEN=3),1292974,5548,9126
+37,North Carolina,No cash rent (TEN=4),88490,1750,2879
+37,North Carolina,Total vacant units,639254,5510,9064
+37,North Carolina,For rent (VACS=1),98704,2043,3360
+37,North Carolina,For sale only (VACS=3),40201,1152,1895
+37,North Carolina,"All Other Vacant (VACS in 2,4,5,6,7)",500349,4472,7356
+38,North Dakota,Total population,773344,0,0
+38,North Dakota,Housing unit population (RELSHIPP=20-36),748971,0,0
+38,North Dakota,GQ population (RELSHIPP=37-38),24373,0,0
+38,North Dakota,GQ institutional population (RELSHIPP=37),9167,5,7
+38,North Dakota,GQ noninstitutional population (RELSHIPP=38),15206,5,7
+38,North Dakota,Total males (SEX=1),397136,640,1053
+38,North Dakota,Total females (SEX=2),376208,640,1053
+38,North Dakota,Age 0-4,53166,303,498
+38,North Dakota,Age 5-9,53417,1224,2014
+38,North Dakota,Age 10-14,49721,1126,1852
+38,North Dakota,Age 15-19,50917,774,1273
+38,North Dakota,Age 20-24,62879,797,1312
+38,North Dakota,Age 25-34,114486,1049,1725
+38,North Dakota,Age 35-44,94167,786,1292
+38,North Dakota,Age 45-54,81010,581,956
+38,North Dakota,Age 55-59,47957,1020,1678
+38,North Dakota,Age 60-64,47725,1024,1685
+38,North Dakota,Age 65-74,67657,353,580
+38,North Dakota,Age 75-84,33697,576,947
+38,North Dakota,Age 85 and over,16545,549,902
+38,North Dakota,Total housing units (TYPEHUGQ=1),370111,123,202
+38,North Dakota,Total occupied units,316544,1079,1774
+38,North Dakota,"Owner occupied units (TEN in 1,2)",199797,1862,3064
+38,North Dakota,"Renter occupied units (TEN in 3,4)",116747,1744,2869
+38,North Dakota,Owned with a mortgage (TEN=1),105717,1723,2834
+38,North Dakota,Owned free and clear (TEN=2),94080,1640,2698
+38,North Dakota,Rented for cash (TEN=3),110430,1745,2871
+38,North Dakota,No cash rent (TEN=4),6317,402,661
+38,North Dakota,Total vacant units,53567,1104,1815
+38,North Dakota,For rent (VACS=1),13251,1069,1758
+38,North Dakota,For sale only (VACS=3),3521,509,837
+38,North Dakota,"All Other Vacant (VACS in 2,4,5,6,7)",36795,1176,1934
+39,Ohio,Total population,11769923,0,0
+39,Ohio,Housing unit population (RELSHIPP=20-36),11463814,0,0
+39,Ohio,GQ population (RELSHIPP=37-38),306109,0,0
+39,Ohio,GQ institutional population (RELSHIPP=37),157211,10,16
+39,Ohio,GQ noninstitutional population (RELSHIPP=38),148898,10,16
+39,Ohio,Total males (SEX=1),5800127,1600,2631
+39,Ohio,Total females (SEX=2),5969796,1600,2631
+39,Ohio,Age 0-4,687676,762,1253
+39,Ohio,Age 5-9,712309,3694,6076
+39,Ohio,Age 10-14,765077,3843,6322
+39,Ohio,Age 15-19,777851,1825,3003
+39,Ohio,Age 20-24,750221,1985,3266
+39,Ohio,Age 25-34,1541157,2169,3569
+39,Ohio,Age 35-44,1432132,1988,3269
+39,Ohio,Age 45-54,1478613,1631,2684
+39,Ohio,Age 55-59,816973,3798,6248
+39,Ohio,Age 60-64,804862,3934,6472
+39,Ohio,Age 65-74,1196092,1303,2143
+39,Ohio,Age 75-84,563372,2241,3686
+39,Ohio,Age 85 and over,243588,2190,3603
+39,Ohio,Total housing units (TYPEHUGQ=1),5232733,369,606
+39,Ohio,Total occupied units,4754159,5511,9066
+39,Ohio,"Owner occupied units (TEN in 1,2)",3152938,8788,14456
+39,Ohio,"Renter occupied units (TEN in 3,4)",1601221,5978,9834
+39,Ohio,Owned with a mortgage (TEN=1),1963832,7516,12364
+39,Ohio,Owned free and clear (TEN=2),1189106,5509,9062
+39,Ohio,Rented for cash (TEN=3),1517928,5884,9679
+39,Ohio,No cash rent (TEN=4),83293,1587,2610
+39,Ohio,Total vacant units,478574,5500,9047
+39,Ohio,For rent (VACS=1),81264,2001,3291
+39,Ohio,For sale only (VACS=3),34691,1190,1957
+39,Ohio,"All Other Vacant (VACS in 2,4,5,6,7)",362619,4427,7282
+40,Oklahoma,Total population,3948136,8,13
+40,Oklahoma,Housing unit population (RELSHIPP=20-36),3845328,8,13
+40,Oklahoma,GQ population (RELSHIPP=37-38),102808,0,0
+40,Oklahoma,GQ institutional population (RELSHIPP=37),57230,24,39
+40,Oklahoma,GQ noninstitutional population (RELSHIPP=38),45578,24,39
+40,Oklahoma,Total males (SEX=1),1966663,941,1549
+40,Oklahoma,Total females (SEX=2),1981473,942,1550
+40,Oklahoma,Age 0-4,252270,424,698
+40,Oklahoma,Age 5-9,268674,2423,3987
+40,Oklahoma,Age 10-14,277365,2473,4068
+40,Oklahoma,Age 15-19,268858,1291,2124
+40,Oklahoma,Age 20-24,271184,1180,1941
+40,Oklahoma,Age 25-34,535878,1437,2364
+40,Oklahoma,Age 35-44,505671,1387,2281
+40,Oklahoma,Age 45-54,458769,1225,2015
+40,Oklahoma,Age 55-59,249768,1872,3079
+40,Oklahoma,Age 60-64,244080,2143,3526
+40,Oklahoma,Age 65-74,366558,779,1282
+40,Oklahoma,Age 75-84,182727,1369,2253
+40,Oklahoma,Age 85 and over,66334,1234,2030
+40,Oklahoma,Total housing units (TYPEHUGQ=1),1741721,227,373
+40,Oklahoma,Total occupied units,1503879,1712,2817
+40,Oklahoma,"Owner occupied units (TEN in 1,2)",989913,2895,4762
+40,Oklahoma,"Renter occupied units (TEN in 3,4)",513966,2894,4760
+40,Oklahoma,Owned with a mortgage (TEN=1),537461,3354,5517
+40,Oklahoma,Owned free and clear (TEN=2),452452,3002,4939
+40,Oklahoma,Rented for cash (TEN=3),470026,2885,4745
+40,Oklahoma,No cash rent (TEN=4),43940,1242,2043
+40,Oklahoma,Total vacant units,237842,1752,2882
+40,Oklahoma,For rent (VACS=1),43801,1357,2232
+40,Oklahoma,For sale only (VACS=3),16608,783,1288
+40,Oklahoma,"All Other Vacant (VACS in 2,4,5,6,7)",177433,1821,2995
+41,Oregon,Total population,4207177,6,10
+41,Oregon,Housing unit population (RELSHIPP=20-36),4121410,6,10
+41,Oregon,GQ population (RELSHIPP=37-38),85767,0,0
+41,Oregon,GQ institutional population (RELSHIPP=37),35707,10,16
+41,Oregon,GQ noninstitutional population (RELSHIPP=38),50060,10,16
+41,Oregon,Total males (SEX=1),2097729,924,1521
+41,Oregon,Total females (SEX=2),2109448,924,1520
+41,Oregon,Age 0-4,222775,527,867
+41,Oregon,Age 5-9,239484,2204,3626
+41,Oregon,Age 10-14,258668,2178,3582
+41,Oregon,Age 15-19,252173,1364,2244
+41,Oregon,Age 20-24,261981,1328,2185
+41,Oregon,Age 25-34,592197,1232,2026
+41,Oregon,Age 35-44,575934,1104,1816
+41,Oregon,Age 45-54,518334,1036,1703
+41,Oregon,Age 55-59,262653,2138,3518
+41,Oregon,Age 60-64,280087,2144,3527
+41,Oregon,Age 65-74,461895,775,1275
+41,Oregon,Age 75-84,198894,1510,2484
+41,Oregon,Age 85 and over,82102,1491,2452
+41,Oregon,Total housing units (TYPEHUGQ=1),1798864,191,314
+41,Oregon,Total occupied units,1658092,2021,3324
+41,Oregon,"Owner occupied units (TEN in 1,2)",1047527,3837,6311
+41,Oregon,"Renter occupied units (TEN in 3,4)",610565,3370,5544
+41,Oregon,Owned with a mortgage (TEN=1),691258,3743,6157
+41,Oregon,Owned free and clear (TEN=2),356269,2826,4649
+41,Oregon,Rented for cash (TEN=3),585992,3280,5396
+41,Oregon,No cash rent (TEN=4),24573,819,1347
+41,Oregon,Total vacant units,140772,2020,3322
+41,Oregon,For rent (VACS=1),23361,846,1391
+41,Oregon,For sale only (VACS=3),10465,641,1054
+41,Oregon,"All Other Vacant (VACS in 2,4,5,6,7)",106946,1699,2795
+42,Pennsylvania,Total population,12970650,2,3
+42,Pennsylvania,Housing unit population (RELSHIPP=20-36),12556941,2,3
+42,Pennsylvania,GQ population (RELSHIPP=37-38),413709,0,0
+42,Pennsylvania,GQ institutional population (RELSHIPP=37),190900,31,51
+42,Pennsylvania,GQ noninstitutional population (RELSHIPP=38),222809,31,51
+42,Pennsylvania,Total males (SEX=1),6393324,1636,2691
+42,Pennsylvania,Total females (SEX=2),6577326,1636,2691
+42,Pennsylvania,Age 0-4,698977,722,1187
+42,Pennsylvania,Age 5-9,733367,3825,6292
+42,Pennsylvania,Age 10-14,793037,3744,6159
+42,Pennsylvania,Age 15-19,827860,2354,3873
+42,Pennsylvania,Age 20-24,805288,1968,3238
+42,Pennsylvania,Age 25-34,1698601,2318,3813
+42,Pennsylvania,Age 35-44,1565240,1577,2595
+42,Pennsylvania,Age 45-54,1646109,1953,3212
+42,Pennsylvania,Age 55-59,923507,4361,7174
+42,Pennsylvania,Age 60-64,918546,4367,7183
+42,Pennsylvania,Age 65-74,1373974,1265,2081
+42,Pennsylvania,Age 75-84,666189,2599,4276
+42,Pennsylvania,Age 85 and over,319955,2537,4173
+42,Pennsylvania,Total housing units (TYPEHUGQ=1),5728788,342,563
+42,Pennsylvania,Total occupied units,5147784,4863,8000
+42,Pennsylvania,"Owner occupied units (TEN in 1,2)",3552966,9041,14872
+42,Pennsylvania,"Renter occupied units (TEN in 3,4)",1594818,7152,11765
+42,Pennsylvania,Owned with a mortgage (TEN=1),2118877,7525,12378
+42,Pennsylvania,Owned free and clear (TEN=2),1434089,6437,10588
+42,Pennsylvania,Rented for cash (TEN=3),1507902,6947,11428
+42,Pennsylvania,No cash rent (TEN=4),86916,1801,2963
+42,Pennsylvania,Total vacant units,581004,4947,8138
+42,Pennsylvania,For rent (VACS=1),86622,2112,3475
+42,Pennsylvania,For sale only (VACS=3),42835,1495,2459
+42,Pennsylvania,"All Other Vacant (VACS in 2,4,5,6,7)",451547,3936,6475
+44,Rhode Island,Total population,1091949,0,0
+44,Rhode Island,Housing unit population (RELSHIPP=20-36),1050125,0,0
+44,Rhode Island,GQ population (RELSHIPP=37-38),41824,0,0
+44,Rhode Island,GQ institutional population (RELSHIPP=37),11489,2,4
+44,Rhode Island,GQ noninstitutional population (RELSHIPP=38),30335,2,4
+44,Rhode Island,Total males (SEX=1),534591,386,634
+44,Rhode Island,Total females (SEX=2),557358,386,634
+44,Rhode Island,Age 0-4,55420,157,258
+44,Rhode Island,Age 5-9,56238,1068,1756
+44,Rhode Island,Age 10-14,62519,1091,1795
+44,Rhode Island,Age 15-19,74926,620,1019
+44,Rhode Island,Age 20-24,76522,680,1119
+44,Rhode Island,Age 25-34,150495,689,1133
+44,Rhode Island,Age 35-44,131879,547,901
+44,Rhode Island,Age 45-54,140409,524,862
+44,Rhode Island,Age 55-59,75995,1320,2172
+44,Rhode Island,Age 60-64,79131,1319,2170
+44,Rhode Island,Age 65-74,109815,439,721
+44,Rhode Island,Age 75-84,54166,728,1198
+44,Rhode Island,Age 85 and over,24434,760,1250
+44,Rhode Island,Total housing units (TYPEHUGQ=1),481168,136,223
+44,Rhode Island,Total occupied units,426769,1207,1986
+44,Rhode Island,"Owner occupied units (TEN in 1,2)",266077,1756,2889
+44,Rhode Island,"Renter occupied units (TEN in 3,4)",160692,1766,2905
+44,Rhode Island,Owned with a mortgage (TEN=1),181048,1769,2910
+44,Rhode Island,Owned free and clear (TEN=2),85029,1391,2288
+44,Rhode Island,Rented for cash (TEN=3),154898,1706,2806
+44,Rhode Island,No cash rent (TEN=4),5794,427,703
+44,Rhode Island,Total vacant units,54399,1201,1976
+44,Rhode Island,For rent (VACS=1),8899,599,985
+44,Rhode Island,For sale only (VACS=3),3042,321,529
+44,Rhode Island,"All Other Vacant (VACS in 2,4,5,6,7)",42458,992,1631
+45,South Carolina,Total population,5078914,10,16
+45,South Carolina,Housing unit population (RELSHIPP=20-36),4953297,10,16
+45,South Carolina,GQ population (RELSHIPP=37-38),125617,0,0
+45,South Carolina,GQ institutional population (RELSHIPP=37),52761,51,83
+45,South Carolina,GQ noninstitutional population (RELSHIPP=38),72856,51,83
+45,South Carolina,Total males (SEX=1),2474348,925,1521
+45,South Carolina,Total females (SEX=2),2604566,925,1521
+45,South Carolina,Age 0-4,285453,440,724
+45,South Carolina,Age 5-9,304153,2201,3621
+45,South Carolina,Age 10-14,327917,2258,3715
+45,South Carolina,Age 15-19,330973,1366,2248
+45,South Carolina,Age 20-24,323186,1334,2194
+45,South Carolina,Age 25-34,658685,1234,2030
+45,South Carolina,Age 35-44,625083,1096,1802
+45,South Carolina,Age 45-54,638562,931,1531
+45,South Carolina,Age 55-59,341022,2830,4655
+45,South Carolina,Age 60-64,343697,2872,4724
+45,South Carolina,Age 65-74,560763,710,1168
+45,South Carolina,Age 75-84,254035,1343,2210
+45,South Carolina,Age 85 and over,85385,1342,2207
+45,South Carolina,Total housing units (TYPEHUGQ=1),2325254,658,1083
+45,South Carolina,Total occupied units,1976452,3574,5879
+45,South Carolina,"Owner occupied units (TEN in 1,2)",1383977,5465,8990
+45,South Carolina,"Renter occupied units (TEN in 3,4)",592475,4105,6753
+45,South Carolina,Owned with a mortgage (TEN=1),800311,4979,8190
+45,South Carolina,Owned free and clear (TEN=2),583666,3679,6051
+45,South Carolina,Rented for cash (TEN=3),537970,4110,6761
+45,South Carolina,No cash rent (TEN=4),54505,1376,2263
+45,South Carolina,Total vacant units,348802,3454,5681
+45,South Carolina,For rent (VACS=1),56245,1609,2647
+45,South Carolina,For sale only (VACS=3),19713,921,1515
+45,South Carolina,"All Other Vacant (VACS in 2,4,5,6,7)",272844,3266,5373
+46,South Dakota,Total population,881785,0,0
+46,South Dakota,Housing unit population (RELSHIPP=20-36),849940,0,0
+46,South Dakota,GQ population (RELSHIPP=37-38),31845,0,0
+46,South Dakota,GQ institutional population (RELSHIPP=37),13740,8,14
+46,South Dakota,GQ noninstitutional population (RELSHIPP=38),18105,8,14
+46,South Dakota,Total males (SEX=1),446854,726,1194
+46,South Dakota,Total females (SEX=2),434931,726,1194
+46,South Dakota,Age 0-4,58967,331,545
+46,South Dakota,Age 5-9,61595,1173,1930
+46,South Dakota,Age 10-14,62330,1166,1919
+46,South Dakota,Age 15-19,60368,787,1294
+46,South Dakota,Age 20-24,58027,751,1235
+46,South Dakota,Age 25-34,112685,887,1458
+46,South Dakota,Age 35-44,106988,917,1508
+46,South Dakota,Age 45-54,97125,684,1125
+46,South Dakota,Age 55-59,56474,1093,1798
+46,South Dakota,Age 60-64,60149,1128,1855
+46,South Dakota,Age 65-74,88446,434,714
+46,South Dakota,Age 75-84,40767,711,1170
+46,South Dakota,Age 85 and over,17864,700,1152
+46,South Dakota,Total housing units (TYPEHUGQ=1),391857,126,207
+46,South Dakota,Total occupied units,345782,860,1415
+46,South Dakota,"Owner occupied units (TEN in 1,2)",237424,1494,2457
+46,South Dakota,"Renter occupied units (TEN in 3,4)",108358,1454,2392
+46,South Dakota,Owned with a mortgage (TEN=1),131938,1701,2798
+46,South Dakota,Owned free and clear (TEN=2),105486,1454,2392
+46,South Dakota,Rented for cash (TEN=3),100014,1562,2570
+46,South Dakota,No cash rent (TEN=4),8344,520,856
+46,South Dakota,Total vacant units,46075,893,1469
+46,South Dakota,For rent (VACS=1),7756,596,981
+46,South Dakota,For sale only (VACS=3),2466,332,546
+46,South Dakota,"All Other Vacant (VACS in 2,4,5,6,7)",35853,991,1631
+47,Tennessee,Total population,6859497,4,7
+47,Tennessee,Housing unit population (RELSHIPP=20-36),6706923,4,7
+47,Tennessee,GQ population (RELSHIPP=37-38),152574,0,0
+47,Tennessee,GQ institutional population (RELSHIPP=37),84353,12,20
+47,Tennessee,GQ noninstitutional population (RELSHIPP=38),68221,12,20
+47,Tennessee,Total males (SEX=1),3362285,1277,2100
+47,Tennessee,Total females (SEX=2),3497212,1277,2101
+47,Tennessee,Age 0-4,405084,616,1014
+47,Tennessee,Age 5-9,415173,2473,4067
+47,Tennessee,Age 10-14,449487,2542,4181
+47,Tennessee,Age 15-19,439496,1582,2602
+47,Tennessee,Age 20-24,442786,1821,2995
+47,Tennessee,Age 25-34,935887,1501,2470
+47,Tennessee,Age 35-44,864495,1377,2266
+47,Tennessee,Age 45-54,884271,1221,2009
+47,Tennessee,Age 55-59,457866,3206,5274
+47,Tennessee,Age 60-64,447462,3141,5167
+47,Tennessee,Age 65-74,682609,823,1354
+47,Tennessee,Age 75-84,324691,1849,3042
+47,Tennessee,Age 85 and over,110190,1842,3031
+47,Tennessee,Total housing units (TYPEHUGQ=1),3011124,400,658
+47,Tennessee,Total occupied units,2664786,3875,6374
+47,Tennessee,"Owner occupied units (TEN in 1,2)",1776476,6697,11017
+47,Tennessee,"Renter occupied units (TEN in 3,4)",888310,4545,7476
+47,Tennessee,Owned with a mortgage (TEN=1),1046842,5377,8845
+47,Tennessee,Owned free and clear (TEN=2),729634,4254,6997
+47,Tennessee,Rented for cash (TEN=3),823666,4642,7636
+47,Tennessee,No cash rent (TEN=4),64644,1497,2462
+47,Tennessee,Total vacant units,346338,3625,5962
+47,Tennessee,For rent (VACS=1),63561,1740,2862
+47,Tennessee,For sale only (VACS=3),21256,994,1635
+47,Tennessee,"All Other Vacant (VACS in 2,4,5,6,7)",261521,3191,5249
+48,Texas,Total population,28862581,2,3
+48,Texas,Housing unit population (RELSHIPP=20-36),28293548,2,3
+48,Texas,GQ population (RELSHIPP=37-38),569033,0,0
+48,Texas,GQ institutional population (RELSHIPP=37),343288,293,482
+48,Texas,GQ noninstitutional population (RELSHIPP=38),225745,293,482
+48,Texas,Total males (SEX=1),14396570,1922,3162
+48,Texas,Total females (SEX=2),14466011,1923,3163
+48,Texas,Age 0-4,1957820,1117,1838
+48,Texas,Age 5-9,2029495,6698,11018
+48,Texas,Age 10-14,2189882,6947,11428
+48,Texas,Age 15-19,2081582,3081,5069
+48,Texas,Age 20-24,1978532,3269,5378
+48,Texas,Age 25-34,4178225,3209,5278
+48,Texas,Age 35-44,3987064,2520,4146
+48,Texas,Age 45-54,3574941,2740,4507
+48,Texas,Age 55-59,1701900,5860,9639
+48,Texas,Age 60-64,1563697,6001,9872
+48,Texas,Age 65-74,2232500,1887,3104
+48,Texas,Age 75-84,1003454,3172,5218
+48,Texas,Age 85 and over,383489,3057,5030
+48,Texas,Total housing units (TYPEHUGQ=1),11433880,794,1306
+48,Texas,Total occupied units,10239349,9338,15361
+48,Texas,"Owner occupied units (TEN in 1,2)",6364449,16631,27359
+48,Texas,"Renter occupied units (TEN in 3,4)",3874900,11405,18761
+48,Texas,Owned with a mortgage (TEN=1),3619291,12107,19915
+48,Texas,Owned free and clear (TEN=2),2745158,10308,16957
+48,Texas,Rented for cash (TEN=3),3694666,11066,18204
+48,Texas,No cash rent (TEN=4),180234,2877,4733
+48,Texas,Total vacant units,1194531,9823,16159
+48,Texas,For rent (VACS=1),317179,4615,7592
+48,Texas,For sale only (VACS=3),85806,2130,3504
+48,Texas,"All Other Vacant (VACS in 2,4,5,6,7)",791546,6841,11254
+49,Utah,Total population,3231370,2,3
+49,Utah,Housing unit population (RELSHIPP=20-36),3184373,2,3
+49,Utah,GQ population (RELSHIPP=37-38),46997,0,0
+49,Utah,GQ institutional population (RELSHIPP=37),20675,5,8
+49,Utah,GQ noninstitutional population (RELSHIPP=38),26322,5,8
+49,Utah,Total males (SEX=1),1633478,886,1457
+49,Utah,Total females (SEX=2),1597892,886,1458
+49,Utah,Age 0-4,245096,455,748
+49,Utah,Age 5-9,266169,2346,3859
+49,Utah,Age 10-14,273499,2382,3919
+49,Utah,Age 15-19,260437,949,1561
+49,Utah,Age 20-24,263668,974,1602
+49,Utah,Age 25-34,470609,1215,1999
+49,Utah,Age 35-44,451262,1045,1719
+49,Utah,Age 45-54,335557,872,1434
+49,Utah,Age 55-59,155521,1911,3143
+49,Utah,Age 60-64,151644,1781,2930
+49,Utah,Age 65-74,220073,697,1147
+49,Utah,Age 75-84,101636,1044,1717
+49,Utah,Age 85 and over,36199,932,1533
+49,Utah,Total housing units (TYPEHUGQ=1),1133558,183,301
+49,Utah,Total occupied units,1033650,1540,2534
+49,Utah,"Owner occupied units (TEN in 1,2)",727238,3091,5085
+49,Utah,"Renter occupied units (TEN in 3,4)",306412,2409,3963
+49,Utah,Owned with a mortgage (TEN=1),511603,3098,5096
+49,Utah,Owned free and clear (TEN=2),215635,2260,3718
+49,Utah,Rented for cash (TEN=3),293714,2511,4131
+49,Utah,No cash rent (TEN=4),12698,700,1151
+49,Utah,Total vacant units,99908,1540,2533
+49,Utah,For rent (VACS=1),18982,930,1530
+49,Utah,For sale only (VACS=3),5323,426,701
+49,Utah,"All Other Vacant (VACS in 2,4,5,6,7)",75603,1406,2313
+50,Vermont,Total population,641637,4,7
+50,Vermont,Housing unit population (RELSHIPP=20-36),616038,4,7
+50,Vermont,GQ population (RELSHIPP=37-38),25599,0,0
+50,Vermont,GQ institutional population (RELSHIPP=37),5142,5,8
+50,Vermont,GQ noninstitutional population (RELSHIPP=38),20457,5,8
+50,Vermont,Total males (SEX=1),318396,323,531
+50,Vermont,Total females (SEX=2),323241,323,531
+50,Vermont,Age 0-4,28967,166,272
+50,Vermont,Age 5-9,31527,820,1349
+50,Vermont,Age 10-14,36102,795,1308
+50,Vermont,Age 15-19,43811,614,1010
+50,Vermont,Age 20-24,46096,579,952
+50,Vermont,Age 25-34,76005,532,875
+50,Vermont,Age 35-44,74251,497,817
+50,Vermont,Age 45-54,81469,494,813
+50,Vermont,Age 55-59,47446,1039,1708
+50,Vermont,Age 60-64,50976,999,1643
+50,Vermont,Age 65-74,77196,265,437
+50,Vermont,Age 75-84,34368,628,1033
+50,Vermont,Age 85 and over,13423,643,1058
+50,Vermont,Total housing units (TYPEHUGQ=1),333519,111,182
+50,Vermont,Total occupied units,262516,860,1415
+50,Vermont,"Owner occupied units (TEN in 1,2)",188462,1555,2558
+50,Vermont,"Renter occupied units (TEN in 3,4)",74054,1332,2191
+50,Vermont,Owned with a mortgage (TEN=1),114878,1455,2393
+50,Vermont,Owned free and clear (TEN=2),73584,1234,2030
+50,Vermont,Rented for cash (TEN=3),70019,1287,2117
+50,Vermont,No cash rent (TEN=4),4035,391,643
+50,Vermont,Total vacant units,71003,872,1434
+50,Vermont,For rent (VACS=1),2941,370,609
+50,Vermont,For sale only (VACS=3),2488,341,562
+50,Vermont,"All Other Vacant (VACS in 2,4,5,6,7)",65574,928,1527
+51,Virginia,Total population,8582479,4,7
+51,Virginia,Housing unit population (RELSHIPP=20-36),8346977,4,7
+51,Virginia,GQ population (RELSHIPP=37-38),235502,0,0
+51,Virginia,GQ institutional population (RELSHIPP=37),92776,48,79
+51,Virginia,GQ noninstitutional population (RELSHIPP=38),142726,48,79
+51,Virginia,Total males (SEX=1),4245660,1095,1802
+51,Virginia,Total females (SEX=2),4336819,1095,1802
+51,Virginia,Age 0-4,501354,579,952
+51,Virginia,Age 5-9,516840,3236,5323
+51,Virginia,Age 10-14,549187,3215,5288
+51,Virginia,Age 15-19,560635,2001,3292
+51,Virginia,Age 20-24,571274,2062,3393
+51,Virginia,Age 25-34,1173646,1851,3044
+51,Virginia,Age 35-44,1138412,1507,2479
+51,Virginia,Age 45-54,1119204,1529,2515
+51,Virginia,Age 55-59,580472,3213,5286
+51,Virginia,Age 60-64,542706,3399,5592
+51,Virginia,Age 65-74,804083,975,1605
+51,Virginia,Age 75-84,381058,1716,2822
+51,Virginia,Age 85 and over,143608,1557,2562
+51,Virginia,Total housing units (TYPEHUGQ=1),3596100,338,557
+51,Virginia,Total occupied units,3248529,4041,6648
+51,Virginia,"Owner occupied units (TEN in 1,2)",2162486,7403,12177
+51,Virginia,"Renter occupied units (TEN in 3,4)",1086043,5203,8559
+51,Virginia,Owned with a mortgage (TEN=1),1476940,6139,10099
+51,Virginia,Owned free and clear (TEN=2),685546,4398,7235
+51,Virginia,Rented for cash (TEN=3),1032378,4882,8031
+51,Virginia,No cash rent (TEN=4),53665,1376,2264
+51,Virginia,Total vacant units,347571,4158,6840
+51,Virginia,For rent (VACS=1),61735,1853,3048
+51,Virginia,For sale only (VACS=3),26367,1027,1689
+51,Virginia,"All Other Vacant (VACS in 2,4,5,6,7)",259469,3295,5420
+53,Washington,Total population,7617364,0,0
+53,Washington,Housing unit population (RELSHIPP=20-36),7474395,0,0
+53,Washington,GQ population (RELSHIPP=37-38),142969,0,0
+53,Washington,GQ institutional population (RELSHIPP=37),55284,19,31
+53,Washington,GQ noninstitutional population (RELSHIPP=38),87685,19,31
+53,Washington,Total males (SEX=1),3830180,1195,1966
+53,Washington,Total females (SEX=2),3787184,1195,1966
+53,Washington,Age 0-4,448940,621,1021
+53,Washington,Age 5-9,471108,3404,5599
+53,Washington,Age 10-14,481907,3328,5475
+53,Washington,Age 15-19,457355,1273,2094
+53,Washington,Age 20-24,478485,1529,2516
+53,Washington,Age 25-34,1150747,1498,2465
+53,Washington,Age 35-44,1046912,1284,2112
+53,Washington,Age 45-54,938967,1082,1780
+53,Washington,Age 55-59,477832,2758,4538
+53,Washington,Age 60-64,487588,2860,4704
+53,Washington,Age 65-74,732174,1162,1911
+53,Washington,Age 75-84,313641,2017,3317
+53,Washington,Age 85 and over,131708,1781,2929
+53,Washington,Total housing units (TYPEHUGQ=1),3170695,463,762
+53,Washington,Total occupied units,2931842,2788,4587
+53,Washington,"Owner occupied units (TEN in 1,2)",1858467,5459,8979
+53,Washington,"Renter occupied units (TEN in 3,4)",1073375,4411,7257
+53,Washington,Owned with a mortgage (TEN=1),1260740,5027,8270
+53,Washington,Owned free and clear (TEN=2),597727,3869,6364
+53,Washington,Rented for cash (TEN=3),1032178,4070,6695
+53,Washington,No cash rent (TEN=4),41197,1248,2053
+53,Washington,Total vacant units,238853,3051,5019
+53,Washington,For rent (VACS=1),43308,1351,2223
+53,Washington,For sale only (VACS=3),15940,903,1486
+53,Washington,"All Other Vacant (VACS in 2,4,5,6,7)",179605,2723,4479
+54,West Virginia,Total population,1801049,2,3
+54,West Virginia,Housing unit population (RELSHIPP=20-36),1756528,2,3
+54,West Virginia,GQ population (RELSHIPP=37-38),44521,0,0
+54,West Virginia,GQ institutional population (RELSHIPP=37),25415,15,25
+54,West Virginia,GQ noninstitutional population (RELSHIPP=38),19106,15,25
+54,West Virginia,Total males (SEX=1),896498,596,981
+54,West Virginia,Total females (SEX=2),904551,596,981
+54,West Virginia,Age 0-4,92810,300,494
+54,West Virginia,Age 5-9,99170,1397,2298
+54,West Virginia,Age 10-14,109597,1419,2335
+54,West Virginia,Age 15-19,111002,830,1366
+54,West Virginia,Age 20-24,110462,564,928
+54,West Virginia,Age 25-34,210368,874,1437
+54,West Virginia,Age 35-44,218920,688,1132
+54,West Virginia,Age 45-54,232783,569,936
+54,West Virginia,Age 55-59,125346,1565,2575
+54,West Virginia,Age 60-64,132152,1481,2437
+54,West Virginia,Age 65-74,217575,438,721
+54,West Virginia,Age 75-84,102954,930,1530
+54,West Virginia,Age 85 and over,37910,974,1602
+54,West Virginia,Total housing units (TYPEHUGQ=1),859437,150,246
+54,West Virginia,Total occupied units,711353,1603,2637
+54,West Virginia,"Owner occupied units (TEN in 1,2)",524263,2221,3654
+54,West Virginia,"Renter occupied units (TEN in 3,4)",187090,2324,3823
+54,West Virginia,Owned with a mortgage (TEN=1),244288,2107,3466
+54,West Virginia,Owned free and clear (TEN=2),279975,1985,3266
+54,West Virginia,Rented for cash (TEN=3),157050,2136,3514
+54,West Virginia,No cash rent (TEN=4),30040,968,1592
+54,West Virginia,Total vacant units,148084,1639,2696
+54,West Virginia,For rent (VACS=1),14745,693,1140
+54,West Virginia,For sale only (VACS=3),9256,521,856
+54,West Virginia,"All Other Vacant (VACS in 2,4,5,6,7)",124083,1602,2635
+55,Wisconsin,Total population,5871661,16,26
+55,Wisconsin,Housing unit population (RELSHIPP=20-36),5731472,16,26
+55,Wisconsin,GQ population (RELSHIPP=37-38),140189,0,0
+55,Wisconsin,GQ institutional population (RELSHIPP=37),64874,32,53
+55,Wisconsin,GQ noninstitutional population (RELSHIPP=38),75315,32,53
+55,Wisconsin,Total males (SEX=1),2938359,1501,2469
+55,Wisconsin,Total females (SEX=2),2933302,1500,2468
+55,Wisconsin,Age 0-4,326604,653,1074
+55,Wisconsin,Age 5-9,354776,2576,4237
+55,Wisconsin,Age 10-14,382390,2526,4155
+55,Wisconsin,Age 15-19,386688,1621,2667
+55,Wisconsin,Age 20-24,391819,1540,2534
+55,Wisconsin,Age 25-34,731696,1874,3082
+55,Wisconsin,Age 35-44,732071,1492,2454
+55,Wisconsin,Age 45-54,733907,1499,2465
+55,Wisconsin,Age 55-59,426871,3249,5345
+55,Wisconsin,Age 60-64,408467,3181,5233
+55,Wisconsin,Age 65-74,598727,866,1425
+55,Wisconsin,Age 75-84,275356,2045,3365
+55,Wisconsin,Age 85 and over,122289,1791,2946
+55,Wisconsin,Total housing units (TYPEHUGQ=1),2718369,624,1026
+55,Wisconsin,Total occupied units,2401827,3051,5019
+55,Wisconsin,"Owner occupied units (TEN in 1,2)",1617266,6372,10483
+55,Wisconsin,"Renter occupied units (TEN in 3,4)",784561,4887,8040
+55,Wisconsin,Owned with a mortgage (TEN=1),1023878,5688,9357
+55,Wisconsin,Owned free and clear (TEN=2),593388,4084,6718
+55,Wisconsin,Rented for cash (TEN=3),751277,4745,7805
+55,Wisconsin,No cash rent (TEN=4),33284,1277,2100
+55,Wisconsin,Total vacant units,316542,2612,4297
+55,Wisconsin,For rent (VACS=1),40588,1373,2259
+55,Wisconsin,For sale only (VACS=3),14170,818,1345
+55,Wisconsin,"All Other Vacant (VACS in 2,4,5,6,7)",261784,2372,3902
+56,Wyoming,Total population,576641,0,0
+56,Wyoming,Housing unit population (RELSHIPP=20-36),563599,0,0
+56,Wyoming,GQ population (RELSHIPP=37-38),13042,0,0
+56,Wyoming,GQ institutional population (RELSHIPP=37),6148,5,9
+56,Wyoming,GQ noninstitutional population (RELSHIPP=38),6894,5,9
+56,Wyoming,Total males (SEX=1),295839,528,869
+56,Wyoming,Total females (SEX=2),280802,528,869
+56,Wyoming,Age 0-4,33965,271,446
+56,Wyoming,Age 5-9,37885,806,1326
+56,Wyoming,Age 10-14,40190,763,1255
+56,Wyoming,Age 15-19,38101,553,910
+56,Wyoming,Age 20-24,36439,471,775
+56,Wyoming,Age 25-34,75169,608,1000
+56,Wyoming,Age 35-44,74879,610,1003
+56,Wyoming,Age 45-54,65729,464,764
+56,Wyoming,Age 55-59,38842,911,1499
+56,Wyoming,Age 60-64,38911,897,1475
+56,Wyoming,Age 65-74,60475,314,516
+56,Wyoming,Age 75-84,26056,543,893
+56,Wyoming,Age 85 and over,10000,525,863
+56,Wyoming,Total housing units (TYPEHUGQ=1),271818,127,209
+56,Wyoming,Total occupied units,230654,935,1537
+56,Wyoming,"Owner occupied units (TEN in 1,2)",164454,1507,2479
+56,Wyoming,"Renter occupied units (TEN in 3,4)",66200,1376,2264
+56,Wyoming,Owned with a mortgage (TEN=1),96561,1506,2477
+56,Wyoming,Owned free and clear (TEN=2),67893,1273,2093
+56,Wyoming,Rented for cash (TEN=3),59942,1412,2322
+56,Wyoming,No cash rent (TEN=4),6258,480,789
+56,Wyoming,Total vacant units,41164,904,1486
+56,Wyoming,For rent (VACS=1),7887,593,976
+56,Wyoming,For sale only (VACS=3),2077,252,415
+56,Wyoming,"All Other Vacant (VACS in 2,4,5,6,7)",31200,860,1415
+72,Puerto Rico,Total population,3311274,0,0
+72,Puerto Rico,Housing unit population (RELSHIPP=20-36),3275796,0,0
+72,Puerto Rico,GQ population (RELSHIPP=37-38),35478,0,0
+72,Puerto Rico,GQ institutional population (RELSHIPP=37),22393,9,15
+72,Puerto Rico,GQ noninstitutional population (RELSHIPP=38),13085,9,15
+72,Puerto Rico,Total males (SEX=1),1571841,455,749
+72,Puerto Rico,Total females (SEX=2),1739433,455,749
+72,Puerto Rico,Age 0-4,122371,275,452
+72,Puerto Rico,Age 5-9,161271,1861,3061
+72,Puerto Rico,Age 10-14,191114,1880,3092
+72,Puerto Rico,Age 15-19,210130,589,968
+72,Puerto Rico,Age 20-24,227043,543,893
+72,Puerto Rico,Age 25-34,419482,546,899
+72,Puerto Rico,Age 35-44,403565,461,759
+72,Puerto Rico,Age 45-54,430176,417,686
+72,Puerto Rico,Age 55-59,220941,1999,3288
+72,Puerto Rico,Age 60-64,221269,1966,3234
+72,Puerto Rico,Age 65-74,378240,369,607
+72,Puerto Rico,Age 75-84,236408,1535,2525
+72,Puerto Rico,Age 85 and over,89264,1553,2555
+72,Puerto Rico,Total housing units (TYPEHUGQ=1),1553791,1522,2504
+72,Puerto Rico,Total occupied units,1196791,2599,4276
+72,Puerto Rico,"Owner occupied units (TEN in 1,2)",813697,2942,4840
+72,Puerto Rico,"Renter occupied units (TEN in 3,4)",383094,2579,4243
+72,Puerto Rico,Owned with a mortgage (TEN=1),306310,2306,3794
+72,Puerto Rico,Owned free and clear (TEN=2),507387,2596,4270
+72,Puerto Rico,Rented for cash (TEN=3),235474,1973,3245
+72,Puerto Rico,No cash rent (TEN=4),147620,1877,3088
+72,Puerto Rico,Total vacant units,357000,2161,3554
+72,Puerto Rico,For rent (VACS=1),27133,832,1369
+72,Puerto Rico,For sale only (VACS=3),21089,733,1206
+72,Puerto Rico,"All Other Vacant (VACS in 2,4,5,6,7)",308778,2093,3442
+US,United States,Total population,329725483,188,309
+US,United States,Housing unit population (RELSHIPP=20-36),321899279,186,306
+US,United States,GQ population (RELSHIPP=37-38),7826204,2,3
+US,United States,GQ institutional population (RELSHIPP=37),3677145,400,658
+US,United States,GQ noninstitutional population (RELSHIPP=38),4149059,399,657
+US,United States,Total males (SEX=1),163209181,7290,11991
+US,United States,Total females (SEX=2),166516302,7318,12038
+US,United States,Age 0-4,19388402,4153,6832
+US,United States,Age 5-9,20187746,23385,38469
+US,United States,Age 10-14,21758650,23659,38920
+US,United States,Age 15-19,21640507,10487,17251
+US,United States,Age 20-24,21566158,10806,17776
+US,United States,Age 25-34,45311796,10491,17258
+US,United States,Age 35-44,42530328,8844,14548
+US,United States,Age 45-54,41619852,9829,16169
+US,United States,Age 55-59,21823556,26227,43143
+US,United States,Age 60-64,21019385,27470,45188
+US,United States,Age 65-74,31597519,6864,11292
+US,United States,Age 75-84,14999933,15484,25471
+US,United States,Age 85 and over,6281651,15811,26010
+US,United States,Total housing units (TYPEHUGQ=1),139647022,2131,3505
+US,United States,Total occupied units,124011027,119539,196641
+US,United States,"Owner occupied units (TEN in 1,2)",79943322,177718,292346
+US,United States,"Renter occupied units (TEN in 3,4)",44067705,64146,105520
+US,United States,Owned with a mortgage (TEN=1),49597126,112548,185142
+US,United States,Owned free and clear (TEN=2),30346196,71942,118344
+US,United States,Rented for cash (TEN=3),41927315,64575,106226
+US,United States,No cash rent (TEN=4),2140390,8255,13580
+US,United States,Total vacant units,15635995,119950,197317
+US,United States,For rent (VACS=1),2656805,27719,45598
+US,United States,For sale only (VACS=3),1027018,11661,19182
+US,United States,"All Other Vacant (VACS in 2,4,5,6,7)",11952172,84428,138885
